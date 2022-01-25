@@ -1,3 +1,11 @@
+# DS_tore
+*.DS_Store
+
+# datasets
+*.csv
+*.nc
+*.xlsx
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
