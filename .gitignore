@@ -3,7 +3,6 @@
 
 # datasets
 *.csv
-*.nc
 *.xlsx
 
 # Byte-compiled / optimized / DLL files
