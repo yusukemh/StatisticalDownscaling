@@ -1,0 +1,45 @@
+===============================================
+{'n_estimators': 160, 'max_depth': None, 'min_samples_split': 5, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.858940
+MSE on validation set: 7.093037
+elapsed time         : 138.244
+===============================================
+{'n_estimators': 160, 'max_depth': None, 'min_samples_split': 5, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.853052
+MSE on validation set: 7.117075
+elapsed time         : 132.654
+===============================================
+{'n_estimators': 280, 'max_depth': None, 'min_samples_split': 8, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 2.654220
+MSE on validation set: 7.270654
+elapsed time         : 219.853
+===============================================
+{'n_estimators': 290, 'max_depth': None, 'min_samples_split': 4, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.541276
+MSE on validation set: 7.064888
+elapsed time         : 241.495
+===============================================
+{'n_estimators': 70, 'max_depth': None, 'min_samples_split': 5, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.898001
+MSE on validation set: 7.159931
+elapsed time         : 61.328
+===============================================
+{'n_estimators': 150, 'max_depth': None, 'min_samples_split': 6, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 2.143814
+MSE on validation set: 7.174220
+elapsed time         : 121.896
+===============================================
+{'n_estimators': 300, 'max_depth': None, 'min_samples_split': 2, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.965298
+MSE on validation set: 7.057699
+elapsed time         : 268.693
+===============================================
+{'n_estimators': 280, 'max_depth': None, 'min_samples_split': 3, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.233554
+MSE on validation set: 7.032811
+elapsed time         : 241.000
+===============================================
+{'n_estimators': 150, 'max_depth': None, 'min_samples_split': 3, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.249010
+MSE on validation set: 7.062160
+elapsed time         : 130.658
