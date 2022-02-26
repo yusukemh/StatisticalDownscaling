@@ -1,0 +1,3 @@
+This file contains the result of hyperparameter tuning.
+MODEL: GradiendBoostingRegressor
+DATASET: original dataset (coarse resolution, closest station, no seasonality)

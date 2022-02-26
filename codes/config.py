@@ -1,4 +1,5 @@
-BASE_DIR = "../dataset"
+# BASE_DIR = "../dataset"
+BASE_DIR = "/home/yusukemh/github/yusukemh/StatisticalDownscaling/dataset"
 
 FILE_NAMES = [
     "air.2m.mon.mean.regridded.nc",
