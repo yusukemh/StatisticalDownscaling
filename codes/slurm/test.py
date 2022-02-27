@@ -46,19 +46,25 @@ def main():
     )
 
     # split the dataset with
-    X = np.array(df_clean.drop(labels=["data_in"], axis=50))
+    X = np.array(df_clean.drop(labels=["data_in", "elev"], axis=1))
     Y = np.array(df_clean["data_in"])
 
     Xtemp, Xtest, Ytemp, Ytest = train_test_split(X, Y, test_size=0.2, random_state=42)
     Xtrain, Xvalid, Ytrain, Yvalid = train_test_split(Xtemp, Ytemp, test_size=0.25, random_state=42)
 
-    file_name = './RFR_elev.txt'
+    file_name = './GBR_original.txt'
 
     parameters = [
-        sherpa.Choice('n_estimators', list(range(50, 310, 10))),
+        sherpa.Choice('n_estimators', list(range(150, 310, 10))),
+        sherpa.Choice('learning_rate', [0.05, 0.1, 0.5, 1.0, 1.25, 1.5, 2]),
+        sherpa.Discrete('max_depth', [1, 8]),
         sherpa.Discrete('min_samples_split', [2, 10])
     ]
-    alg = sherpa.algorithms.RandomSearch(max_num_trials=1)
+
+
+
+
+    alg = sherpa.algorithms.RandomSearch(max_num_trials=50)
     study = sherpa.Study(parameters=parameters,
                          algorithm=alg,
                          lower_is_better=True)
@@ -68,14 +74,14 @@ def main():
         line = '===============================================\n'
         params = {
             "n_estimators": trial.parameters['n_estimators'],
-            "max_depth": None,
+            "learning_rate": trial.parameters['learning_rate'],
+            "max_depth": trial.parameters['max_depth'],
             "min_samples_split": trial.parameters["min_samples_split"],
-            "verbose": True,
-            "n_jobs": -1
+            "verbose": True
         }
         print(params)
         line += str(params) + '\n'
-        model = RandomForestRegressor(**params)
+        model = GradientBoostingRegressor(**params)
         model.fit(Xtrain, Ytrain)
         training_error = mean_squared_error(Ytrain, model.predict(Xtrain))
         validation_error = mean_squared_error(Yvalid, model.predict(Xvalid))

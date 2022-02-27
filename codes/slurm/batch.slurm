@@ -4,8 +4,8 @@
 #SBATCH --partition=shared
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=1
-#SBATCH --cpus-per-task=16
-#SBATCH --time 12:00:00
+#SBATCH --cpus-per-task=1
+#SBATCH --time 15:00:00
 #SBATCH --error=./outputs/error_%j.err
 #SBATCH --output=./outputs/output_%j.out
 #SBATCH --mem=32G

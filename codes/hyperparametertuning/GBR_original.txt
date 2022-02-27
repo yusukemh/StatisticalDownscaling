@@ -1,3 +1,5 @@
-This file contains the result of hyperparameter tuning.
-MODEL: GradiendBoostingRegressor
-DATASET: original dataset (coarse resolution, closest station, no seasonality)
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.1, 'max_depth': 2, 'min_samples_split': 6, 'verbosity': 1}
+MSE on training set  : 22.210802
+MSE on validation set: 22.299181
+elapsed time         : 76.910
