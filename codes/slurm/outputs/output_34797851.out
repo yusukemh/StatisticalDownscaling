@@ -7,3 +7,54 @@ Use only the closest observation to represent each field, from 16 different NetC
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: on
+{'n_estimators': 190, 'learning_rate': 1.5, 'max_depth': 4, 'verbosity': 1}
+{'n_estimators': 300, 'learning_rate': 2, 'max_depth': 8, 'verbosity': 1}
+{'n_estimators': 290, 'learning_rate': 0.5, 'max_depth': 6, 'verbosity': 1}
+{'n_estimators': 220, 'learning_rate': 0.5, 'max_depth': 5, 'verbosity': 1}
+{'n_estimators': 200, 'learning_rate': 1.25, 'max_depth': 5, 'verbosity': 1}
+{'n_estimators': 170, 'learning_rate': 0.1, 'max_depth': 8, 'verbosity': 1}
+{'n_estimators': 190, 'learning_rate': 2, 'max_depth': 2, 'verbosity': 1}
+{'n_estimators': 240, 'learning_rate': 0.5, 'max_depth': 2, 'verbosity': 1}
+{'n_estimators': 260, 'learning_rate': 1.25, 'max_depth': 7, 'verbosity': 1}
+{'n_estimators': 200, 'learning_rate': 1.25, 'max_depth': 6, 'verbosity': 1}
+{'n_estimators': 300, 'learning_rate': 0.05, 'max_depth': 3, 'verbosity': 1}
+{'n_estimators': 290, 'learning_rate': 1.5, 'max_depth': 7, 'verbosity': 1}
+{'n_estimators': 190, 'learning_rate': 1.0, 'max_depth': 1, 'verbosity': 1}
+{'n_estimators': 160, 'learning_rate': 0.05, 'max_depth': 9, 'verbosity': 1}
+{'n_estimators': 220, 'learning_rate': 1.5, 'max_depth': 9, 'verbosity': 1}
+{'n_estimators': 190, 'learning_rate': 0.05, 'max_depth': 5, 'verbosity': 1}
+{'n_estimators': 100, 'learning_rate': 1.5, 'max_depth': 2, 'verbosity': 1}
+{'n_estimators': 200, 'learning_rate': 2, 'max_depth': 7, 'verbosity': 1}
+{'n_estimators': 100, 'learning_rate': 1.25, 'max_depth': 7, 'verbosity': 1}
+{'n_estimators': 180, 'learning_rate': 1.25, 'max_depth': 1, 'verbosity': 1}
+{'n_estimators': 300, 'learning_rate': 0.5, 'max_depth': 4, 'verbosity': 1}
+{'n_estimators': 120, 'learning_rate': 1.0, 'max_depth': 5, 'verbosity': 1}
+{'n_estimators': 250, 'learning_rate': 0.5, 'max_depth': 2, 'verbosity': 1}
+{'n_estimators': 280, 'learning_rate': 1.25, 'max_depth': 2, 'verbosity': 1}
+{'n_estimators': 250, 'learning_rate': 0.5, 'max_depth': 6, 'verbosity': 1}
+{'n_estimators': 230, 'learning_rate': 0.05, 'max_depth': 9, 'verbosity': 1}
+{'n_estimators': 210, 'learning_rate': 1.5, 'max_depth': 4, 'verbosity': 1}
+{'n_estimators': 240, 'learning_rate': 0.05, 'max_depth': 9, 'verbosity': 1}
+{'n_estimators': 170, 'learning_rate': 0.1, 'max_depth': 3, 'verbosity': 1}
+{'n_estimators': 110, 'learning_rate': 0.5, 'max_depth': 9, 'verbosity': 1}
+{'n_estimators': 270, 'learning_rate': 1.5, 'max_depth': 3, 'verbosity': 1}
+{'n_estimators': 230, 'learning_rate': 1.0, 'max_depth': 3, 'verbosity': 1}
+{'n_estimators': 230, 'learning_rate': 1.0, 'max_depth': 6, 'verbosity': 1}
+{'n_estimators': 180, 'learning_rate': 0.05, 'max_depth': 3, 'verbosity': 1}
+{'n_estimators': 250, 'learning_rate': 1.0, 'max_depth': 2, 'verbosity': 1}
+{'n_estimators': 260, 'learning_rate': 1.25, 'max_depth': 4, 'verbosity': 1}
+{'n_estimators': 290, 'learning_rate': 1.5, 'max_depth': 3, 'verbosity': 1}
+{'n_estimators': 220, 'learning_rate': 1.5, 'max_depth': 8, 'verbosity': 1}
+{'n_estimators': 160, 'learning_rate': 1.25, 'max_depth': 4, 'verbosity': 1}
+{'n_estimators': 250, 'learning_rate': 1.25, 'max_depth': 7, 'verbosity': 1}
+{'n_estimators': 250, 'learning_rate': 2, 'max_depth': 5, 'verbosity': 1}
+{'n_estimators': 140, 'learning_rate': 0.5, 'max_depth': 5, 'verbosity': 1}
+{'n_estimators': 260, 'learning_rate': 0.1, 'max_depth': 4, 'verbosity': 1}
+{'n_estimators': 170, 'learning_rate': 0.1, 'max_depth': 7, 'verbosity': 1}
+{'n_estimators': 280, 'learning_rate': 1.5, 'max_depth': 6, 'verbosity': 1}
+{'n_estimators': 230, 'learning_rate': 0.05, 'max_depth': 8, 'verbosity': 1}
+{'n_estimators': 210, 'learning_rate': 0.1, 'max_depth': 7, 'verbosity': 1}
+{'n_estimators': 290, 'learning_rate': 1.0, 'max_depth': 1, 'verbosity': 1}
+{'n_estimators': 290, 'learning_rate': 0.05, 'max_depth': 9, 'verbosity': 1}
+{'n_estimators': 260, 'learning_rate': 1.5, 'max_depth': 6, 'verbosity': 1}
+{'Trial-ID': 30, 'Iteration': 1, 'learning_rate': 0.5, 'max_depth': 9, 'n_estimators': 110, 'Objective': 7.415630422984937, 'training_error': 4.124365025015942}
