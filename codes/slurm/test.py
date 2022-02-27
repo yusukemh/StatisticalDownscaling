@@ -45,12 +45,14 @@ def main():
         )
     )
 
-    # split the dataset without "elev"
-    X = np.array(df_clean.drop(labels=["data_in", "elev"], axis=1))
+    # split the dataset with
+    X = np.array(df_clean.drop(labels=["data_in"], axis=50))
     Y = np.array(df_clean["data_in"])
 
     Xtemp, Xtest, Ytemp, Ytest = train_test_split(X, Y, test_size=0.2, random_state=42)
     Xtrain, Xvalid, Ytrain, Yvalid = train_test_split(Xtemp, Ytemp, test_size=0.25, random_state=42)
+
+    file_name = './RFR_elev.txt'
 
     parameters = [
         sherpa.Choice('n_estimators', list(range(50, 310, 10))),
@@ -62,6 +64,8 @@ def main():
                          lower_is_better=True)
 
     for trial in study:
+        start = time.time()
+        line = '===============================================\n'
         params = {
             "n_estimators": trial.parameters['n_estimators'],
             "max_depth": None,
@@ -70,6 +74,7 @@ def main():
             "n_jobs": -1
         }
         print(params)
+        line += str(params) + '\n'
         model = RandomForestRegressor(**params)
         model.fit(Xtrain, Ytrain)
         training_error = mean_squared_error(Ytrain, model.predict(Xtrain))
@@ -80,6 +85,13 @@ def main():
             objective=validation_error,
             context={'training_error': training_error}
         )
+        end = time.time()
+        line += "MSE on training set  : {:.6f}".format(training_error) + '\n'
+        line += "MSE on validation set: {:.6f}".format(validation_error) + '\n'
+        line += "elapsed time         : {:.3f}".format(end - start) + '\n'
+
+        with open(file_name, 'a') as f:
+            f.write(line)
 
         study.finalize(trial)
 

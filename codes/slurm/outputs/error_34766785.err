@@ -1,0 +1,20 @@
+slurmstepd: error: execve(): module: No such file or directory
+srun: error: node-0332: task 0: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=34766785.0
+slurmstepd: error: execve(): source: No such file or directory
+srun: error: node-0332: task 0: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=34766785.1
+INFO:sherpa.core:
+-------------------------------------------------------
+SHERPA Dashboard running. Access via
+http://10.100.1.76:8880 if on a cluster or
+http://localhost:8880 if running locally.
+-------------------------------------------------------
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[Parallel(n_jobs=-1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=-1)]: Done 280 out of 280 | elapsed: 20.8min finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 280 out of 280 | elapsed:   43.0s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done 280 out of 280 | elapsed:   14.9s finished

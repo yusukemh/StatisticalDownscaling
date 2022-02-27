@@ -1,0 +1,5 @@
+===============================================
+{'n_estimators': 280, 'max_depth': None, 'min_samples_split': 5, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.716708
+MSE on validation set: 6.837722
+elapsed time         : 1307.486
