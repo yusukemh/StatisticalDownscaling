@@ -4,11 +4,11 @@
 #SBATCH --partition=shared
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=1
-#SBATCH --cpus-per-task=1
-#SBATCH --time 15:00:00
+#SBATCH --cpus-per-task=12
+#SBATCH --time 9:00:00
 #SBATCH --error=./outputs/error_%j.err
 #SBATCH --output=./outputs/output_%j.out
-#SBATCH --mem=32G
+#SBATCH --mem=64G
 #SBATCH --mail-user=yusukemh@hawaii.edu
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END

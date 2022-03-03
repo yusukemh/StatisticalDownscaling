@@ -23,80 +23,62 @@ import sherpa
 def main():
     # Variables from config file
     BASE_DIR = "/home/yusukemh/github/yusukemh/StatisticalDownscaling/dataset"
-
-    # Load the dataset
-    df_metadata = pd.read_excel(f"{BASE_DIR}/FilledDataset2012.xlsx", sheet_name="Header")
-    df_data_original = pd.read_csv(f"{BASE_DIR}/dataset.csv")
-
-    # make sure there is no NaN value
-    assert df_data_original.isnull().values.any() == False
-    print(f"There are {df_data_original.shape[0]} samples.")
-    print(
-        "Each sample is associated with lat and lon coordinates.\n" + 
-        "Use only the closest observation to represent each field, from 16 different NetCDF files.", )
-
-    df_combined = df_data_original.merge(right=df_metadata[["SKN", "ElevFT"]], left_on="skn", right_on="SKN")
-    df_clean = (
-        df_combined.drop(
-            labels=["lat", "lon", "year", "month", "SKN", "skn", "Lon_DD_updated"],
-            axis=1
-        ).rename(
-            columns={"Lat_DD": "lat", "Lon_DD": "lon", "ElevFT": "elev"}
-        )
+    df_6grids = pd.read_csv(f"{BASE_DIR}/dataset_5girds.csv")
+    df_6g = df_6grids.drop(
+        labels=["skn", "year", "month", "name", "Observer", "NumMos", "MinYear", "MaxYear", "Status2010"],
+        axis=1
     )
-
-    # split the dataset with
-    X = np.array(df_clean.drop(labels=["data_in", "elev"], axis=1))
-    Y = np.array(df_clean["data_in"])
+    df_6g = df_6g.drop(
+        labels=[
+            "air2m", "air1000_500", "hgt500", "hgt1000", "omega500",
+            "pottemp1000-500", "pottemp1000-850", "pr_wtr", "shum-uwnd-700",
+            "shum-uwnd-925", "shum-vwnd-700", "shum-vwnd-950", "shum700",
+            "shum925", "skt", "slp"
+        ],
+        axis=1
+    )
+    
+    Y = df_6g["data_in"]
+    X = df_6g.drop(["data_in"], axis=1)
 
     Xtemp, Xtest, Ytemp, Ytest = train_test_split(X, Y, test_size=0.2, random_state=42)
     Xtrain, Xvalid, Ytrain, Yvalid = train_test_split(Xtemp, Ytemp, test_size=0.25, random_state=42)
+    
+    gradient_boost = GradientBoostingRegressor(
+        n_estimators=280, 
+        learning_rate=0.5,
+        max_depth=5,
+        min_samples_split=2,
+        verbose=False
+    )
 
-    file_name = './XGB_original.txt'
-
-    parameters = [
-        sherpa.Choice('n_estimators', list(range(100, 310, 10))),
-        sherpa.Choice('learning_rate', [0.05, 0.1, 0.5, 1.0, 1.25, 1.5, 2]),
-        sherpa.Discrete('max_depth', [1, 10]),
-    ]
-
-    alg = sherpa.algorithms.RandomSearch(max_num_trials=50)
-    study = sherpa.Study(parameters=parameters,
-                         algorithm=alg,
-                         lower_is_better=True)
-
-    for trial in study:
-        start = time.time()
-        line = '===============================================\n'
-        params = {
-            "n_estimators": trial.parameters['n_estimators'],
-            "learning_rate": trial.parameters['learning_rate'],
-            "max_depth": trial.parameters['max_depth'],
-            "verbosity": 1
-        }
-        print(params)
-        line += str(params) + '\n'
-        model = XGBRegressor(**params)
-        model.fit(Xtrain, Ytrain)
-        training_error = mean_squared_error(Ytrain, model.predict(Xtrain))
-        validation_error = mean_squared_error(Yvalid, model.predict(Xvalid))
-        study.add_observation(
-            trial=trial,
-            iteration=1,
-            objective=validation_error,
-            context={'training_error': training_error}
-        )
-        end = time.time()
-        line += "MSE on training set  : {:.6f}".format(training_error) + '\n'
-        line += "MSE on validation set: {:.6f}".format(validation_error) + '\n'
-        line += "elapsed time         : {:.3f}".format(end - start) + '\n'
-
-        with open(file_name, 'a') as f:
-            f.write(line)
-
-        study.finalize(trial)
-
-    print(study.get_best_result())
+    gradient_boost.fit(Xtrain, Ytrain)
+    print("MSE on gradient boost (test) : {:.5f}".format(mean_squared_error(Ytest, gradient_boost.predict(Xtest))))
+    print("MSE on gradient boost (train): {:.5f}".format(mean_squared_error(Ytrain, gradient_boost.predict(Xtrain))))
+    
+    file_name = './XGB_GBR_6grid.txt'
+    
+    line = "Result on gradient boosting regressor\n"
+    line += "MSE on gradient boost (test) : {:.5f}".format(mean_squared_error(Ytest, gradient_boost.predict(Xtest))) + '\n'
+    line += "MSE on gradient boost (train): {:.5f}".format(mean_squared_error(Ytrain, gradient_boost.predict(Xtrain))) + '\n'
+    
+    
+    xgboost = XGBRegressor(
+        n_estimators=110,
+        learning_rate=0.5,
+        max_depth=9,
+        verbosity=0
+    )
+    xgboost.fit(Xtrain, Ytrain)
+    print("MSE on xgboost (test) : {:.5f}".format(mean_squared_error(Ytest, xgboost.predict(Xtest))))
+    print("MSE on xgboost (train): {:.5f}".format(mean_squared_error(Ytrain, xgboost.predict(Xtrain))))
+    
+    line += "Result on xgboost regressor\n"
+    line += "MSE on xgboost (test) : {:.5f}".format(mean_squared_error(Ytest, xgboost.predict(Xtest))) + '\n'
+    line += "MSE on xgboost (train): {:.5f}".format(mean_squared_error(Ytrain, xgboost.predict(Xtrain))) + '\n'
+    
+    with open(file_name, 'a') as f:
+        f.write(line)
 
 if __name__ == "__main__":
     main()
