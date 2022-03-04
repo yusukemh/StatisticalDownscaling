@@ -17,4 +17,4 @@ echo hello
 srun module load lang/Anaconda3
 srun source activate climate
 ## srun /opt/apps/software/lang/Anaconda3/2020.11/bin/python test.py
-srun /home/yusukemh/.conda/envs/climate/bin/python3 test.py
+srun /home/yusukemh/.conda/envs/climate/bin/python3 run_scripts/original/random_forest.py
