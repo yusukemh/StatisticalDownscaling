@@ -1,5 +1,0 @@
-hello
-MSE on gradient boost (test) : 8.42223
-MSE on gradient boost (train): 6.73136
-MSE on xgboost (test) : 7.09670
-MSE on xgboost (train): 3.41817

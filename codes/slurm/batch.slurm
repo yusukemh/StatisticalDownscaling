@@ -5,7 +5,7 @@
 #SBATCH --partition=shared
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=1
-#SBATCH --cpus-per-task=1
+#SBATCH --cpus-per-task=16
 #SBATCH --time 6:00:00
 #SBATCH --error=./outputs/error_%j.err
 #SBATCH --output=./outputs/output_%j.out
@@ -18,4 +18,4 @@ echo hello
 srun module load lang/Anaconda3
 srun source activate climate
 ## srun /opt/apps/software/lang/Anaconda3/2020.11/bin/python test.py
-srun /home/yusukemh/.conda/envs/climate/bin/python3 run_scripts/elevation/xg_boost.py
+srun /home/yusukemh/.conda/envs/climate/bin/python3 run_scripts/elevation/random_forest.py
