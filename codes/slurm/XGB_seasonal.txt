@@ -1,0 +1,1 @@
+labels to use: ['data_in', 'lat', 'lon', 'season_wet', 'season_dry', 'air2m', 'air1000_500', 'hgt500', 'hgt1000', 'omega500', 'pottemp1000-500', 'pottemp1000-850', 'pr_wtr', 'shum-uwnd-700', 'shum-uwnd-925', 'shum-vwnd-700', 'shum-vwnd-950', 'shum700', 'shum925', 'skt', 'slp']
