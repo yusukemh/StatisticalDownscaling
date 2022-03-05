@@ -1,0 +1,9 @@
+slurmstepd: error: execve(): module: No such file or directory
+srun: error: lmem-0005: task 0: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=35065547.0
+srun: error: lmem-0005: task 0: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=35065547.1
+slurmstepd: error: execve(): source: No such file or directory
+/home/yusukemh/.conda/envs/climate/bin/python3: can't open file '/home/yusukemh/github/yusukemh/StatisticalDownscaling/codes/slurm/run_scripts/original/xgboost.py': [Errno 2] No such file or directory
+srun: error: lmem-0005: task 0: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=35065547.2

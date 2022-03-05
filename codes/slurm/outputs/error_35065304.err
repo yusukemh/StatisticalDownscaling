@@ -1,0 +1,14 @@
+slurmstepd: error: execve(): module: No such file or directory
+srun: error: node-0332: task 0: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=35065304.0
+slurmstepd: error: execve(): source: No such file or directory
+srun: error: node-0332: task 0: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=35065304.1
+Traceback (most recent call last):
+  File "/home/yusukemh/github/yusukemh/StatisticalDownscaling/codes/slurm/run_scripts/original/xgboost.py", line 17, in <module>
+    from xgboost import XGBRegressor
+  File "/home/yusukemh/github/yusukemh/StatisticalDownscaling/codes/slurm/run_scripts/original/xgboost.py", line 17, in <module>
+    from xgboost import XGBRegressor
+ImportError: cannot import name 'XGBRegressor' from partially initialized module 'xgboost' (most likely due to a circular import) (/home/yusukemh/github/yusukemh/StatisticalDownscaling/codes/slurm/run_scripts/original/xgboost.py)
+srun: error: node-0332: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=35065304.2
