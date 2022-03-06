@@ -1,0 +1,6 @@
+labels to use: ['data_in', 'lat', 'lon', 'elevation', 'season_wet', 'season_dry', 'i50_air2m', 'i50_air1000_500', 'i50_hgt500', 'i50_hgt1000', 'i50_omega500', 'i50_pottemp1000-500', 'i50_pottemp1000-850', 'i50_pr_wtr', 'i50_shum-uwnd-700', 'i50_shum-uwnd-925', 'i50_shum-vwnd-700', 'i50_shum-vwnd-950', 'i50_shum700', 'i50_shum925', 'i50_skt', 'i50_slp']
+===============================================
+{'n_estimators': 240, 'learning_rate': 2, 'max_depth': 2, 'verbosity': 1}
+MSE on training set  : 59.669590
+MSE on validation set: 59.982856
+elapsed time         : 85.979
