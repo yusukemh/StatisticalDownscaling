@@ -1,0 +1,9 @@
+slurmstepd: error: execve(): module: No such file or directory
+srun: error: lmem-0005: task 0: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=35131613.0
+slurmstepd: error: execve(): source: No such file or directory
+srun: error: lmem-0005: task 0: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=35131613.1
+/home/yusukemh/.conda/envs/climate/bin/python3: can't open file '/home/yusukemh/github/yusukemh/StatisticalDownscaling/codes/slurm/run_scripts/interp_50/run_scripts/interp_50/garbage.py': [Errno 2] No such file or directory
+srun: error: lmem-0005: task 0: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=35131613.2

@@ -1,0 +1,20 @@
+slurmstepd: error: execve(): module: No such file or directory
+srun: error: lmem-0005: task 0: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=35131157.0
+slurmstepd: error: execve(): source: No such file or directory
+srun: error: lmem-0005: task 0: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=35131157.1
+Traceback (most recent call last):
+  File "/home/yusukemh/github/yusukemh/StatisticalDownscaling/codes/slurm/run_scripts/seasonal_elevation/xg_boost.py", line 119, in <module>
+    main()
+  File "/home/yusukemh/github/yusukemh/StatisticalDownscaling/codes/slurm/run_scripts/seasonal_elevation/xg_boost.py", line 65, in main
+    Xtrain = np.array(df_train[columns].drop(labels=["data_in"], axis=1))
+  File "/home/yusukemh/.conda/envs/climate/lib/python3.9/site-packages/pandas/core/frame.py", line 3464, in __getitem__
+    indexer = self.loc._get_listlike_indexer(key, axis=1)[1]
+  File "/home/yusukemh/.conda/envs/climate/lib/python3.9/site-packages/pandas/core/indexing.py", line 1314, in _get_listlike_indexer
+    self._validate_read_indexer(keyarr, indexer, axis)
+  File "/home/yusukemh/.conda/envs/climate/lib/python3.9/site-packages/pandas/core/indexing.py", line 1377, in _validate_read_indexer
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['elevationair2m'] not in index"
+srun: error: lmem-0005: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=35131157.2
