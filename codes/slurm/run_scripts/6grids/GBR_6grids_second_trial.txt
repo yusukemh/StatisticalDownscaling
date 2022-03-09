@@ -169,3 +169,13 @@ elapsed time         : 288.986
 MSE on training set  : 7.341937
 MSE on validation set: 16.618239
 elapsed time         : 2905.492
+===============================================
+{'n_estimators': 300, 'learning_rate': 1.25, 'max_depth': 7, 'min_samples_split': 8, 'verbose': True}
+MSE on training set  : 4.202488
+MSE on validation set: 36.777993
+elapsed time         : 3306.070
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.1, 'max_depth': 5, 'min_samples_split': 7, 'verbose': True}
+MSE on training set  : 11.786084
+MSE on validation set: 18.419276
+elapsed time         : 1130.292
