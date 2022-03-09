@@ -24,7 +24,7 @@ import sherpa
 BASE_DIR='/home/yusukemh/github/yusukemh/StatisticalDownscaling/dataset'
 
 def main():
-    file_name = './GBR_6grids.txt'
+    file_name = './GBR_6grids_second_trial.txt'
 
     reanalysis_data = [
         'air2m', 'air1000_500', 'hgt500', 'hgt1000', 'omega500',

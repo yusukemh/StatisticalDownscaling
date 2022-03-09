@@ -1,0 +1,14 @@
+slurmstepd: error: execve(): module: No such file or directory
+srun: error: lmem-0002: task 0: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=35326651.0
+slurmstepd: error: execve(): source: No such file or directory
+srun: error: lmem-0002: task 0: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=35326651.1
+INFO:sherpa.core:
+-------------------------------------------------------
+SHERPA Dashboard running. Access via
+http://10.100.5.1:8880 if on a cluster or
+http://localhost:8880 if running locally.
+-------------------------------------------------------
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
