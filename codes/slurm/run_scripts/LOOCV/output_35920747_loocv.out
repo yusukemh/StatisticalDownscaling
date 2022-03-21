@@ -1,1 +1,54 @@
 hello
+=========================================
+Running experiment on PUUKOHOLA HEIAU station.
+There are:
+426 training data and
+131 test data
+=========================================
+MSE on xgboost (test) : 1.26395
+MSE on xgboost (train): 4.65344
+MSE on Linear Regression (test) : 1.60422
+MSE on Linear Regression (train): 1.01516
+=========================================
+Running experiment on FIELD 23 station.
+There are:
+450 training data and
+135 test data
+=========================================
+MSE on xgboost (test) : 9.01745
+MSE on xgboost (train): 4.65344
+MSE on Linear Regression (test) : 11.45641
+MSE on Linear Regression (train): 12.17799
+=========================================
+Running experiment on KAUKONAHUA MAUKA station.
+There are:
+450 training data and
+135 test data
+=========================================
+MSE on xgboost (test) : 14.16329
+MSE on xgboost (train): 4.65344
+MSE on Linear Regression (test) : 16.27004
+MSE on Linear Regression (train): 7.72826
+=========================================
+Running experiment on HONOKAA MAUKA station.
+There are:
+449 training data and
+135 test data
+=========================================
+MSE on xgboost (test) : 29.64510
+MSE on xgboost (train): 4.65344
+MSE on Linear Regression (test) : 24.83349
+MSE on Linear Regression (train): 15.01859
+=========================================
+Running experiment on E KAUAI WATER 2 station.
+There are:
+450 training data and
+135 test data
+=========================================
+MSE on xgboost (test) : 6.19651
+MSE on xgboost (train): 4.65344
+MSE on Linear Regression (test) : 6.55571
+MSE on Linear Regression (train): 5.30726
+mean of MSE with XGBoost: 12.16578
+mean of MSE with Linear Regression: 12.25196
+2944.6508831977844
