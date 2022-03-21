@@ -81,7 +81,8 @@ def main():
     gradient_boost.fit(Xtrain, Ytrain)
     line = "MSE on gradient boost (test) : {:.3f}".format(mean_squared_error(Ytest, gradient_boost.predict(Xtest)))
     line += "MSE on gradient boost (train): {:.3f}".format(mean_squared_error(Ytrain, gradient_boost.predict(Xtrain)))
-    
+    with open(file_name, 'a') as f:
+        f.write(line)
 
 
 if __name__ == "__main__":

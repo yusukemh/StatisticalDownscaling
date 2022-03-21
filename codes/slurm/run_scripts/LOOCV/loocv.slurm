@@ -6,9 +6,9 @@
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=1
 #SBATCH --cpus-per-task=1
-#SBATCH --time 1:30:00
-#SBATCH --error=./outputs/error_%j.err
-#SBATCH --output=./outputs/output_%j.out
+#SBATCH --time 4:00:00
+#SBATCH --error=./error_%j_loocv.err
+#SBATCH --output=./output_%j_loocv.out
 #SBATCH --mem=64G
 #SBATCH --mail-user=yusukemh@hawaii.edu
 #SBATCH --mail-type=BEGIN
@@ -17,5 +17,4 @@
 echo hello
 srun module load lang/Anaconda3
 srun source activate climate
-## srun /opt/apps/software/lang/Anaconda3/2020.11/bin/python test.py
-srun /home/yusukemh/.conda/envs/climate/bin/python3 garbage.py
+srun /home/yusukemh/.conda/envs/climate/bin/python3 loocv.py
