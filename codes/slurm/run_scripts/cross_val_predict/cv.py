@@ -22,9 +22,19 @@ import xarray as xr
 import sherpa
 
 BASE_DIR='/home/yusukemh/github/yusukemh/StatisticalDownscaling/dataset'
+FILE_NAME = './report.txt'
+
+def report(message,  time=False, start=None):
+    with open(FILE_NAME, 'a') as f:
+        f.write(message + '\n')
+    if time:
+        curr = time.time()
+        f.write("Elapsed time: {:.2f}\n".format(curr - start))
 
 def main():
-    file_name = './GBR_interp100.txt'
+    start = time.time()
+    report("starting CV")
+    
 
     reanalysis_data = [
         'air2m', 'air1000_500', 'hgt500', 'hgt1000', 'omega500',
@@ -44,40 +54,40 @@ def main():
     df_train = pd.read_csv(f"{BASE_DIR}/train.csv")
     df_valid = pd.read_csv(f"{BASE_DIR}/valid.csv")
     df_test = pd.read_csv(f"{BASE_DIR}/test.csv")
-    
-    # Nov-Apr = "wet", May-Oct = "dry"
-    wet = [11, 12, 1, 2, 3, 4]
-    dry = [5, 6, 7, 8, 9, 10]
-    df_train['season_dry'] = df_train.apply(lambda row: 1 if row.month in dry else 0, axis=1)
-    df_train['season_wet'] = df_train.apply(lambda row: 1 if row.month in wet else 0, axis=1)
-
-    df_valid['season_dry'] = df_valid.apply(lambda row: 1 if row.month in dry else 0, axis=1)
-    df_valid['season_wet'] = df_valid.apply(lambda row: 1 if row.month in wet else 0, axis=1)
-
-    df_test['season_dry'] = df_test.apply(lambda row: 1 if row.month in dry else 0, axis=1)
-    df_test['season_wet'] = df_test.apply(lambda row: 1 if row.month in wet else 0, axis=1)
-    
 
     df_combined = pd.concat([df_train, df_valid, df_test])
+        
+    report('dataset loaded')
+    report('running linear regression')
+        
+    # Linear regression
+    for i, (name, group) in enumerate(df_combined.groupby(by="skn")):
+        X = np.array(group[columns].drop("data_in", axis=1))
+        Y = np.array(group["data_in"])
+        if X.shape[0] < n_cv:
+            group['prediction_multi_linear'] = [np.nan] * X.shape[0]
+            continue
+
+        yhat = cross_val_predict(LinearRegression(), X, Y, cv=n_cv, n_jobs=-1)
+        group["prediction_multi_linear"] = yhat
+        dfs.append(group)
     
+    df_multi_linear = pd.concat(dfs)
+    df_multi_linear.to_csv(f"{BASE_DIR}/cv/multi_linear.csv", index=False)
     
-    
+    report('linear regression complete', time=True, start=start)
+
     # XGBoost
-    # make sure to groupby by skn: some stations have the same name e.g., WAIMEA
-    ytrue = []
-    ypred = []
-
-    n_data = []
-    rmse_per_station = []
-
     n_cv = 5
-
     num_groups = df_combined['skn'].unique().shape[0]
+    report(f'xgb initiating. There are {num_groups} stations')
 
     for i, (name, group) in enumerate(df_combined.groupby(by="skn")):
         X = np.array(group[columns].drop("data_in", axis=1))
         Y = np.array(group["data_in"])
-        if X.shape[0] < n_cv: continue
+        if X.shape[0] < n_cv: 
+            group['prediction_multi_xgb'] = [np.nan] * X.shape[0]
+            continue
 
         xgboost = XGBRegressor(
             n_estimators=170,
@@ -86,21 +96,17 @@ def main():
             verbosity=0
         )
 
-
         yhat = cross_val_predict(xgboost, X, Y, cv=n_cv, n_jobs=-1)
-        rmse = mean_squared_error(Y, yhat, squared=False)
-
-        ytrue.extend(Y)
-        ypred.extend(yhat)
-
-        n_data.append(X.shape[0])
-        rmse_per_station.append(rmse)
-
+        group['prediction_multi_linear'] = yhat
+        dfs.append(group)
+        
         print(f"{i}/{num_groups}")
-    np.savetxt("ytrue.csv", np.array(ytrue), delimiter=",")
-    np.savetxt("yperd.csv", np.array(ypred), delimiter=",")
-    np.savetxt("n_data.csv", np.array(n_data), delimiter=",")
-    np.savetxt("rmse_per_station.csv", np.array(rmse_per_station), delimiter=",")
+        
+    df_multi_xgb = pd.concat(dfs)
+    df_multi_xgb.to_csv(f"{BASE_DIR}/cv/multi_xgb.csv", index=False)
+    
+    report('xgb complete', time=True, start=start)
+    
     
     
 if __name__ == "__main__":
