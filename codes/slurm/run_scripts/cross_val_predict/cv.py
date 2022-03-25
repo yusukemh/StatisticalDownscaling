@@ -106,7 +106,7 @@ def main():
         group['prediction_multi_xgb'] = yhat
         dfs.append(group)
         
-        print(f"{i}/{num_groups}")
+        report(f"{i}/{num_groups}")
         
     df_multi_xgb = pd.concat(dfs)
     df_multi_xgb[['skn', 'year', 'month', 'data_in', 'name', 'season_dry', 'season_wet', 'prediction_multi_linear']].to_csv(f"{BASE_DIR}/cv/multi_xgb.csv", index=False)

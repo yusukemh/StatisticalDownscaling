@@ -4,3 +4,5 @@ srun: launch/slurm: _step_signal: Terminating StepId=36121829.0
 slurmstepd: error: execve(): source: No such file or directory
 srun: error: node-0062: task 0: Exited with exit code 2
 srun: launch/slurm: _step_signal: Terminating StepId=36121829.1
+slurmstepd: error: *** STEP 36121829.2 ON node-0062 CANCELLED AT 2022-03-25T15:24:53 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 36121829 ON node-0062 CANCELLED AT 2022-03-25T15:24:53 DUE TO TIME LIMIT ***
