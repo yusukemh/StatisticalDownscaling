@@ -1,6 +1,0 @@
-slurmstepd: error: execve(): module: No such file or directory
-srun: error: lmem-0001: task 0: Exited with exit code 2
-srun: launch/slurm: _step_signal: Terminating StepId=36033206.0
-slurmstepd: error: execve(): source: No such file or directory
-srun: error: lmem-0001: task 0: Exited with exit code 2
-srun: launch/slurm: _step_signal: Terminating StepId=36033206.1

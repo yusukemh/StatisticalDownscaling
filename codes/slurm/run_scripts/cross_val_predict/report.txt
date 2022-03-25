@@ -1,0 +1,17 @@
+starting CV
+dataset loaded
+running linear regression
+this is updated code
+starting CV
+dataset loaded
+running linear regression
+linear regression complete
+this is updated code
+starting CV
+dataset loaded
+running linear regression
+linear regression complete
+Elapsed time: 193.95
+xgb initiating. There are 1992 stations
+xgb complete
+Elapsed time: 13210.37

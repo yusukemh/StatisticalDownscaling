@@ -24,15 +24,16 @@ import sherpa
 BASE_DIR='/home/yusukemh/github/yusukemh/StatisticalDownscaling/dataset'
 FILE_NAME = './report.txt'
 
-def report(message,  time=False, start=None):
+def report(message, report_time=False, start=None):
     with open(FILE_NAME, 'a') as f:
         f.write(message + '\n')
-    if time:
-        curr = time.time()
-        f.write("Elapsed time: {:.2f}\n".format(curr - start))
+        if report_time:
+            curr = time.time()
+            f.write("Elapsed time: {:.2f}\n".format(curr - start))
 
 def main():
     start = time.time()
+    report('this is updated code')
     report("starting CV")
     
 
@@ -61,6 +62,8 @@ def main():
     report('running linear regression')
         
     # Linear regression
+    n_cv = 5
+    dfs = []
     for i, (name, group) in enumerate(df_combined.groupby(by="skn")):
         X = np.array(group[columns].drop("data_in", axis=1))
         Y = np.array(group["data_in"])
@@ -75,10 +78,11 @@ def main():
     df_multi_linear = pd.concat(dfs)
     df_multi_linear.to_csv(f"{BASE_DIR}/cv/multi_linear.csv", index=False)
     
-    report('linear regression complete', time=True, start=start)
+    report('linear regression complete', report_time=True, start=start)
 
     # XGBoost
     n_cv = 5
+    dfs = []
     num_groups = df_combined['skn'].unique().shape[0]
     report(f'xgb initiating. There are {num_groups} stations')
 
@@ -105,7 +109,7 @@ def main():
     df_multi_xgb = pd.concat(dfs)
     df_multi_xgb.to_csv(f"{BASE_DIR}/cv/multi_xgb.csv", index=False)
     
-    report('xgb complete', time=True, start=start)
+    report('xgb complete', report_time=True, start=start)
     
     
     
