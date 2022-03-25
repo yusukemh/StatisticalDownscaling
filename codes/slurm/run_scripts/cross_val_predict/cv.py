@@ -69,6 +69,7 @@ def main():
         Y = np.array(group["data_in"])
         if X.shape[0] < n_cv:
             group['prediction_multi_linear'] = [np.nan] * X.shape[0]
+            dfs.append(group)
             continue
 
         yhat = cross_val_predict(LinearRegression(), X, Y, cv=n_cv, n_jobs=-1)
@@ -76,7 +77,7 @@ def main():
         dfs.append(group)
     
     df_multi_linear = pd.concat(dfs)
-    df_multi_linear.to_csv(f"{BASE_DIR}/cv/multi_linear.csv", index=False)
+    df_multi_linear[['skn', 'year', 'month', 'data_in', 'name', 'season_dry', 'season_wet', 'prediction_multi_linear']].to_csv(f"{BASE_DIR}/cv/multi_linear.csv", index=False)
     
     report('linear regression complete', report_time=True, start=start)
 
@@ -91,6 +92,7 @@ def main():
         Y = np.array(group["data_in"])
         if X.shape[0] < n_cv: 
             group['prediction_multi_xgb'] = [np.nan] * X.shape[0]
+            dfs.append(group)
             continue
 
         xgboost = XGBRegressor(
@@ -101,13 +103,13 @@ def main():
         )
 
         yhat = cross_val_predict(xgboost, X, Y, cv=n_cv, n_jobs=-1)
-        group['prediction_multi_linear'] = yhat
+        group['prediction_multi_xgb'] = yhat
         dfs.append(group)
         
         print(f"{i}/{num_groups}")
         
     df_multi_xgb = pd.concat(dfs)
-    df_multi_xgb.to_csv(f"{BASE_DIR}/cv/multi_xgb.csv", index=False)
+    df_multi_xgb[['skn', 'year', 'month', 'data_in', 'name', 'season_dry', 'season_wet', 'prediction_multi_linear']].to_csv(f"{BASE_DIR}/cv/multi_xgb.csv", index=False)
     
     report('xgb complete', report_time=True, start=start)
     

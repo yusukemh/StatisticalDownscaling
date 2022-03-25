@@ -15,3 +15,10 @@ Elapsed time: 193.95
 xgb initiating. There are 1992 stations
 xgb complete
 Elapsed time: 13210.37
+this is updated code
+starting CV
+dataset loaded
+running linear regression
+linear regression complete
+Elapsed time: 62.90
+xgb initiating. There are 1992 stations
