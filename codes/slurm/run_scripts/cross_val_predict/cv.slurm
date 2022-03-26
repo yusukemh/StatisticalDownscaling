@@ -6,7 +6,7 @@
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=1
 #SBATCH --cpus-per-task=12
-#SBATCH --time 7:00:00
+#SBATCH --time 8:00:00
 #SBATCH --error=./error_%j.err
 #SBATCH --output=./output_%j.out
 #SBATCH --mem=64G

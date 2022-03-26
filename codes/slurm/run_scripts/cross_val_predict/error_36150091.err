@@ -4,3 +4,17 @@ srun: launch/slurm: _step_signal: Terminating StepId=36150091.0
 slurmstepd: error: execve(): source: No such file or directory
 srun: error: lmem-0005: task 0: Exited with exit code 2
 srun: launch/slurm: _step_signal: Terminating StepId=36150091.1
+Traceback (most recent call last):
+  File "/home/yusukemh/github/yusukemh/StatisticalDownscaling/codes/slurm/run_scripts/cross_val_predict/cv.py", line 119, in <module>
+    main()
+  File "/home/yusukemh/github/yusukemh/StatisticalDownscaling/codes/slurm/run_scripts/cross_val_predict/cv.py", line 112, in main
+    df_multi_xgb[['skn', 'year', 'month', 'data_in', 'name', 'season_dry', 'season_wet', 'prediction_multi_linear']].to_csv(f"{BASE_DIR}/cv/multi_xgb.csv", index=False)
+  File "/home/yusukemh/.conda/envs/climate/lib/python3.9/site-packages/pandas/core/frame.py", line 3464, in __getitem__
+    indexer = self.loc._get_listlike_indexer(key, axis=1)[1]
+  File "/home/yusukemh/.conda/envs/climate/lib/python3.9/site-packages/pandas/core/indexing.py", line 1314, in _get_listlike_indexer
+    self._validate_read_indexer(keyarr, indexer, axis)
+  File "/home/yusukemh/.conda/envs/climate/lib/python3.9/site-packages/pandas/core/indexing.py", line 1377, in _validate_read_indexer
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['prediction_multi_linear'] not in index"
+srun: error: lmem-0005: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=36150091.2
