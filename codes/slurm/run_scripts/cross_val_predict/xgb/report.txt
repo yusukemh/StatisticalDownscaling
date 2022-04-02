@@ -1,0 +1,3 @@
+starting CV
+dataset loaded
+running linear regression
