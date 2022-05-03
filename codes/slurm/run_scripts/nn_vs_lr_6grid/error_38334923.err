@@ -1,0 +1,9 @@
+WARNING: overwriting environment variables set in the machine
+overwriting variable LD_LIBRARY_PATH
+/home/yusukemh/sadow_lts/personal/yusukemh/Anaconda3/envs/tfp/lib/python3.10/site-packages/xgboost/compat.py:36: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  from pandas import MultiIndex, Int64Index
+2022-05-03 03:00:29.026401: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/yusukemh/sadow_lts/personal/yusukemh/Anaconda3/envs/tfp/lib
+2022-05-03 03:00:29.026899: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)
+2022-05-03 03:00:29.027348: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (node-0332): /proc/driver/nvidia/version does not exist
+2022-05-03 03:00:29.027909: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.

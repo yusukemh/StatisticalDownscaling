@@ -105,7 +105,7 @@ def main():
     results = []
     n_stations = df_combined['skn'].unique().shape[0]
     lr = 0.003
-    for i, skn in enumerate(df_combined['skn'].unique()[:10]):
+    for i, skn in enumerate(df_combined['skn'].unique()):
         df_station = df_combined[df_combined['skn'] == skn]
         if df_station.shape[0] <= 5: continue
 
