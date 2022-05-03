@@ -39,6 +39,10 @@ LABELS = [
     "slp"
 ]
 
+C_SINGLE = []
+for item in LABELS:
+    C_SINGLE.append()
+
 ATTRIBUTES = [
     "air",
     "air",
