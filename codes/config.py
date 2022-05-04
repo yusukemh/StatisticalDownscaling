@@ -39,10 +39,6 @@ LABELS = [
     "slp"
 ]
 
-C_SINGLE = []
-for item in LABELS:
-    C_SINGLE.append()
-
 ATTRIBUTES = [
     "air",
     "air",
@@ -116,3 +112,28 @@ ISLAND_RANGES = [
         "lon": (-155.474286-0.7, -155.474286+0.7)
     }
 ]
+
+# single closest grid cell
+C_SINGLE = []
+for item in LABELS:
+    C_SINGLE.append(item)
+C_SINGLE.extend(['elevation', 'season_wet', 'lat', 'lon'])
+
+# interpolation: lower resolution
+C_INT50 = []
+for item in LABELS:
+    C_INT50.append(f'i50_{item}')
+C_INT50.extend(['elevation', 'season_wet', 'lat', 'lon'])
+
+# interpolation: higher resolution
+C_INT100 = []
+for item in LABELS:
+    C_INT100.append(f'i100_{item}')
+C_INT100.extend(['elevation', 'season_wet', 'lat', 'lon'])
+
+# grid data
+C_GRID = []
+for i in range(6):
+    for item in LABELS:
+        C_GRID.append(f"{item}_{i}")
+C_GRID.extend(['elevation', 'season_wet', 'lat', 'lon'])
