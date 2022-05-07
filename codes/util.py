@@ -4,7 +4,22 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import KFold, cross_val_predict, train_test_split
 
-def cross_val_predict_for_nn(model, X, Y, callback, batch_size, epochs, early_stopping=True, val_size=0.2, verbose=False):
+def augment_data(X, Y):
+    # make sure to apply this only on the training dataset
+    # add noise to X
+    new_X = [X]
+    new_Y = [Y]
+    for _ in range(5):
+        noise = np.random.random(X.shape) * 0.001
+        new_X.append(X + noise)
+        new_Y.append(Y)
+        
+    
+    return (np.vstack(new_X), np.array(new_Y).flatten())
+
+def cross_val_predict_for_nn(
+    model, X, Y, callback, batch_size, epochs, early_stopping=True, val_size=0.2, add_noise = False, verbose=False
+):
     kf = KFold(n_splits=5)
     y_pred = []
 
@@ -32,6 +47,8 @@ def cross_val_predict_for_nn(model, X, Y, callback, batch_size, epochs, early_st
         else: #if no early stopping
             Xtrain, Xtest = X[train_index], X[test_index]
             Ytrain, Ytest = Y[train_index], Y[test_index]
+            if add_noise:
+                Xtrain, Ytrain = augment_data(Xtrain, Ytrain)
             
             scaler = StandardScaler()
             Xtrain = scaler.fit_transform(Xtrain)
