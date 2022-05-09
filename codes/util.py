@@ -8,13 +8,14 @@ from tensorflow.keras.callbacks import EarlyStopping
 
 # from multiprocessing import Pool, cpu_count
 from joblib import Parallel, delayed
+from copy import deepcopy
 
 def augment_data(X, Y):
     # make sure to apply this only on the training dataset
     # add noise to X
     new_X = [X]
     new_Y = [Y]
-    for _ in range(5):
+    for _ in range(10):
         noise = np.random.random(X.shape) * 0.001
         new_X.append(X + noise)
         new_Y.append(Y)
@@ -23,7 +24,7 @@ def augment_data(X, Y):
     return (np.vstack(new_X), np.array(new_Y).flatten())
 
 def cross_val_predict_for_nn(
-    model, X, Y,
+    model_func, model_params, X, Y,
     callback, batch_size, epochs,
     early_stopping=True,
     val_size=0.2,
@@ -32,8 +33,9 @@ def cross_val_predict_for_nn(
 ):
     kf = KFold(n_splits=5)
     y_pred = []
-
+    
     for train_index, test_index in kf.split(X):
+        model = model_func(**model_params)
         if early_stopping:
             Xtemp, Xtest = X[train_index], X[test_index]
             Ytemp, Ytest = Y[train_index], Y[test_index]
@@ -84,7 +86,8 @@ def cross_val_predict_for_nn(
 
 def estimate_epochs(
     X, Y,
-    model,
+    model_func,
+    model_params,
     patience=5,
     n_iter=50
 ):
@@ -102,6 +105,7 @@ def estimate_epochs(
 
     n_epochs = []
     for _ in range(n_iter):
+        model = model_func(**model_params)
         history = model.fit(
             Xtrain, Ytrain, epochs=epochs,
             validation_data = (Xvalid, Yvalid),
