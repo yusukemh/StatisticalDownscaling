@@ -113,6 +113,9 @@ ISLAND_RANGES = [
     }
 ]
 
+# common variables that needs to be loaded
+C_COMMON = ['skn', 'data_in', 'season_wet', 'elevation', 'year', 'month', 'lat', 'lon']
+
 # single closest grid cell
 C_SINGLE = []
 for item in LABELS:
