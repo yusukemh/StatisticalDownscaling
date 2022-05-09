@@ -6,6 +6,9 @@ from sklearn.model_selection import KFold, cross_val_predict, train_test_split
 
 from tensorflow.keras.callbacks import EarlyStopping
 
+# from multiprocessing import Pool, cpu_count
+from joblib import Parallel, delayed
+
 def augment_data(X, Y):
     # make sure to apply this only on the training dataset
     # add noise to X
@@ -98,7 +101,6 @@ def estimate_epochs(
     batch_size=64
 
     n_epochs = []
-    # n_iter = 50 # how many iterations to run for taking average for n_epochs
     for _ in range(n_iter):
         history = model.fit(
             Xtrain, Ytrain, epochs=epochs,
@@ -113,6 +115,8 @@ def estimate_epochs(
         # print(f"# epochs trained: {n_epochs_trained}")
         n_epochs.append(n_epochs_trained)
         print(f"{_}/{n_iter}", end='\r')
+    
+        
     print("mean number of epochs: {:.3}\nStd: {:.3f}".format(np.mean(n_epochs), np.std(n_epochs)))
     return np.mean(n_epochs)
 
