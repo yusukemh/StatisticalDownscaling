@@ -89,10 +89,13 @@ def estimate_epochs(
     model_func,
     model_params,
     patience=5,
-    n_iter=50
+    n_iter=50,
+    add_noise=False
 ):
     #model = define_model(input_dim=len(columns), lr=0.005)
     Xtrain, Xvalid, Ytrain, Yvalid = train_test_split(X, Y, test_size=0.2, shuffle=False)
+    if add_noise:
+        Xtrain, Ytrain = augment_data(Xtrain, Ytrain)
     # scale the input data
     scaler = StandardScaler()
     Xtrain = scaler.fit_transform(Xtrain)
