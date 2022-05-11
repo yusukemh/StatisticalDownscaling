@@ -1,4 +1,3 @@
-# CHECK FILE NAME, MODEL, PARAMETER SPACE
 # basic imports
 import numpy as np
 import pandas as pd
@@ -24,10 +23,11 @@ tfd = tfp.distributions
 from copy import deepcopy
 from xgboost import XGBRegressor
 import sherpa
+import sys
 
 # Variables from config file
 sys.path.append('/home/yusukemh/github/yusukemh/StatisticalDownscaling/codes/')
-from config import BASE_DIR, FILE_NAMES, LABELS, ATTRIBUTES, BEST_MODEL_COLUMNS, ISLAND_RANGES, C_SINGLE, C_INT50, C_INT100, C_GRID
+from config import BASE_DIR, FILE_NAMES, LABELS, ATTRIBUTES, BEST_MODEL_COLUMNS, ISLAND_RANGES, C_SINGLE, C_INT50, C_INT100, C_GRID, C_COMMON
 
 # util
 from util import cross_val_predict_for_nn, estimate_epochs
@@ -131,17 +131,16 @@ def run_single_experiment(
     # first, run linear regression
     linear_regression = LinearRegression()
     y_pred = cross_val_predict(linear_regression, X, Y, n_jobs=-1)
-    rmse_lr = mean_squared_erorr(Y, y_pred, squared=False)
-    
+    rmse_lr = mean_squared_error(Y, y_pred, squared=False)
     # estimate the # epochs
     estimated_epochs = estimate_epochs(
-        X=X, Y=Y, model_func=model_func, model_params=model_params
+        X=X, Y=Y, model_func=model_func, model_params=model_params, n_iter=50
     )
     
     rmses = []
     for trial in range(n_trial):
         y_pred = cross_val_predict_for_nn(
-            X=X, Y=Y, model_func=model_func, model_params=model_params,
+            X=X, Y=Y, model_func=model_func, model_params=model_params, callback=None, batch_size=64,
             epochs=int(estimated_epochs), early_stopping=False, verbose=False
         )
         rmse = mean_squared_error(Y, y_pred, squared=False)
@@ -150,12 +149,13 @@ def run_single_experiment(
     m, s = np.mean(rmses), np.std(rmses)
     return pd.DataFrame(
         dict(
-            skn=skn,
             n_samples=X.shape[0],
-            mean=m,
-            std=s,
+            rmse_LR=rmse_lr,
+            rmse_NN_mean=m,
+            rmse_NN_std=s,
             rel_imp=(rmse_lr - m)/rmse_lr
-        )
+        ),
+        index=[skn]
     )
 
 def main():
@@ -165,56 +165,58 @@ def main():
     # load nonfilled dataset
     df_nonfilled = pd.read_csv(f"{BASE_DIR}/nonfilled_dataset.csv", usecols=C_SINGLE + C_COMMON)
     # sample a station: returned object is sorted.
-    
-    df_n_data = df_nonfilled.groupby('skn').size().rename(columns={0:"n_data"})
+
+    df_n_data = df_nonfilled.groupby('skn').size().reset_index().rename(columns={0:"n_data"})
     valid_skn = df_n_data[df_n_data['n_data'] > 750]['skn']
-    
+
     stats_regular = []
     stats_normal = []
     stats_gamma = []
+
     for i, skn in enumerate(valid_skn):
         with open(file_name, 'a') as f:
-            f.write(f'Running experiment on skn {skn}')
-            f.write(f'{i}/{valid_skn.shape[0]}')
-            
+            f.write(f'Running experiment on skn {skn}\n')
+            f.write(f'{i}/{valid_skn.shape[0]}\n')
+
         df_station = df_nonfilled[df_nonfilled['skn'] == skn].sort_values(['year', 'month'])
-        
+
         X = np.array(df_station[columns])
         Y = np.array(df_station['data_in'])
-        
+
         with open(file_name, 'a') as f:
-            f.write(f'\tRunning regular NN')
-            
+            f.write(f'\tRunning regular NN\n')
+
         # regular NN
         stats_regular.append(
             run_single_experiment(
-                X, Y, model_func=define_model, model_params=dict(input_dim=len(columns), lr=0.0005)
-                n_trial=30
-            )
-        )
-        
-        with open(file_name, 'a') as f:
-            f.write(f'\tRunning normal NN')
-        
-        stats_normal.append(
-            run_single_experiment(
-                X, Y, model_func=define_hetero_model_normal, model_params=dict(input_dim=len(columns), lr=0.0005)
+                X, Y, model_func=define_model, model_params=dict(input_dim=len(columns), lr=0.0005),
                 n_trial=30
             )
         )
 
         with open(file_name, 'a') as f:
-            f.write(f'\tRunning gamma NN')
-        
-        stats_gamma.append(
+            f.write(f'\tRunning normal NN\n')
+
+        stats_normal.append(
             run_single_experiment(
-                X, Y, model_func=define_hetero_model_gamma, model_params=dict(input_dim=len(columns), lr=0.001)
+                X, Y, model_func=define_hetero_model_normal, model_params=dict(input_dim=len(columns), lr=0.0005),
                 n_trial=30
             )
         )
-    
+
+        with open(file_name, 'a') as f:
+            f.write(f'\tRunning gamma NN\n')
+
+        stats_gamma.append(
+            run_single_experiment(
+                X, Y, model_func=define_hetero_model_gamma, model_params=dict(input_dim=len(columns), lr=0.001),
+                n_trial=30
+            )
+        )
+
     pd.concat(stats_regular).to_csv(f"./stats_regular.csv", index=False)
     pd.concat(stats_normal).to_csv(f"./stats_normal.csv", index=False)
     pd.concat(stats_gamma).to_csv(f"./stats_gamma.csv", index=False)
-if __name__ == "__main__":
+
+if __name__ == '__main__':
     main()

@@ -1,0 +1,5 @@
+Running experiment on skn 54.0
+0/24
+	Running regular NN
+	Running normal NN
+	Running gamma NN
