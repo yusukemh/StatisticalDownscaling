@@ -126,7 +126,7 @@ def define_hetero_model_gamma(input_dim=20, lr=0.0065):
 def run_single_experiment(
     X, Y,
     model_func, model_params,
-    n_trial
+    n_trial, skn
 ):
     # first, run linear regression
     linear_regression = LinearRegression()
@@ -134,7 +134,7 @@ def run_single_experiment(
     rmse_lr = mean_squared_error(Y, y_pred, squared=False)
     # estimate the # epochs
     estimated_epochs = estimate_epochs(
-        X=X, Y=Y, model_func=model_func, model_params=model_params, n_iter=50
+        X=X, Y=Y, model_func=model_func, model_params=model_params, n_iter=30
     )
     
     rmses = []
@@ -150,6 +150,7 @@ def run_single_experiment(
     return pd.DataFrame(
         dict(
             n_samples=X.shape[0],
+            estimated_epochs=estimated_epochs,
             rmse_LR=rmse_lr,
             rmse_NN_mean=m,
             rmse_NN_std=s,
@@ -190,7 +191,7 @@ def main():
         stats_regular.append(
             run_single_experiment(
                 X, Y, model_func=define_model, model_params=dict(input_dim=len(columns), lr=0.0005),
-                n_trial=30
+                n_trial=20, skn=skn
             )
         )
 
@@ -200,7 +201,7 @@ def main():
         stats_normal.append(
             run_single_experiment(
                 X, Y, model_func=define_hetero_model_normal, model_params=dict(input_dim=len(columns), lr=0.0005),
-                n_trial=30
+                n_trial=20, skn=skn
             )
         )
 
@@ -210,7 +211,7 @@ def main():
         stats_gamma.append(
             run_single_experiment(
                 X, Y, model_func=define_hetero_model_gamma, model_params=dict(input_dim=len(columns), lr=0.001),
-                n_trial=30
+                n_trial=20, skn=skn
             )
         )
 
