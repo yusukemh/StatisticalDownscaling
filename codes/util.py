@@ -40,7 +40,7 @@ def cross_val_predict_for_nn(
             Xtemp, Xtest = X[train_index], X[test_index]
             Ytemp, Ytest = Y[train_index], Y[test_index]
 
-            Xtrain, Xvalid, Ytrain, Yvalid = train_test_split(Xtemp, Ytemp, test_size=0.2, shuffle=True)
+            Xtrain, Xvalid, Ytrain, Yvalid = train_test_split(Xtemp, Ytemp, test_size=val_size, shuffle=True)
 
             # scale the input
             scaler = StandardScaler()
