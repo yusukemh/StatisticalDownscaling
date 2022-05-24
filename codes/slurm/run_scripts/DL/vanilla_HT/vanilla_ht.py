@@ -24,6 +24,7 @@ from copy import deepcopy
 from xgboost import XGBRegressor
 import sherpa
 import sys
+import time
 
 # Variables from config file
 sys.path.append('/home/yusukemh/github/yusukemh/StatisticalDownscaling/codes/')
@@ -60,6 +61,16 @@ def define_model(
     
     return model
 
+def sample_station(df, threshold, seed=None):
+    if seed is not None:
+        np.random.seed(seed)
+    df_n_data = df.groupby('skn').size().reset_index().rename(columns={0:"n_data"})
+    sample_skn = df_n_data[df_n_data['n_data'] > threshold]['skn'].sample().values[0]
+    df_station = df[df['skn'] == sample_skn].sort_values(['year', 'month'])
+    print(f'Station with skn: {sample_skn} was chosen out of all stations with more than {threshold} historical (non-filled) rainfall observations.')
+    print(f"There are {df_station.shape[0]} rainfall observations from this station.")
+    return df_station
+
 def main():
     file_name = './progress.txt'
     with open(file_name, 'w') as f:
@@ -76,11 +87,11 @@ def main():
         sherpa.Choice(name='activation', range=['relu', 'elu', 'tanh']),
         sherpa.Discrete(name='n_units', range=[128, 1024]),
         sherpa.Discrete(name='n_layers', range=[1,5]),
-        sherpa.Choice(name='dropout', range=[0.3, 0.8]),
+        sherpa.Continuous(name='dropout', range=[0.3, 0.8]),
         sherpa.Discrete(name='batch_size', range=[32, 128])    
     ]
     
-    num_trials = 5
+    num_trials = 300
     alg = sherpa.algorithms.RandomSearch(max_num_trials=num_trials)
     study = sherpa.Study(
         parameters=parameters,

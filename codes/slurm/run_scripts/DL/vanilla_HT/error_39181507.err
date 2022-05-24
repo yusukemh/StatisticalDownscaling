@@ -1,0 +1,18 @@
+WARNING: overwriting environment variables set in the machine
+overwriting variable LD_LIBRARY_PATH
+/home/yusukemh/sadow_lts/personal/yusukemh/Anaconda3/envs/tfp/lib/python3.10/site-packages/xgboost/compat.py:36: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+  from pandas import MultiIndex, Int64Index
+INFO:sherpa.core:
+-------------------------------------------------------
+SHERPA Dashboard running. Access via
+http://10.100.11.206:8880 if on a cluster or
+http://localhost:8880 if running locally.
+-------------------------------------------------------
+2022-05-23 20:13:08.877559: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2022-05-23 20:13:08.877859: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: gpu-0008
+2022-05-23 20:13:08.878015: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: gpu-0008
+2022-05-23 20:13:08.878272: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 495.29.5
+2022-05-23 20:13:08.878421: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 495.29.5
+2022-05-23 20:13:08.878559: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 495.29.5
+2022-05-23 20:13:08.879169: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
