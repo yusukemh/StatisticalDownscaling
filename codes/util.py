@@ -5,10 +5,43 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import KFold, cross_val_predict, train_test_split
 
 from tensorflow.keras.callbacks import EarlyStopping
+#tensorflow
+import tensorflow as tf
+from tensorflow.keras.metrics import RootMeanSquaredError
+from tensorflow.keras.models import Model, Sequential
+from tensorflow.keras.wrappers.scikit_learn import KerasRegressor
+from tensorflow.keras.layers import Dense, Input, Concatenate, Dropout
 
 # from multiprocessing import Pool, cpu_count
 from joblib import Parallel, delayed
 from copy import deepcopy
+
+def define_model(
+    input_dim=20, 
+    lr=0.005, 
+    activation='relu',
+    n_units=256,
+    n_layers=4,
+    dropout=0.5
+):
+    inputs = Input(shape=(input_dim,))
+    x = Dense(units=n_units, activation=activation)(inputs)
+    
+    for i in range(n_layers - 1):
+        if dropout:
+            x = Dropout(rate=dropout)(x)
+        x = Dense(units=n_units, activation=activation)(x)
+    outputs = Dense(units=1, kernel_initializer='normal', activation='linear')(x)
+    
+    model = Model(inputs=inputs, outputs=outputs)
+    
+    model.compile(
+        optimizer=tf.optimizers.Adam(learning_rate=lr),
+        loss='mse',
+        metrics=[RootMeanSquaredError()]
+    )
+    
+    return model
 
 def augment_data(X, Y):
     # make sure to apply this only on the training dataset

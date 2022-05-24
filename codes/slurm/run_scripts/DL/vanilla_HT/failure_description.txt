@@ -1,0 +1,3 @@
+failure_1: dropout rate was Choice
+failure_2: dropout was always 0, so failure_1 and failure_2 is all result from when 
+    dropout = 0
