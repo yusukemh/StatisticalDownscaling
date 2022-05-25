@@ -47,6 +47,55 @@ def define_model(
     
     return model
 
+def define_hetero_model_gamma(
+    input_dim=20, lr=0.0065,
+    n_additional_layers_main=2,
+    n_additional_layers_sub=0,
+    activation='elu',
+    n_units_main=512,
+    n_units_sub=256,
+    dropout=0.5,
+):
+    inputs = Input(shape=(input_dim,))
+    x = Dense(units=n_units_main, activation=activation, kernel_initializer='normal')(inputs)
+    
+    for _ in range(n_additional_layers_main):
+        x = Dense(units=n_units_main, activation=activation, kernel_initializer='normal')(x)
+        if dropout:
+            x = Dropout(rate=0.5)(x)
+    
+    m = Dense(units=n_units_sub, activation=activation, kernel_initializer='normal')(x)
+    for _ in range(n_additional_layers_sub):
+        m = Dense(units=n_units_sub, activation=activation, kernel_initializer='normal')(m)
+    m = Dense(units=10, activation=activation, kernel_initializer='normal')(m)
+    m = Dense(units=1, activation='linear', kernel_initializer='normal')(m)
+    
+    s = Dense(units=n_units_sub, activation=activation, kernel_initializer='normal')(x)
+    for _ in range(n_additional_layers_sub):
+        s = Dense(units=n_units_sub, activation=activation, kernel_initializer='normal')(s)
+    s = Dense(units=10, activation=activation, kernel_initializer='normal')(s)
+    s = Dense(units=1, activation='linear', kernel_initializer='normal')(s)
+    
+    ms = Concatenate(axis=-1)([m, s])
+    outputs = tfp.layers.DistributionLambda(
+        make_distribution_fn=lambda t: tfd.Gamma(
+            concentration=tf.math.softplus(t[...,0]), rate=tf.math.softplus(t[...,1])
+        ),
+        convert_to_tensor_fn=lambda d: d.mean()
+    )(ms)
+    
+    model = Model(inputs=inputs, outputs=outputs)
+    
+    epsilon=1e-5 # for loss function
+    model.compile(
+        optimizer=tf.optimizers.Adam(learning_rate=lr),
+        loss=lambda y, p_y: -p_y.log_prob(y + epsilon),
+        # loss=safe_nll,
+        metrics=[RootMeanSquaredError()]
+    )
+    
+    return model
+
 @tf.autograph.experimental.do_not_convert
 def define_hetero_model_normal(
     input_dim=20, lr=0.0065,
