@@ -65,7 +65,7 @@ def main():
         sherpa.Discrete(name='batch_size', range=[32, 128]) 
     ]
     
-    num_trials = 3
+    num_trials = 100
     alg = sherpa.algorithms.RandomSearch(max_num_trials=num_trials)
     study = sherpa.Study(
         parameters=parameters,
@@ -105,7 +105,7 @@ def main():
         # now evaluate the performance, use 10 iterations
         for iteration in range(10):
             y_pred = cross_val_predict_for_nn(
-                model_func=define_hetero_model_normal,
+                model_func=define_hetero_model_gamma,
                 model_params=model_params,
                 batch_size=batch_size,
                 epochs=int(estimated_epochs),

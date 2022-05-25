@@ -1,0 +1,3 @@
+trial 0/100
+Elapsed time = 95
+trial 1/100

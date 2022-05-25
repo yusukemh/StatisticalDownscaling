@@ -68,7 +68,7 @@ def main():
         sherpa.Discrete(name='batch_size', range=[32, 128]) 
     ]
     
-    num_trials = 3
+    num_trials = 100
     alg = sherpa.algorithms.RandomSearch(max_num_trials=num_trials)
     study = sherpa.Study(
         parameters=parameters,
