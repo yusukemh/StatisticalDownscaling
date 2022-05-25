@@ -437,3 +437,41 @@ Elapsed time = 36
 trial 218/300
 Elapsed time = 83
 trial 219/300
+Elapsed time = 80
+trial 220/300
+Elapsed time = 47
+trial 221/300
+Elapsed time = 73
+trial 222/300
+Elapsed time = 47
+trial 223/300
+Elapsed time = 141
+trial 224/300
+Elapsed time = 68
+trial 225/300
+Elapsed time = 155
+trial 226/300
+Elapsed time = 71
+trial 227/300
+Elapsed time = 55
+trial 228/300
+Elapsed time = 75
+trial 229/300
+Elapsed time = 35
+trial 230/300
+Elapsed time = 119
+trial 231/300
+Elapsed time = 70
+trial 232/300
+Elapsed time = 69
+trial 233/300
+Elapsed time = 43
+trial 234/300
+Elapsed time = 446
+trial 235/300
+Elapsed time = 132
+trial 236/300
+Elapsed time = 35
+trial 237/300
+Elapsed time = 178
+trial 238/300

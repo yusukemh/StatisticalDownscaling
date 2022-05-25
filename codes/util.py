@@ -98,7 +98,7 @@ def define_hetero_model_gamma(
 
 @tf.autograph.experimental.do_not_convert
 def define_hetero_model_normal(
-    input_dim=20, lr=0.0065,
+    input_dim, lr=0.0065,
     n_additional_layers_main=0,
     n_additional_layers_sub=0,
     activation='relu',
