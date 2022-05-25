@@ -1,0 +1,2 @@
+failure_1: dropout was Choice
+failure_2: batch_size was fixed for estimate_epochs

@@ -31,35 +31,7 @@ sys.path.append('/home/yusukemh/github/yusukemh/StatisticalDownscaling/codes/')
 from config import BASE_DIR, FILE_NAMES, LABELS, ATTRIBUTES, BEST_MODEL_COLUMNS, ISLAND_RANGES, C_SINGLE, C_INT50, C_INT100, C_GRID, C_COMMON
 
 # util
-from util import cross_val_predict_for_nn, estimate_epochs
-
-# define a NN model
-def define_model(
-    input_dim=20, 
-    lr=0.005, 
-    activation='relu',
-    n_units=256,
-    n_layers=4,
-    dropout=0.5
-):
-    inputs = Input(shape=(input_dim,))
-    x = Dense(units=n_units, activation=activation)(inputs)
-    
-    for i in range(n_layers - 1):
-        if dropout:
-            x = Dropout(rate=dropout)(x)
-        x = Dense(units=n_units, activation=activation)(x)
-    outputs = Dense(units=1, kernel_initializer='normal', activation='linear')(x)
-    
-    model = Model(inputs=inputs, outputs=outputs)
-    
-    model.compile(
-        optimizer=tf.optimizers.Adam(learning_rate=lr),
-        loss='mse',
-        metrics=[RootMeanSquaredError()]
-    )
-    
-    return model
+from util import cross_val_predict_for_nn, estimate_epochs, define_model
 
 def sample_station(df, threshold, seed=None):
     if seed is not None:
@@ -122,6 +94,7 @@ def main():
             model_params=model_params,
             patience=5,
             n_iter=10,
+            batch_size=batch_size,
             add_noise=False
         )
 

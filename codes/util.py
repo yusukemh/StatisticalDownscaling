@@ -12,6 +12,10 @@ from tensorflow.keras.models import Model, Sequential
 from tensorflow.keras.wrappers.scikit_learn import KerasRegressor
 from tensorflow.keras.layers import Dense, Input, Concatenate, Dropout
 
+import tensorflow_probability as tfp
+tfd = tfp.distributions
+
+
 # from multiprocessing import Pool, cpu_count
 from joblib import Parallel, delayed
 from copy import deepcopy
@@ -38,6 +42,61 @@ def define_model(
     model.compile(
         optimizer=tf.optimizers.Adam(learning_rate=lr),
         loss='mse',
+        metrics=[RootMeanSquaredError()]
+    )
+    
+    return model
+
+def define_hetero_model_normal(
+    input_dim=20, lr=0.0065,
+    n_additional_layers_main=0,
+    n_additional_layers_sub=0,
+    activation='relu',
+    n_units_main=512,
+    n_units_sub=10,
+    dropout=0.5,
+    l2_sigma=100,
+    sigma_a=0.001,# these hyperparameters might have significant affect
+    sigma_b=0.03 # these hyperparameters might have signigicant affect
+):
+    inputs = Input(shape=(input_dim,))
+    x = Dense(units=n_units_main, activation=activation, kernel_initializer='normal')(inputs)
+    # main branch
+    for _ in range(n_additional_layers_main):
+        if dropout:
+            x = Dropout(rate=dropout)(x)
+        x = Dense(units=n_units_main, activation=activation, kernel_initializer='normal')(x)
+    # mean branch
+    if n_additional_layers_sub == 0:
+        m = Dense(units=1, activation='linear', kernel_initializer='normal')(x)
+    else:
+        m = Dense(units=n_units_sub, activation=activation, kernel_initializer='normal')(x)
+        for _ in range(n_additional_layers_sub - 1):
+            m = Dense(units=n_units_sub, activation=activation)(m)
+        m = Dense(units=1, activation='linear', kernel_initializer='normal')(m)
+    
+    # std branch
+    if n_additional_layers_sub == 0:
+        s = Dense(units=1, activation='linear', kernel_initializer='normal', kernel_regularizer=tf.keras.regularizers.L2(l2=l2_sigma))(x)
+    else:
+        s = Dense(units=n_units_sub, activation=activation, kernel_initializer='normal')(x)
+        for _ in range(n_additional_layers_sub - 1):
+            s = Dense(units=n_units_sub, activation=activation)(s)
+        s = Dense(units=1, activation='linear', kernel_initializer='normal', kernel_regularizer=tf.keras.regularizers.L2(l2=l2_sigma))(s)
+    
+    ms = Concatenate(axis=-1)([m, s])
+    outputs = tfp.layers.DistributionLambda(
+        make_distribution_fn=lambda t: tfd.Normal(
+            loc=t[...,0], scale=tf.math.softplus(sigma_a * t[...,1] + sigma_b)
+        ),
+        convert_to_tensor_fn=lambda s: s.mean()
+    )(ms)
+    
+    model = Model(inputs=inputs, outputs=outputs)
+    
+    model.compile(
+        optimizer=tf.optimizers.Adam(learning_rate=lr),
+        loss=lambda y, p_y: -p_y.log_prob(y),
         metrics=[RootMeanSquaredError()]
     )
     
@@ -123,9 +182,9 @@ def estimate_epochs(
     model_params,
     patience=5,
     n_iter=50,
+    batch_size=64,
     add_noise=False
 ):
-    #model = define_model(input_dim=len(columns), lr=0.005)
     Xtrain, Xvalid, Ytrain, Yvalid = train_test_split(X, Y, test_size=0.2, shuffle=False)
     if add_noise:
         Xtrain, Ytrain = augment_data(Xtrain, Ytrain)
@@ -134,10 +193,9 @@ def estimate_epochs(
     Xtrain = scaler.fit_transform(Xtrain)
     Xvalid = scaler.transform(Xvalid)
 
-    # callback = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience = patience, mode='min')
     callback = EarlyStopping(monitor='val_loss', patience = patience, mode='min')
     epochs=300
-    batch_size=64
+    batch_size=batch_size
 
     n_epochs = []
     for _ in range(n_iter):
