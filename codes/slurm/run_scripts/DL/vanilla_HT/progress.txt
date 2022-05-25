@@ -73,3 +73,19 @@ Elapsed time = 34
 trial 36/300
 Elapsed time = 75
 trial 37/300
+Elapsed time = 42
+trial 38/300
+Elapsed time = 232
+trial 39/300
+Elapsed time = 56
+trial 40/300
+Elapsed time = 43
+trial 41/300
+Elapsed time = 32
+trial 42/300
+Elapsed time = 33
+trial 43/300
+Elapsed time = 310
+trial 44/300
+Elapsed time = 36
+trial 45/300
