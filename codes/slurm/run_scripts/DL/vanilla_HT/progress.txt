@@ -89,3 +89,25 @@ Elapsed time = 310
 trial 44/300
 Elapsed time = 36
 trial 45/300
+Elapsed time = 169
+trial 46/300
+Elapsed time = 192
+trial 47/300
+Elapsed time = 300
+trial 48/300
+Elapsed time = 64
+trial 49/300
+Elapsed time = 32
+trial 50/300
+Elapsed time = 71
+trial 51/300
+Elapsed time = 43
+trial 52/300
+Elapsed time = 47
+trial 53/300
+Elapsed time = 161
+trial 54/300
+Elapsed time = 157
+trial 55/300
+Elapsed time = 671
+trial 56/300

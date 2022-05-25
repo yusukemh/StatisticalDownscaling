@@ -47,6 +47,7 @@ def define_model(
     
     return model
 
+@tf.autograph.experimental.do_not_convert
 def define_hetero_model_normal(
     input_dim=20, lr=0.0065,
     n_additional_layers_main=0,
