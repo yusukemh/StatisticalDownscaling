@@ -435,3 +435,5 @@ Elapsed time = 41
 trial 217/300
 Elapsed time = 36
 trial 218/300
+Elapsed time = 83
+trial 219/300
