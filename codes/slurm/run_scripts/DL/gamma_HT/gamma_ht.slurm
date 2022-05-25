@@ -18,4 +18,4 @@
 
 export PATH="/home/yusukemh/sadow_lts/personal/yusukemh/Anaconda3/bin:$PATH"
 source activate tfp
-python normal_ht.py
+python gamma_ht.py

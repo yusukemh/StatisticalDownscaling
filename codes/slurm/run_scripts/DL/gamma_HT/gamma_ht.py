@@ -31,7 +31,7 @@ sys.path.append('/home/yusukemh/github/yusukemh/StatisticalDownscaling/codes/')
 from config import BASE_DIR, FILE_NAMES, LABELS, ATTRIBUTES, BEST_MODEL_COLUMNS, ISLAND_RANGES, C_SINGLE, C_INT50, C_INT100, C_GRID, C_COMMON
 
 # util
-from util import cross_val_predict_for_nn, estimate_epochs, define_hetero_model_normal
+from util import cross_val_predict_for_nn, estimate_epochs, define_hetero_model_gamma
 
 def sample_station(df, threshold, seed=None):
     if seed is not None:
@@ -55,16 +55,13 @@ def main():
     df_station = sample_station(df=df_nonfilled, threshold=750, seed=42)
 
     parameters = [
-        sherpa.Continuous(name='lr', range=[0.001, 0.01]),
+        sherpa.Continuous(name='lr', range=[0.0005, 0.003]),
         sherpa.Choice(name='activation', range=['relu', 'elu', 'selu']),
         sherpa.Discrete(name='n_units_main', range=[256, 1024]),
         sherpa.Discrete(name='n_units_sub', range=[128, 512]),
         sherpa.Discrete(name='n_additional_layers_main', range=[0,3]),
         sherpa.Discrete(name='n_additional_layers_sub', range=[0,3]),
         sherpa.Continuous(name='dropout', range=[0.3, 0.8]),
-        sherpa.Discrete(name='l2_sigma', range=[50, 300]),
-        sherpa.Continuous(name='sigma_a', range=[0.005, 0.01]),
-        sherpa.Continuous(name='sigma_b', range=[0.01, 0.05]),
         sherpa.Discrete(name='batch_size', range=[32, 128]) 
     ]
     
@@ -90,9 +87,6 @@ def main():
             "n_additional_layers_main": trial.parameters['n_additional_layers_main'],
             "n_additional_layers_sub": trial.parameters['n_additional_layers_sub'],
             "dropout": trial.parameters['dropout'],
-            "l2_sigma": trial.parameters['l2_sigma'],
-            "sigma_a": trial.parameters['sigma_a'],
-            "sigma_b": trial.parameters['sigma_b']
         }
         batch_size = trial.parameters['batch_size']
 
@@ -100,7 +94,7 @@ def main():
         X = np.array(df_station[C_SINGLE])
         Y = np.array(df_station['data_in'])
         estimated_epochs = estimate_epochs(
-            X=X, Y=Y, model_func=define_hetero_model_normal,
+            X=X, Y=Y, model_func=define_hetero_model_gamma,
             model_params=model_params,
             patience=5,
             n_iter=10,

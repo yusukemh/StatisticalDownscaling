@@ -1,0 +1,3 @@
+trial 0/3
+Elapsed time = 114
+trial 1/3

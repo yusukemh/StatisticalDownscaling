@@ -475,3 +475,19 @@ Elapsed time = 35
 trial 237/300
 Elapsed time = 178
 trial 238/300
+Elapsed time = 90
+trial 239/300
+Elapsed time = 88
+trial 240/300
+Elapsed time = 128
+trial 241/300
+Elapsed time = 67
+trial 242/300
+Elapsed time = 207
+trial 243/300
+Elapsed time = 62
+trial 244/300
+Elapsed time = 46
+trial 245/300
+Elapsed time = 32
+trial 246/300
