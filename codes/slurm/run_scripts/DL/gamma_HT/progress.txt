@@ -5,3 +5,196 @@ Elapsed time = 125
 trial 2/100
 Elapsed time = 202
 trial 3/100
+Elapsed time = 125
+trial 4/100
+Elapsed time = 327
+trial 5/100
+Elapsed time = 269
+trial 6/100
+Elapsed time = 204
+trial 7/100
+Elapsed time = 116
+trial 8/100
+Elapsed time = 191
+trial 9/100
+Elapsed time = 85
+trial 10/100
+Elapsed time = 160
+trial 11/100
+Elapsed time = 130
+trial 12/100
+Elapsed time = 229
+trial 13/100
+Elapsed time = 88
+trial 14/100
+Elapsed time = 311
+trial 15/100
+Elapsed time = 82
+trial 16/100
+Elapsed time = 139
+trial 17/100
+Elapsed time = 97
+trial 18/100
+Elapsed time = 240
+trial 19/100
+Elapsed time = 197
+trial 20/100
+Elapsed time = 207
+trial 21/100
+Elapsed time = 122
+trial 22/100
+Elapsed time = 138
+trial 23/100
+Elapsed time = 136
+trial 24/100
+Elapsed time = 119
+trial 25/100
+Elapsed time = 185
+trial 26/100
+Elapsed time = 198
+trial 27/100
+Elapsed time = 188
+trial 28/100
+Elapsed time = 177
+trial 29/100
+Elapsed time = 163
+trial 30/100
+Elapsed time = 108
+trial 31/100
+Elapsed time = 190
+trial 32/100
+Elapsed time = 262
+trial 33/100
+Elapsed time = 153
+trial 34/100
+Elapsed time = 190
+trial 35/100
+Elapsed time = 186
+trial 36/100
+Elapsed time = 194
+trial 37/100
+Elapsed time = 328
+trial 38/100
+Elapsed time = 133
+trial 39/100
+Elapsed time = 101
+trial 40/100
+Elapsed time = 201
+trial 41/100
+Elapsed time = 96
+trial 42/100
+Elapsed time = 165
+trial 43/100
+Elapsed time = 139
+trial 44/100
+Elapsed time = 94
+trial 45/100
+Elapsed time = 107
+trial 46/100
+Elapsed time = 80
+trial 47/100
+Elapsed time = 185
+trial 48/100
+Elapsed time = 170
+trial 49/100
+Elapsed time = 126
+trial 50/100
+Elapsed time = 253
+trial 51/100
+Elapsed time = 208
+trial 52/100
+Elapsed time = 185
+trial 53/100
+Elapsed time = 120
+trial 54/100
+Elapsed time = 150
+trial 55/100
+Elapsed time = 109
+trial 56/100
+Elapsed time = 139
+trial 57/100
+Elapsed time = 197
+trial 58/100
+Elapsed time = 151
+trial 59/100
+Elapsed time = 147
+trial 60/100
+Elapsed time = 118
+trial 61/100
+Elapsed time = 132
+trial 62/100
+Elapsed time = 153
+trial 63/100
+Elapsed time = 155
+trial 64/100
+Elapsed time = 97
+trial 65/100
+Elapsed time = 137
+trial 66/100
+Elapsed time = 163
+trial 67/100
+Elapsed time = 140
+trial 68/100
+Elapsed time = 255
+trial 69/100
+Elapsed time = 117
+trial 70/100
+Elapsed time = 147
+trial 71/100
+Elapsed time = 201
+trial 72/100
+Elapsed time = 198
+trial 73/100
+Elapsed time = 113
+trial 74/100
+Elapsed time = 115
+trial 75/100
+Elapsed time = 172
+trial 76/100
+Elapsed time = 239
+trial 77/100
+Elapsed time = 117
+trial 78/100
+Elapsed time = 122
+trial 79/100
+Elapsed time = 110
+trial 80/100
+Elapsed time = 164
+trial 81/100
+Elapsed time = 253
+trial 82/100
+Elapsed time = 87
+trial 83/100
+Elapsed time = 87
+trial 84/100
+Elapsed time = 137
+trial 85/100
+Elapsed time = 97
+trial 86/100
+Elapsed time = 295
+trial 87/100
+Elapsed time = 122
+trial 88/100
+Elapsed time = 192
+trial 89/100
+Elapsed time = 203
+trial 90/100
+Elapsed time = 202
+trial 91/100
+Elapsed time = 92
+trial 92/100
+Elapsed time = 111
+trial 93/100
+Elapsed time = 143
+trial 94/100
+Elapsed time = 102
+trial 95/100
+Elapsed time = 185
+trial 96/100
+Elapsed time = 181
+trial 97/100
+Elapsed time = 156
+trial 98/100
+Elapsed time = 167
+trial 99/100
+Elapsed time = 129
