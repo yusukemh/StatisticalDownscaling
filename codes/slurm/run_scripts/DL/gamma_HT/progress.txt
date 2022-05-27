@@ -1,3 +1,7 @@
 trial 0/100
-Elapsed time = 95
+Elapsed time = 124
 trial 1/100
+Elapsed time = 125
+trial 2/100
+Elapsed time = 202
+trial 3/100

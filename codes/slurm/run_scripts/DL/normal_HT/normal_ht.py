@@ -95,6 +95,9 @@ def main():
             "sigma_b": trial.parameters['sigma_b']
         }
         batch_size = trial.parameters['batch_size']
+        
+        with open(file_name, 'a') as f:
+            f.write(f"{model_params}, {batch_size}")
 
         # first, estimate the number of epochs
         X = np.array(df_station[C_SINGLE])

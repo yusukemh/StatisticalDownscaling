@@ -1,0 +1,207 @@
+Station with skn: 396.0 was chosen out of all stations with more than 750 historical (non-filled) rainfall observations.
+There are 778 rainfall observations from this station.
+ * Serving Flask app 'sherpa.app.app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 24.1
+Std: 8.252
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 18.8
+Std: 2.482
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 21.0
+Std: 3.606
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 27.9
+Std: 4.657
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 18.6
+Std: 2.871
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 14.1
+Std: 2.548
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 25.9
+Std: 4.700
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 17.9
+Std: 2.587
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 31.3
+Std: 10.383
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 24.1
+Std: 6.268
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 21.0
+Std: 3.130
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 20.9
+Std: 4.949
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 23.4
+Std: 12.548
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 20.1
+Std: 16.950
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 23.3
+Std: 7.708
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 20.7
+Std: 2.571
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 16.0
+Std: 3.606
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 14.4
+Std: 2.375
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 16.4
+Std: 3.040
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 23.9
+Std: 4.085
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 22.5
+Std: 9.351
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 20.8
+Std: 3.919
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 15.1
+Std: 2.844
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 24.4
+Std: 5.142
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 18.9
+Std: 4.277
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 16.7
+Std: 1.345
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 20.3
+Std: 3.257
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 19.3
+Std: 3.716
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 41.2
+Std: 9.282
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 16.0
+Std: 3.606
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 29.8
+Std: 5.845
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 11.6
+Std: 2.691
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 22.1
+Std: 8.068
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 16.5
+Std: 5.296
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 29.6
+Std: 1.855
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 26.2
+Std: 3.250
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 18.0
+Std: 3.130
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 20.8
+Std: 13.746
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 23.1
+Std: 3.885
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 27.3
+Std: 12.514
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 31.4
+Std: 5.678
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 18.6
+Std: 2.289
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 19.9
+Std: 12.136
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 32.0
+Std: 4.472
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 17.1
+Std: 2.119
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 20.9
+Std: 2.385
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 18.7
+Std: 2.722
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 49.7
+Std: 5.984
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 18.1
+Std: 12.470
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 27.5
+Std: 7.089
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 17.2
+Std: 2.960
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 25.1
+Std: 3.727
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 19.6
+Std: 3.382
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 18.6
+Std: 2.728
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 18.2
+Std: 2.638
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 19.8
+Std: 2.227
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 36.8
+Std: 11.889
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 17.6
+Std: 1.497
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 18.8
+Std: 3.092
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 16.8
+Std: 4.512
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 21.8
+Std: 2.315
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 16.7
+Std: 2.452
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 25.6
+Std: 5.407
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 24.8
+Std: 4.812
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 19.0
+Std: 3.066
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 22.3
+Std: 3.132
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 17.6
+Std: 2.871
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 21.1
+Std: 6.730
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 13.9
+Std: 3.239
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 23.9
+Std: 4.721
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 23.0
+Std: 2.864
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 21.1
+Std: 11.623
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 17.7
+Std: 1.552
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 13.2
+Std: 2.315
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 23.0
+Std: 4.290
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 17.6
+Std: 4.499
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 28.2
+Std: 6.779
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 25.9
+Std: 10.054
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 19.5
+Std: 5.353
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 19.7
+Std: 6.001
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 18.3
+Std: 3.743
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 13.7
+Std: 3.348
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 23.4
+Std: 4.055
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 31.2
+Std: 4.190
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 22.9
+Std: 2.119
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 21.8
+Std: 3.682
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 22.5
+Std: 6.376
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 17.7
+Std: 3.378
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 27.8
+Std: 7.291
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 24.0
+Std: 9.581
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 17.9
+Std: 2.022
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 23.8
+Std: 8.829
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 20.9
+Std: 2.071
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 20.3
+Std: 2.830
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 17.6
+Std: 2.538
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 23.8
+Std: 6.462
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 18.7
+Std: 3.348
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 21.9
+Std: 2.773
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 32.1
+Std: 9.782
+0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 28.4
+Std: 8.947

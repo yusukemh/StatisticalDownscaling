@@ -146,7 +146,8 @@ def define_hetero_model_normal(
     
     model.compile(
         optimizer=tf.optimizers.Adam(learning_rate=lr),
-        loss=lambda y, p_y: -p_y.log_prob(y),
+        # loss=lambda y, p_y: -p_y.log_prob(y),
+        loss=lambda y, p_y: -p_y.log_prob(y + 1e-5),
         metrics=[RootMeanSquaredError()]
     )
     

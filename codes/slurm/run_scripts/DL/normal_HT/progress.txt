@@ -1,0 +1,200 @@
+trial 0/100
+{'input_dim': 20, 'lr': 0.0038823758249689226, 'activation': 'selu', 'n_units_main': 686, 'n_units_sub': 223, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 1, 'dropout': 0.3034460503764954, 'l2_sigma': 188, 'sigma_a': 0.006030858882333269, 'sigma_b': 0.020343568381451887}, 40Elapsed time = 409
+trial 1/100
+{'input_dim': 20, 'lr': 0.006185637859563429, 'activation': 'relu', 'n_units_main': 485, 'n_units_sub': 193, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 0, 'dropout': 0.5819108211269244, 'l2_sigma': 54, 'sigma_a': 0.009175530981653234, 'sigma_b': 0.012807959052015727}, 123Elapsed time = 51
+trial 2/100
+{'input_dim': 20, 'lr': 0.0025390862055695565, 'activation': 'selu', 'n_units_main': 1010, 'n_units_sub': 197, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 0, 'dropout': 0.5473398487895959, 'l2_sigma': 175, 'sigma_a': 0.005699985280003294, 'sigma_b': 0.03213385934295808}, 63Elapsed time = 411
+trial 3/100
+{'input_dim': 20, 'lr': 0.0027891697704496878, 'activation': 'elu', 'n_units_main': 492, 'n_units_sub': 345, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 2, 'dropout': 0.5517616148156241, 'l2_sigma': 108, 'sigma_a': 0.008092341834283846, 'sigma_b': 0.040032851972161165}, 112Elapsed time = 253
+trial 4/100
+{'input_dim': 20, 'lr': 0.0018232989432561666, 'activation': 'elu', 'n_units_main': 751, 'n_units_sub': 272, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 1, 'dropout': 0.3472831553028565, 'l2_sigma': 279, 'sigma_a': 0.005184185864004834, 'sigma_b': 0.027670795816804435}, 42Elapsed time = 384
+trial 5/100
+{'input_dim': 20, 'lr': 0.005057004002159272, 'activation': 'relu', 'n_units_main': 815, 'n_units_sub': 181, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 1, 'dropout': 0.7327876472533736, 'l2_sigma': 217, 'sigma_a': 0.00804895538785036, 'sigma_b': 0.02681768945271982}, 58Elapsed time = 79
+trial 6/100
+{'input_dim': 20, 'lr': 0.009270459661804804, 'activation': 'relu', 'n_units_main': 793, 'n_units_sub': 216, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 2, 'dropout': 0.40485766583011806, 'l2_sigma': 255, 'sigma_a': 0.007389346165720902, 'sigma_b': 0.013579001420255664}, 119Elapsed time = 367
+trial 7/100
+{'input_dim': 20, 'lr': 0.001464825728907472, 'activation': 'elu', 'n_units_main': 990, 'n_units_sub': 258, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 1, 'dropout': 0.6101097344867306, 'l2_sigma': 158, 'sigma_a': 0.0091754059897967, 'sigma_b': 0.012437306251637881}, 38Elapsed time = 140
+trial 8/100
+{'input_dim': 20, 'lr': 0.0027282915795377605, 'activation': 'selu', 'n_units_main': 518, 'n_units_sub': 298, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 2, 'dropout': 0.6642338731674375, 'l2_sigma': 203, 'sigma_a': 0.005917630564358905, 'sigma_b': 0.04665440249838515}, 107Elapsed time = 155
+trial 9/100
+{'input_dim': 20, 'lr': 0.005511094682951061, 'activation': 'elu', 'n_units_main': 888, 'n_units_sub': 475, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 1, 'dropout': 0.7665934489242683, 'l2_sigma': 111, 'sigma_a': 0.005534025823821708, 'sigma_b': 0.03144726781868711}, 124Elapsed time = 433
+trial 10/100
+{'input_dim': 20, 'lr': 0.004156458403106522, 'activation': 'relu', 'n_units_main': 349, 'n_units_sub': 380, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 2, 'dropout': 0.5163845213045019, 'l2_sigma': 122, 'sigma_a': 0.009457646868058937, 'sigma_b': 0.02217049659103647}, 74Elapsed time = 128
+trial 11/100
+{'input_dim': 20, 'lr': 0.0024496558258046554, 'activation': 'selu', 'n_units_main': 824, 'n_units_sub': 223, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 2, 'dropout': 0.5657094208272542, 'l2_sigma': 174, 'sigma_a': 0.00921241509601128, 'sigma_b': 0.014310017712019332}, 39Elapsed time = 316
+trial 12/100
+{'input_dim': 20, 'lr': 0.004102174380971893, 'activation': 'selu', 'n_units_main': 541, 'n_units_sub': 385, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 1, 'dropout': 0.4710458549925489, 'l2_sigma': 65, 'sigma_a': 0.006625887265901075, 'sigma_b': 0.01280375004681913}, 85Elapsed time = 184
+trial 13/100
+{'input_dim': 20, 'lr': 0.008692239115428164, 'activation': 'selu', 'n_units_main': 914, 'n_units_sub': 146, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 2, 'dropout': 0.5276321704210027, 'l2_sigma': 180, 'sigma_a': 0.006645007705361361, 'sigma_b': 0.015118704389012198}, 48Elapsed time = 450
+trial 14/100
+{'input_dim': 20, 'lr': 0.006659416418451508, 'activation': 'relu', 'n_units_main': 372, 'n_units_sub': 159, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 2, 'dropout': 0.7644569851490967, 'l2_sigma': 198, 'sigma_a': 0.005236451283040328, 'sigma_b': 0.02641116221012898}, 98Elapsed time = 106
+trial 15/100
+{'input_dim': 20, 'lr': 0.0050690479496558055, 'activation': 'relu', 'n_units_main': 705, 'n_units_sub': 482, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 0, 'dropout': 0.6365983243496187, 'l2_sigma': 59, 'sigma_a': 0.00812006931998475, 'sigma_b': 0.028456103915052967}, 115Elapsed time = 48
+trial 16/100
+{'input_dim': 20, 'lr': 0.001796991734837495, 'activation': 'selu', 'n_units_main': 600, 'n_units_sub': 471, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 1, 'dropout': 0.756438398018824, 'l2_sigma': 116, 'sigma_a': 0.008196672808621179, 'sigma_b': 0.03786538565057412}, 37Elapsed time = 236
+trial 17/100
+{'input_dim': 20, 'lr': 0.007689203702095115, 'activation': 'relu', 'n_units_main': 489, 'n_units_sub': 487, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 0, 'dropout': 0.5430997197670819, 'l2_sigma': 141, 'sigma_a': 0.0060712298106779285, 'sigma_b': 0.024381347553468664}, 73Elapsed time = 105
+trial 18/100
+{'input_dim': 20, 'lr': 0.006662202589488848, 'activation': 'selu', 'n_units_main': 499, 'n_units_sub': 299, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 1, 'dropout': 0.4193135361124345, 'l2_sigma': 61, 'sigma_a': 0.007090861230869654, 'sigma_b': 0.024734854544206993}, 69Elapsed time = 82
+trial 19/100
+{'input_dim': 20, 'lr': 0.0014254794333553116, 'activation': 'elu', 'n_units_main': 586, 'n_units_sub': 454, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 0, 'dropout': 0.4797062870873096, 'l2_sigma': 163, 'sigma_a': 0.0064128715160183935, 'sigma_b': 0.03279120487607184}, 54Elapsed time = 123
+trial 20/100
+{'input_dim': 20, 'lr': 0.004219923074471972, 'activation': 'elu', 'n_units_main': 586, 'n_units_sub': 295, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 1, 'dropout': 0.37471481038506377, 'l2_sigma': 289, 'sigma_a': 0.006138169768322011, 'sigma_b': 0.01819914441108647}, 88Elapsed time = 243
+trial 21/100
+{'input_dim': 20, 'lr': 0.009346170088341196, 'activation': 'elu', 'n_units_main': 923, 'n_units_sub': 147, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 0, 'dropout': 0.7642763899021086, 'l2_sigma': 274, 'sigma_a': 0.009732429042702488, 'sigma_b': 0.025789943474803616}, 64Elapsed time = 360
+trial 22/100
+{'input_dim': 20, 'lr': 0.005560195541487877, 'activation': 'elu', 'n_units_main': 448, 'n_units_sub': 227, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 0, 'dropout': 0.31197977673652977, 'l2_sigma': 135, 'sigma_a': 0.007227744793639784, 'sigma_b': 0.03389329072368471}, 69Elapsed time = 55
+trial 23/100
+{'input_dim': 20, 'lr': 0.004291929000974366, 'activation': 'selu', 'n_units_main': 930, 'n_units_sub': 335, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 2, 'dropout': 0.41779199710055964, 'l2_sigma': 168, 'sigma_a': 0.005135155270469801, 'sigma_b': 0.03943920978239772}, 113Elapsed time = 465
+trial 24/100
+{'input_dim': 20, 'lr': 0.005666142002758455, 'activation': 'elu', 'n_units_main': 766, 'n_units_sub': 438, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 2, 'dropout': 0.6744978622304936, 'l2_sigma': 133, 'sigma_a': 0.009796500453551089, 'sigma_b': 0.040924354614416174}, 67Elapsed time = 214
+trial 25/100
+{'input_dim': 20, 'lr': 0.007022003500809357, 'activation': 'selu', 'n_units_main': 444, 'n_units_sub': 152, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 0, 'dropout': 0.5930739244123724, 'l2_sigma': 233, 'sigma_a': 0.005609744850293554, 'sigma_b': 0.02356115409168598}, 89Elapsed time = 53
+trial 26/100
+{'input_dim': 20, 'lr': 0.006634605780286382, 'activation': 'selu', 'n_units_main': 308, 'n_units_sub': 382, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 2, 'dropout': 0.4164731323152636, 'l2_sigma': 261, 'sigma_a': 0.008350881660021977, 'sigma_b': 0.026762502815258153}, 34Elapsed time = 206
+trial 27/100
+{'input_dim': 20, 'lr': 0.008885820979213675, 'activation': 'relu', 'n_units_main': 699, 'n_units_sub': 467, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 2, 'dropout': 0.6923353531511227, 'l2_sigma': 184, 'sigma_a': 0.005993183499303306, 'sigma_b': 0.04552209370568705}, 68Elapsed time = 404
+trial 28/100
+{'input_dim': 20, 'lr': 0.0021291059123212316, 'activation': 'elu', 'n_units_main': 549, 'n_units_sub': 207, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 2, 'dropout': 0.31821351593899466, 'l2_sigma': 152, 'sigma_a': 0.0062718844569088815, 'sigma_b': 0.033488146710538486}, 97Elapsed time = 167
+trial 29/100
+{'input_dim': 20, 'lr': 0.004799299621444438, 'activation': 'elu', 'n_units_main': 278, 'n_units_sub': 135, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 0, 'dropout': 0.646045971631079, 'l2_sigma': 277, 'sigma_a': 0.0064732874046367775, 'sigma_b': 0.022807084530817125}, 76Elapsed time = 76
+trial 30/100
+{'input_dim': 20, 'lr': 0.005452077230088253, 'activation': 'selu', 'n_units_main': 916, 'n_units_sub': 331, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 1, 'dropout': 0.7208810298244308, 'l2_sigma': 175, 'sigma_a': 0.008501175196164132, 'sigma_b': 0.02411568587076282}, 116Elapsed time = 489
+trial 31/100
+{'input_dim': 20, 'lr': 0.008621025713058731, 'activation': 'selu', 'n_units_main': 901, 'n_units_sub': 258, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 1, 'dropout': 0.6470568198190465, 'l2_sigma': 60, 'sigma_a': 0.006706646596399178, 'sigma_b': 0.020579391132348676}, 41Elapsed time = 98
+trial 32/100
+{'input_dim': 20, 'lr': 0.008078723268931987, 'activation': 'elu', 'n_units_main': 398, 'n_units_sub': 341, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 1, 'dropout': 0.7066793158996955, 'l2_sigma': 157, 'sigma_a': 0.006447306820135526, 'sigma_b': 0.03155562938015988}, 55Elapsed time = 138
+trial 33/100
+{'input_dim': 20, 'lr': 0.00723547987162186, 'activation': 'selu', 'n_units_main': 984, 'n_units_sub': 251, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 2, 'dropout': 0.6685765425900707, 'l2_sigma': 265, 'sigma_a': 0.008756144685320686, 'sigma_b': 0.04817847105231072}, 51Elapsed time = 307
+trial 34/100
+{'input_dim': 20, 'lr': 0.0020797051337347714, 'activation': 'relu', 'n_units_main': 817, 'n_units_sub': 325, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 2, 'dropout': 0.5143146061736987, 'l2_sigma': 101, 'sigma_a': 0.006276540848949569, 'sigma_b': 0.03968751361177254}, 118Elapsed time = 203
+trial 35/100
+{'input_dim': 20, 'lr': 0.0023202469498191194, 'activation': 'selu', 'n_units_main': 361, 'n_units_sub': 499, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 1, 'dropout': 0.7558979702101414, 'l2_sigma': 200, 'sigma_a': 0.008017140083083539, 'sigma_b': 0.036919008258604294}, 110Elapsed time = 113
+trial 36/100
+{'input_dim': 20, 'lr': 0.004328926489836753, 'activation': 'elu', 'n_units_main': 395, 'n_units_sub': 470, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 2, 'dropout': 0.3352629372019271, 'l2_sigma': 193, 'sigma_a': 0.0076415878737190026, 'sigma_b': 0.026417918625459676}, 49Elapsed time = 255
+trial 37/100
+{'input_dim': 20, 'lr': 0.004546264581095565, 'activation': 'relu', 'n_units_main': 485, 'n_units_sub': 393, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 1, 'dropout': 0.6387860608935569, 'l2_sigma': 129, 'sigma_a': 0.006514977379911124, 'sigma_b': 0.04521425556650438}, 35Elapsed time = 203
+trial 38/100
+{'input_dim': 20, 'lr': 0.00735958834998475, 'activation': 'relu', 'n_units_main': 533, 'n_units_sub': 380, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 0, 'dropout': 0.46116232935480467, 'l2_sigma': 241, 'sigma_a': 0.006702224812562109, 'sigma_b': 0.027627747451237833}, 121Elapsed time = 95
+trial 39/100
+{'input_dim': 20, 'lr': 0.003711895262225141, 'activation': 'relu', 'n_units_main': 855, 'n_units_sub': 202, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 1, 'dropout': 0.6983202932120207, 'l2_sigma': 182, 'sigma_a': 0.005261189791606036, 'sigma_b': 0.04156988572163486}, 90Elapsed time = 413
+trial 40/100
+{'input_dim': 20, 'lr': 0.007395460971493513, 'activation': 'selu', 'n_units_main': 1015, 'n_units_sub': 424, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 2, 'dropout': 0.4275014953220074, 'l2_sigma': 215, 'sigma_a': 0.009788778562874897, 'sigma_b': 0.02531348924051636}, 105Elapsed time = 301
+trial 41/100
+{'input_dim': 20, 'lr': 0.00997417986785035, 'activation': 'selu', 'n_units_main': 611, 'n_units_sub': 395, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 0, 'dropout': 0.3956916136049134, 'l2_sigma': 219, 'sigma_a': 0.007119047774248193, 'sigma_b': 0.02019893275384367}, 85Elapsed time = 51
+trial 42/100
+{'input_dim': 20, 'lr': 0.004861038533201172, 'activation': 'elu', 'n_units_main': 951, 'n_units_sub': 319, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 1, 'dropout': 0.5341115683183527, 'l2_sigma': 246, 'sigma_a': 0.007819155145831428, 'sigma_b': 0.01299186483554926}, 54Elapsed time = 351
+trial 43/100
+{'input_dim': 20, 'lr': 0.002356148243283944, 'activation': 'selu', 'n_units_main': 547, 'n_units_sub': 392, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 2, 'dropout': 0.34688101824351353, 'l2_sigma': 190, 'sigma_a': 0.006771151429065005, 'sigma_b': 0.04033511271528719}, 118Elapsed time = 365
+trial 44/100
+{'input_dim': 20, 'lr': 0.0022719393258317866, 'activation': 'relu', 'n_units_main': 480, 'n_units_sub': 476, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 0, 'dropout': 0.5436319226873658, 'l2_sigma': 139, 'sigma_a': 0.007959208283076143, 'sigma_b': 0.031187596154009935}, 60Elapsed time = 58
+trial 45/100
+{'input_dim': 20, 'lr': 0.008582643962552207, 'activation': 'relu', 'n_units_main': 372, 'n_units_sub': 260, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 1, 'dropout': 0.561853280248839, 'l2_sigma': 240, 'sigma_a': 0.007123700795088917, 'sigma_b': 0.020793145951084925}, 117Elapsed time = 96
+trial 46/100
+{'input_dim': 20, 'lr': 0.002726967231004907, 'activation': 'elu', 'n_units_main': 835, 'n_units_sub': 209, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 2, 'dropout': 0.3001440078481363, 'l2_sigma': 284, 'sigma_a': 0.007024440749205414, 'sigma_b': 0.04397584263902248}, 39Elapsed time = 307
+trial 47/100
+{'input_dim': 20, 'lr': 0.0010513152065599485, 'activation': 'selu', 'n_units_main': 578, 'n_units_sub': 478, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 1, 'dropout': 0.5834392369854289, 'l2_sigma': 59, 'sigma_a': 0.008608599101344667, 'sigma_b': 0.04481168133725017}, 97Elapsed time = 505
+trial 48/100
+{'input_dim': 20, 'lr': 0.003560189386893996, 'activation': 'relu', 'n_units_main': 362, 'n_units_sub': 390, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 1, 'dropout': 0.7160978555304531, 'l2_sigma': 110, 'sigma_a': 0.0065707656011477, 'sigma_b': 0.01716528921813928}, 45Elapsed time = 123
+trial 49/100
+{'input_dim': 20, 'lr': 0.006647228751614197, 'activation': 'selu', 'n_units_main': 730, 'n_units_sub': 179, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 2, 'dropout': 0.45271737200115136, 'l2_sigma': 296, 'sigma_a': 0.007885894594893729, 'sigma_b': 0.03516470676405075}, 106Elapsed time = 122
+trial 50/100
+{'input_dim': 20, 'lr': 0.008733705389551422, 'activation': 'relu', 'n_units_main': 1013, 'n_units_sub': 443, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 0, 'dropout': 0.5794240511346689, 'l2_sigma': 109, 'sigma_a': 0.009201792105380184, 'sigma_b': 0.04209114112205825}, 65Elapsed time = 203
+trial 51/100
+{'input_dim': 20, 'lr': 0.002969356873790617, 'activation': 'selu', 'n_units_main': 663, 'n_units_sub': 344, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 0, 'dropout': 0.41395786815954766, 'l2_sigma': 233, 'sigma_a': 0.005423602317311598, 'sigma_b': 0.019394578381262254}, 100Elapsed time = 135
+trial 52/100
+{'input_dim': 20, 'lr': 0.002202526576221015, 'activation': 'relu', 'n_units_main': 523, 'n_units_sub': 208, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 1, 'dropout': 0.3989310586911274, 'l2_sigma': 191, 'sigma_a': 0.0070107358095385965, 'sigma_b': 0.02673784696941988}, 77Elapsed time = 80
+trial 53/100
+{'input_dim': 20, 'lr': 0.0017130370200827071, 'activation': 'relu', 'n_units_main': 639, 'n_units_sub': 365, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 2, 'dropout': 0.35587058638075497, 'l2_sigma': 168, 'sigma_a': 0.00960532977882075, 'sigma_b': 0.012535974356190246}, 40Elapsed time = 304
+trial 54/100
+{'input_dim': 20, 'lr': 0.006647429814213328, 'activation': 'relu', 'n_units_main': 433, 'n_units_sub': 422, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 1, 'dropout': 0.7564200039961924, 'l2_sigma': 135, 'sigma_a': 0.008012852612933295, 'sigma_b': 0.029257832287890695}, 102Elapsed time = 86
+trial 55/100
+{'input_dim': 20, 'lr': 0.008250708175212151, 'activation': 'relu', 'n_units_main': 370, 'n_units_sub': 300, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 1, 'dropout': 0.33020486075208233, 'l2_sigma': 102, 'sigma_a': 0.0064461746883726235, 'sigma_b': 0.04887166324597072}, 105Elapsed time = 92
+trial 56/100
+{'input_dim': 20, 'lr': 0.005418278329844733, 'activation': 'selu', 'n_units_main': 480, 'n_units_sub': 497, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 2, 'dropout': 0.5076685247150917, 'l2_sigma': 216, 'sigma_a': 0.005975692400484317, 'sigma_b': 0.01044850060850858}, 109Elapsed time = 360
+trial 57/100
+{'input_dim': 20, 'lr': 0.008532910066576253, 'activation': 'relu', 'n_units_main': 469, 'n_units_sub': 405, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 2, 'dropout': 0.5738617833557611, 'l2_sigma': 180, 'sigma_a': 0.008584287029479781, 'sigma_b': 0.046422858654944305}, 83Elapsed time = 178
+trial 58/100
+{'input_dim': 20, 'lr': 0.0032907890947362437, 'activation': 'relu', 'n_units_main': 476, 'n_units_sub': 221, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 0, 'dropout': 0.6520127329242376, 'l2_sigma': 140, 'sigma_a': 0.009497729432832076, 'sigma_b': 0.03805136618501623}, 84Elapsed time = 80
+trial 59/100
+{'input_dim': 20, 'lr': 0.005495137066470588, 'activation': 'relu', 'n_units_main': 791, 'n_units_sub': 482, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 0, 'dropout': 0.3838449188614724, 'l2_sigma': 172, 'sigma_a': 0.0072152792904542126, 'sigma_b': 0.019546557118569112}, 44Elapsed time = 164
+trial 60/100
+{'input_dim': 20, 'lr': 0.005441947115085998, 'activation': 'relu', 'n_units_main': 340, 'n_units_sub': 241, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 0, 'dropout': 0.3975270621931439, 'l2_sigma': 214, 'sigma_a': 0.009637292397599747, 'sigma_b': 0.016010919771028687}, 107Elapsed time = 86
+trial 61/100
+{'input_dim': 20, 'lr': 0.002104717893451305, 'activation': 'relu', 'n_units_main': 854, 'n_units_sub': 375, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 1, 'dropout': 0.4366691712375545, 'l2_sigma': 159, 'sigma_a': 0.00902807726909525, 'sigma_b': 0.01959160784038297}, 50Elapsed time = 141
+trial 62/100
+{'input_dim': 20, 'lr': 0.0013777395383357948, 'activation': 'elu', 'n_units_main': 567, 'n_units_sub': 407, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 0, 'dropout': 0.40711005832248126, 'l2_sigma': 224, 'sigma_a': 0.009516182855815934, 'sigma_b': 0.02932559256115421}, 55Elapsed time = 135
+trial 63/100
+{'input_dim': 20, 'lr': 0.0017533492341804916, 'activation': 'elu', 'n_units_main': 609, 'n_units_sub': 238, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 2, 'dropout': 0.30394759707836333, 'l2_sigma': 209, 'sigma_a': 0.006604124756876195, 'sigma_b': 0.011424500856543474}, 54Elapsed time = 240
+trial 64/100
+{'input_dim': 20, 'lr': 0.0069319525042991735, 'activation': 'relu', 'n_units_main': 761, 'n_units_sub': 251, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 1, 'dropout': 0.5982644050136773, 'l2_sigma': 259, 'sigma_a': 0.0073481740684047826, 'sigma_b': 0.029393356273967067}, 90Elapsed time = 190
+trial 65/100
+{'input_dim': 20, 'lr': 0.0072528744123153, 'activation': 'relu', 'n_units_main': 869, 'n_units_sub': 482, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 1, 'dropout': 0.4190915021728956, 'l2_sigma': 82, 'sigma_a': 0.008076371125554073, 'sigma_b': 0.0414202975779168}, 120Elapsed time = 287
+trial 66/100
+{'input_dim': 20, 'lr': 0.004059691992141262, 'activation': 'relu', 'n_units_main': 853, 'n_units_sub': 342, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 2, 'dropout': 0.74934857697909, 'l2_sigma': 179, 'sigma_a': 0.0075740259717557035, 'sigma_b': 0.013600056027887822}, 35Elapsed time = 222
+trial 67/100
+{'input_dim': 20, 'lr': 0.007233083768645661, 'activation': 'elu', 'n_units_main': 733, 'n_units_sub': 404, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 1, 'dropout': 0.6823903070562725, 'l2_sigma': 144, 'sigma_a': 0.007222683508830834, 'sigma_b': 0.04652799804666651}, 103Elapsed time = 234
+trial 68/100
+{'input_dim': 20, 'lr': 0.008895548501940145, 'activation': 'elu', 'n_units_main': 670, 'n_units_sub': 329, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 1, 'dropout': 0.7571896133080418, 'l2_sigma': 227, 'sigma_a': 0.009431374991232658, 'sigma_b': 0.033870220869848436}, 38Elapsed time = 280
+trial 69/100
+{'input_dim': 20, 'lr': 0.005117598513317193, 'activation': 'elu', 'n_units_main': 952, 'n_units_sub': 503, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 1, 'dropout': 0.46091227755854136, 'l2_sigma': 261, 'sigma_a': 0.006063801482249439, 'sigma_b': 0.026135884385557848}, 126Elapsed time = 192
+trial 70/100
+{'input_dim': 20, 'lr': 0.006774938656810478, 'activation': 'selu', 'n_units_main': 838, 'n_units_sub': 289, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 0, 'dropout': 0.5269420962093379, 'l2_sigma': 206, 'sigma_a': 0.005639728215759528, 'sigma_b': 0.04536356010813384}, 117Elapsed time = 264
+trial 71/100
+{'input_dim': 20, 'lr': 0.0058470069905481314, 'activation': 'elu', 'n_units_main': 492, 'n_units_sub': 227, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 1, 'dropout': 0.31406668223179185, 'l2_sigma': 179, 'sigma_a': 0.008186042159905982, 'sigma_b': 0.02278278140492685}, 48Elapsed time = 153
+trial 72/100
+{'input_dim': 20, 'lr': 0.00875282265232355, 'activation': 'relu', 'n_units_main': 745, 'n_units_sub': 511, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 1, 'dropout': 0.39288041981495136, 'l2_sigma': 208, 'sigma_a': 0.009929505195302984, 'sigma_b': 0.03344261916376517}, 62Elapsed time = 379
+trial 73/100
+{'input_dim': 20, 'lr': 0.006336292531435631, 'activation': 'relu', 'n_units_main': 953, 'n_units_sub': 157, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 1, 'dropout': 0.36492388821180594, 'l2_sigma': 199, 'sigma_a': 0.006152581855432145, 'sigma_b': 0.04399643278614824}, 58Elapsed time = 78
+trial 74/100
+{'input_dim': 20, 'lr': 0.007203648005909923, 'activation': 'elu', 'n_units_main': 483, 'n_units_sub': 308, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 2, 'dropout': 0.7395506301193383, 'l2_sigma': 288, 'sigma_a': 0.006353631807514751, 'sigma_b': 0.04261371739824497}, 90Elapsed time = 129
+trial 75/100
+{'input_dim': 20, 'lr': 0.007873022819101308, 'activation': 'selu', 'n_units_main': 490, 'n_units_sub': 396, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 1, 'dropout': 0.4228772137841042, 'l2_sigma': 231, 'sigma_a': 0.006634775435866508, 'sigma_b': 0.01360458655930568}, 80Elapsed time = 91
+trial 76/100
+{'input_dim': 20, 'lr': 0.007165109869610788, 'activation': 'elu', 'n_units_main': 571, 'n_units_sub': 213, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 2, 'dropout': 0.37336291100450353, 'l2_sigma': 209, 'sigma_a': 0.005673766282908208, 'sigma_b': 0.024959182499050013}, 111Elapsed time = 122
+trial 77/100
+{'input_dim': 20, 'lr': 0.0031779709876647, 'activation': 'elu', 'n_units_main': 503, 'n_units_sub': 148, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 2, 'dropout': 0.5564505303241742, 'l2_sigma': 223, 'sigma_a': 0.00783161391148303, 'sigma_b': 0.0499508360395903}, 81Elapsed time = 215
+trial 78/100
+{'input_dim': 20, 'lr': 0.00722972880090539, 'activation': 'selu', 'n_units_main': 897, 'n_units_sub': 129, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 2, 'dropout': 0.6299482124570029, 'l2_sigma': 245, 'sigma_a': 0.005534230181405717, 'sigma_b': 0.010724413446461698}, 38Elapsed time = 121
+trial 79/100
+{'input_dim': 20, 'lr': 0.00878594770237666, 'activation': 'relu', 'n_units_main': 562, 'n_units_sub': 251, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 2, 'dropout': 0.5352849492820736, 'l2_sigma': 234, 'sigma_a': 0.006109499159100642, 'sigma_b': 0.01421709462370781}, 79Elapsed time = 215
+trial 80/100
+{'input_dim': 20, 'lr': 0.009709725061386402, 'activation': 'elu', 'n_units_main': 836, 'n_units_sub': 505, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 1, 'dropout': 0.4570448076503965, 'l2_sigma': 153, 'sigma_a': 0.005066315647158876, 'sigma_b': 0.01475428845608616}, 80Elapsed time = 364
+trial 81/100
+{'input_dim': 20, 'lr': 0.009895654347452959, 'activation': 'elu', 'n_units_main': 674, 'n_units_sub': 199, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 1, 'dropout': 0.5757876291372952, 'l2_sigma': 153, 'sigma_a': 0.009575025714373991, 'sigma_b': 0.02027908844768608}, 37Elapsed time = 90
+trial 82/100
+{'input_dim': 20, 'lr': 0.0031910332828675486, 'activation': 'selu', 'n_units_main': 437, 'n_units_sub': 345, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 1, 'dropout': 0.7682048229833013, 'l2_sigma': 277, 'sigma_a': 0.005617657692318371, 'sigma_b': 0.03426506907484325}, 105Elapsed time = 175
+trial 83/100
+{'input_dim': 20, 'lr': 0.001241918593043362, 'activation': 'elu', 'n_units_main': 323, 'n_units_sub': 296, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 0, 'dropout': 0.43322575572774874, 'l2_sigma': 269, 'sigma_a': 0.009760210866150391, 'sigma_b': 0.03417587373417665}, 63Elapsed time = 79
+trial 84/100
+{'input_dim': 20, 'lr': 0.0010794461921037556, 'activation': 'selu', 'n_units_main': 1005, 'n_units_sub': 150, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 2, 'dropout': 0.49966164582327244, 'l2_sigma': 254, 'sigma_a': 0.006226031178992767, 'sigma_b': 0.024805882540466423}, 33Elapsed time = 471
+trial 85/100
+{'input_dim': 20, 'lr': 0.007846929442352636, 'activation': 'elu', 'n_units_main': 1001, 'n_units_sub': 407, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 0, 'dropout': 0.7949203756032013, 'l2_sigma': 263, 'sigma_a': 0.007845870867632254, 'sigma_b': 0.023751164193327047}, 124Elapsed time = 58
+trial 86/100
+{'input_dim': 20, 'lr': 0.009101615581294381, 'activation': 'relu', 'n_units_main': 399, 'n_units_sub': 465, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 2, 'dropout': 0.7038847754298203, 'l2_sigma': 264, 'sigma_a': 0.0075615903987433265, 'sigma_b': 0.04386926348081031}, 101Elapsed time = 182
+trial 87/100
+{'input_dim': 20, 'lr': 0.008243739383737809, 'activation': 'elu', 'n_units_main': 386, 'n_units_sub': 140, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 0, 'dropout': 0.4670404428199488, 'l2_sigma': 74, 'sigma_a': 0.00951051146305061, 'sigma_b': 0.03684839800730296}, 77Elapsed time = 72
+trial 88/100
+{'input_dim': 20, 'lr': 0.004009433257669401, 'activation': 'elu', 'n_units_main': 907, 'n_units_sub': 399, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 1, 'dropout': 0.6075091236303385, 'l2_sigma': 147, 'sigma_a': 0.005437697748845793, 'sigma_b': 0.012479923393065891}, 48Elapsed time = 761
+trial 89/100
+{'input_dim': 20, 'lr': 0.0068044516019128585, 'activation': 'selu', 'n_units_main': 568, 'n_units_sub': 292, 'n_additional_layers_main': 1, 'n_additional_layers_sub': 1, 'dropout': 0.554983296556391, 'l2_sigma': 69, 'sigma_a': 0.0056313096897466575, 'sigma_b': 0.033847891447039306}, 52Elapsed time = 200
+trial 90/100
+{'input_dim': 20, 'lr': 0.00969263607915571, 'activation': 'elu', 'n_units_main': 438, 'n_units_sub': 234, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 0, 'dropout': 0.5291509767123628, 'l2_sigma': 139, 'sigma_a': 0.005836406093041745, 'sigma_b': 0.031217924832038113}, 108Elapsed time = 54
+trial 91/100
+{'input_dim': 20, 'lr': 0.007412530387125948, 'activation': 'elu', 'n_units_main': 660, 'n_units_sub': 306, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 2, 'dropout': 0.41893630098781354, 'l2_sigma': 91, 'sigma_a': 0.006711188354588354, 'sigma_b': 0.03830642954378743}, 83Elapsed time = 152
+trial 92/100
+{'input_dim': 20, 'lr': 0.005793600479874854, 'activation': 'elu', 'n_units_main': 897, 'n_units_sub': 415, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 1, 'dropout': 0.6177959024691142, 'l2_sigma': 267, 'sigma_a': 0.009762734538792043, 'sigma_b': 0.02701095450641529}, 115Elapsed time = 148
+trial 93/100
+{'input_dim': 20, 'lr': 0.002651037761617666, 'activation': 'relu', 'n_units_main': 563, 'n_units_sub': 476, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 1, 'dropout': 0.5930853872627266, 'l2_sigma': 55, 'sigma_a': 0.008973964805569704, 'sigma_b': 0.04633939523847224}, 107Elapsed time = 117
+trial 94/100
+{'input_dim': 20, 'lr': 0.00702833647440636, 'activation': 'elu', 'n_units_main': 736, 'n_units_sub': 299, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 1, 'dropout': 0.33539680453699416, 'l2_sigma': 281, 'sigma_a': 0.006653487619842592, 'sigma_b': 0.035564276231080945}, 93Elapsed time = 106
+trial 95/100
+{'input_dim': 20, 'lr': 0.00873325171203984, 'activation': 'selu', 'n_units_main': 707, 'n_units_sub': 163, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 0, 'dropout': 0.5521406530980343, 'l2_sigma': 66, 'sigma_a': 0.007602273769261052, 'sigma_b': 0.044435126301479874}, 90Elapsed time = 239
+trial 96/100
+{'input_dim': 20, 'lr': 0.008186489287147478, 'activation': 'selu', 'n_units_main': 683, 'n_units_sub': 474, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 0, 'dropout': 0.45020958857989085, 'l2_sigma': 299, 'sigma_a': 0.007067517331510906, 'sigma_b': 0.028642877574892395}, 65Elapsed time = 208
+trial 97/100
+{'input_dim': 20, 'lr': 0.00918057046303999, 'activation': 'relu', 'n_units_main': 725, 'n_units_sub': 301, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 0, 'dropout': 0.45039534814714727, 'l2_sigma': 215, 'sigma_a': 0.005269169358981708, 'sigma_b': 0.03327275504937156}, 108Elapsed time = 212
+trial 98/100
+{'input_dim': 20, 'lr': 0.0038526599352584553, 'activation': 'selu', 'n_units_main': 356, 'n_units_sub': 358, 'n_additional_layers_main': 0, 'n_additional_layers_sub': 2, 'dropout': 0.5025163961244644, 'l2_sigma': 219, 'sigma_a': 0.006093728283606774, 'sigma_b': 0.013004174013644239}, 92Elapsed time = 177
+trial 99/100
+{'input_dim': 20, 'lr': 0.004682380258236493, 'activation': 'selu', 'n_units_main': 1012, 'n_units_sub': 455, 'n_additional_layers_main': 2, 'n_additional_layers_sub': 1, 'dropout': 0.669423158182418, 'l2_sigma': 230, 'sigma_a': 0.0062342998677111724, 'sigma_b': 0.04100469603810315}, 117Elapsed time = 596

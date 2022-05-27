@@ -56,10 +56,10 @@ def main():
 
     parameters = [
         sherpa.Continuous(name='lr', range=[0.001, 0.01]),
-        sherpa.Choice(name='activation', range=['relu', 'elu', 'tanh']),
+        sherpa.Choice(name='activation', range=['relu', 'elu']),
         sherpa.Discrete(name='n_units', range=[128, 1024]),
-        sherpa.Discrete(name='n_layers', range=[1,5]),
-        sherpa.Continuous(name='dropout', range=[0.3, 0.8]),
+        sherpa.Discrete(name='n_layers', range=[1,3]),
+        sherpa.Continuous(name='dropout', range=[0.4, 0.6]),
         sherpa.Discrete(name='batch_size', range=[32, 128])    
     ]
     
