@@ -1,0 +1,7 @@
+Station with skn: 396.0 was chosen out of all stations with more than 750 historical (non-filled) rainfall observations.
+There are 778 rainfall observations from this station.
+ * Serving Flask app 'sherpa.app.app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on

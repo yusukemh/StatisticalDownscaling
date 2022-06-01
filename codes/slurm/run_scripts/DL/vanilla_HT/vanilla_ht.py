@@ -55,13 +55,14 @@ def main():
     df_station = sample_station(df=df_nonfilled, threshold=750, seed=42)
 
     parameters = [
-        sherpa.Continuous(name='lr', range=[0.001, 0.01]),
+        sherpa.Continuous(name='lr', range=[0.001, 0.008]),
         sherpa.Choice(name='activation', range=['relu', 'elu']),
-        sherpa.Discrete(name='n_units', range=[128, 1024]),
-        sherpa.Discrete(name='n_layers', range=[1,3]),
+        sherpa.Discrete(name='n_units', range=[128, 800]),
+        sherpa.Discrete(name='n_layers', range=[1,2]),
         sherpa.Continuous(name='dropout', range=[0.3, 0.8]),
         sherpa.Discrete(name='batch_size', range=[32, 128])    
     ]
+
     
     num_trials = 300
     alg = sherpa.algorithms.RandomSearch(max_num_trials=num_trials)
