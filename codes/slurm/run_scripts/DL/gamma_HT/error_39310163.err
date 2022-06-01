@@ -8,19 +8,19 @@ SHERPA Dashboard running. Access via
 http://10.100.11.206:8880 if on a cluster or
 http://localhost:8880 if running locally.
 -------------------------------------------------------
-2022-05-25 18:24:34.354848: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
-2022-05-25 18:24:34.355132: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: gpu-0008
-2022-05-25 18:24:34.355258: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: gpu-0008
-2022-05-25 18:24:34.355538: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 495.29.5
-2022-05-25 18:24:34.355711: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 495.29.5
-2022-05-25 18:24:34.355839: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 495.29.5
-2022-05-25 18:24:34.356519: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+2022-05-31 19:06:28.258985: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2022-05-31 19:06:28.259338: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: gpu-0008
+2022-05-31 19:06:28.259473: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: gpu-0008
+2022-05-31 19:06:28.259763: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 495.29.5
+2022-05-31 19:06:28.259957: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 495.29.5
+2022-05-31 19:06:28.260096: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 495.29.5
+2022-05-31 19:06:28.260789: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
 To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2022-05-25 18:24:34.448226: W tensorflow/python/util/util.cc:368] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+2022-05-31 19:06:28.348055: W tensorflow/python/util/util.cc:368] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
 Traceback (most recent call last):
-  File "/home/yusukemh/github/yusukemh/StatisticalDownscaling/codes/slurm/run_scripts/DL/normal_HT/normal_ht.py", line 143, in <module>
+  File "/home/yusukemh/github/yusukemh/StatisticalDownscaling/codes/slurm/run_scripts/DL/gamma_HT/gamma_ht.py", line 137, in <module>
     main()
-  File "/home/yusukemh/github/yusukemh/StatisticalDownscaling/codes/slurm/run_scripts/DL/normal_HT/normal_ht.py", line 126, in main
+  File "/home/yusukemh/github/yusukemh/StatisticalDownscaling/codes/slurm/run_scripts/DL/gamma_HT/gamma_ht.py", line 120, in main
     validation_error = mean_squared_error(Y, y_pred, squared=False)
   File "/home/yusukemh/sadow_lts/personal/yusukemh/Anaconda3/envs/tfp/lib/python3.10/site-packages/sklearn/metrics/_regression.py", line 438, in mean_squared_error
     y_type, y_true, y_pred, multioutput = _check_reg_targets(

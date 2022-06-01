@@ -59,8 +59,8 @@ def main():
         sherpa.Choice(name='activation', range=['relu', 'elu', 'selu']),
         sherpa.Discrete(name='n_units_main', range=[256, 1024]),
         sherpa.Discrete(name='n_units_sub', range=[128, 512]),
-        sherpa.Discrete(name='n_additional_layers_main', range=[0,2]),
-        sherpa.Discrete(name='n_additional_layers_sub', range=[0,2]),
+        sherpa.Discrete(name='n_additional_layers_main', range=[0,3]),
+        sherpa.Discrete(name='n_additional_layers_sub', range=[0,3]),
         sherpa.Continuous(name='dropout', range=[0.3, 0.8]),
         sherpa.Discrete(name='batch_size', range=[32, 128]) 
     ]

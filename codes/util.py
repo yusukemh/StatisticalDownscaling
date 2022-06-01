@@ -35,7 +35,7 @@ def define_model(
         if dropout:
             x = Dropout(rate=dropout)(x)
         x = Dense(units=n_units, activation=activation)(x)
-    outputs = Dense(units=1, kernel_initializer='normal', activation='linear')(x)
+    outputs = Dense(units=1, kernel_initializer=tf.keras.initializers.HeNormal, activation='linear')(x)
     
     model = Model(inputs=inputs, outputs=outputs)
     
@@ -57,24 +57,24 @@ def define_hetero_model_gamma(
     dropout=0.5,
 ):
     inputs = Input(shape=(input_dim,))
-    x = Dense(units=n_units_main, activation=activation, kernel_initializer='normal')(inputs)
+    x = Dense(units=n_units_main, activation=activation, kernel_initializer=tf.keras.initializers.HeNormal)(inputs)
     
     for _ in range(n_additional_layers_main):
-        x = Dense(units=n_units_main, activation=activation, kernel_initializer='normal')(x)
+        x = Dense(units=n_units_main, activation=activation, kernel_initializer=tf.keras.initializers.HeNormal)(x)
         if dropout:
             x = Dropout(rate=0.5)(x)
     
-    m = Dense(units=n_units_sub, activation=activation, kernel_initializer='normal')(x)
+    m = Dense(units=n_units_sub, activation=activation, kernel_initializer=tf.keras.initializers.HeNormal)(x)
     for _ in range(n_additional_layers_sub):
-        m = Dense(units=n_units_sub, activation=activation, kernel_initializer='normal')(m)
-    m = Dense(units=10, activation=activation, kernel_initializer='normal')(m)
-    m = Dense(units=1, activation='linear', kernel_initializer='normal')(m)
+        m = Dense(units=n_units_sub, activation=activation, kernel_initializer=tf.keras.initializers.HeNormal)(m)
+    m = Dense(units=10, activation=activation, kernel_initializer=tf.keras.initializers.HeNormal)(m)
+    m = Dense(units=1, activation='linear', kernel_initializer=tf.keras.initializers.HeNormal)(m)
     
-    s = Dense(units=n_units_sub, activation=activation, kernel_initializer='normal')(x)
+    s = Dense(units=n_units_sub, activation=activation, kernel_initializer=tf.keras.initializers.HeNormal)(x)
     for _ in range(n_additional_layers_sub):
-        s = Dense(units=n_units_sub, activation=activation, kernel_initializer='normal')(s)
-    s = Dense(units=10, activation=activation, kernel_initializer='normal')(s)
-    s = Dense(units=1, activation='linear', kernel_initializer='normal')(s)
+        s = Dense(units=n_units_sub, activation=activation, kernel_initializer=tf.keras.initializers.HeNormal)(s)
+    s = Dense(units=10, activation=activation, kernel_initializer=tf.keras.initializers.HeNormal)(s)
+    s = Dense(units=1, activation='linear', kernel_initializer=tf.keras.initializers.HeNormal)(s)
     
     ms = Concatenate(axis=-1)([m, s])
     outputs = tfp.layers.DistributionLambda(
@@ -110,29 +110,29 @@ def define_hetero_model_normal(
     sigma_b=0.03 # these hyperparameters might have signigicant affect
 ):
     inputs = Input(shape=(input_dim,))
-    x = Dense(units=n_units_main, activation=activation, kernel_initializer='normal')(inputs)
+    x = Dense(units=n_units_main, activation=activation, kernel_initializer=tf.keras.initializers.HeNormal)(inputs)
     # main branch
     for _ in range(n_additional_layers_main):
         if dropout:
             x = Dropout(rate=dropout)(x)
-        x = Dense(units=n_units_main, activation=activation, kernel_initializer='normal')(x)
+        x = Dense(units=n_units_main, activation=activation, kernel_initializer=tf.keras.initializers.HeNormal)(x)
     # mean branch
     if n_additional_layers_sub == 0:
-        m = Dense(units=1, activation='linear', kernel_initializer='normal')(x)
+        m = Dense(units=1, activation='linear', kernel_initializer=tf.keras.initializers.HeNormal)(x)
     else:
-        m = Dense(units=n_units_sub, activation=activation, kernel_initializer='normal')(x)
+        m = Dense(units=n_units_sub, activation=activation, kernel_initializer=tf.keras.initializers.HeNormal)(x)
         for _ in range(n_additional_layers_sub - 1):
             m = Dense(units=n_units_sub, activation=activation)(m)
-        m = Dense(units=1, activation='linear', kernel_initializer='normal')(m)
+        m = Dense(units=1, activation='linear', kernel_initializer=tf.keras.initializers.HeNormal)(m)
     
     # std branch
     if n_additional_layers_sub == 0:
-        s = Dense(units=1, activation='linear', kernel_initializer='normal', kernel_regularizer=tf.keras.regularizers.L2(l2=l2_sigma))(x)
+        s = Dense(units=1, activation='linear', kernel_initializer=tf.keras.initializers.HeNormal, kernel_regularizer=tf.keras.regularizers.L2(l2=l2_sigma))(x)
     else:
-        s = Dense(units=n_units_sub, activation=activation, kernel_initializer='normal')(x)
+        s = Dense(units=n_units_sub, activation=activation, kernel_initializer=tf.keras.initializers.HeNormal)(x)
         for _ in range(n_additional_layers_sub - 1):
             s = Dense(units=n_units_sub, activation=activation)(s)
-        s = Dense(units=1, activation='linear', kernel_initializer='normal', kernel_regularizer=tf.keras.regularizers.L2(l2=l2_sigma))(s)
+        s = Dense(units=1, activation='linear', kernel_initializer=tf.keras.initializers.HeNormal, kernel_regularizer=tf.keras.regularizers.L2(l2=l2_sigma))(s)
     
     ms = Concatenate(axis=-1)([m, s])
     outputs = tfp.layers.DistributionLambda(

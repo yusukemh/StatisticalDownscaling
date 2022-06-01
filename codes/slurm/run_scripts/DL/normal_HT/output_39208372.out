@@ -1,19 +1,0 @@
-Station with skn: 396.0 was chosen out of all stations with more than 750 historical (non-filled) rainfall observations.
-There are 778 rainfall observations from this station.
- * Serving Flask app 'sherpa.app.app' (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: on
-0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 49.0
-Std: 5.329
-0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 23.7
-Std: 3.466
-0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 27.5
-Std: 3.442
-0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 21.6
-Std: 4.779
-0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 21.8
-Std: 4.895
-0/101/102/103/104/105/106/107/108/109/10mean number of epochs: 38.7
-Std: 21.781

@@ -43,7 +43,7 @@ def run_single_experiment(
     rmse_lr = mean_squared_error(Y, y_pred, squared=False)
     # estimate the # epochs
     estimated_epochs = estimate_epochs(
-        X=X, Y=Y, model_func=model_func, model_params=model_params, n_iter=30, batch_size
+        X=X, Y=Y, model_func=model_func, model_params=model_params, batch_size=batch_size, n_iter=30,
     )
     
     rmses = []
@@ -110,7 +110,7 @@ def main():
         #############################################
         stats_regular.append(
             run_single_experiment(
-                X, Y, model_func=define_model, model_params=dict(input_dim=len(columns), lr=0.0005),
+                X, Y, model_func=define_model, model_params=model_params,
                 batch_size=batch_size, n_trial=20, skn=skn
             )
         )
@@ -136,7 +136,7 @@ def main():
         #############################################
         stats_normal.append(
             run_single_experiment(
-                X, Y, model_func=define_hetero_model_normal, model_params=dict(input_dim=len(columns), lr=0.0005),
+                X, Y, model_func=define_hetero_model_normal, model_params=model_params,
                 batch_size=batch_size, n_trial=20, skn=skn
             )
         )
@@ -159,7 +159,7 @@ def main():
         #############################################
         stats_gamma.append(
             run_single_experiment(
-                X, Y, model_func=define_hetero_model_gamma, model_params=dict(input_dim=len(columns), lr=0.001),
+                X, Y, model_func=define_hetero_model_gamma, model_params=model_params,
                 batch_size=batch_size, n_trial=20, skn=skn
             )
         )
