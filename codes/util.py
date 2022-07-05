@@ -162,8 +162,6 @@ def augment_data(X, Y):
         noise = np.random.random(X.shape) * 0.001
         new_X.append(X + noise)
         new_Y.append(Y)
-        
-    
     return (np.vstack(new_X), np.array(new_Y).flatten())
 
 def cross_val_predict_for_nn(
