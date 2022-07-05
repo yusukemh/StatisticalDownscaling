@@ -9,6 +9,8 @@ from tensorflow.keras.models import Model
 # from tensorflow.keras.wrappers.scikit_learn import KerasRegressor
 from tensorflow.keras.layers import Dense, Input, Concatenate, Dropout
 
+from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
+
 def define_model(
     input_dim=20, 
     lr=0.005, 
@@ -42,12 +44,18 @@ class Transfer_Model():
         self.inputs = inputs
         self.outputs = outputs
         self.model = None
+        self.model_params = None
+
         
     def set_model(self, model_params):
+        self.model_params = model_params
         self.model = define_model(**model_params)
         
-    def load_model(self, filename):
-        self.model = tf.keras.models.load_model(filename)
+    def load_pretrained_model(self, model_path):
+        return tf.keras.models.load_model(model_path)
+        
+    def save_pretrained_model(self, model_path):
+        self.model.save(model_path)
 
     def train_test_split(self, df, fold, fine_tune:bool, skn=None):
         if fine_tune:
@@ -81,22 +89,103 @@ class Transfer_Model():
         else:
             return x_train, x_test, y_train, y_test
         
-#     def pre_train(self, df, fold:int, retrain_full):
-#         assert self.model is not None, "Please first provide the model structure with \"set_model\"."
+    def fine_tune(
+        self, df, fold, skn, retrain_full,
+        model_path,
+        epochs=1000,
+        batch_size=64,
+        stopping_patience=20,
+        lr=0.001,
+        lr_factor=0.95,
+        lr_patience=10,
+        verbose=2,
+        validation_split=0.2
+    ):
+        x_train, x_test, y_train, y_test, x_train_station, x_test_station, y_train_station, y_test_station = \
+        self.train_test_split(df, fold, fine_tune=True, skn=skn)
         
-#         x_train, x_test, y_train, y_test = self.train_test_split(df, fold, fine_tune=False)
-#         self.model.
+        callbacks = [
+            EarlyStopping(monitor='val_loss', min_delta=0, patience=stopping_patience, restore_best_weights=True),
+            ReduceLROnPlateau(monitor='val_loss', factor=lr_factor, patience=lr_patience)
+        ]
         
-
+        self.model = self.load_pretrained_model(model_path)
+        self.model.compile(
+            optimizer=tf.optimizers.Adam(learning_rate=lr),
+            loss='mse',
+            metrics=[RootMeanSquaredError()]
+        )
+        history = self.model.fit(
+            x_train_station, y_train_station,
+            epochs=epochs,
+            batch_size=batch_size,
+            verbose=verbose,
+            validation_split=validation_split,
+            callbacks=callbacks
+        )
         
-        # pass
-    
-    def fine_tune():
-        pass        
+        if retrain_full:
+            self.model = self.load_pretrained_model(model_path)
+            epochs = len(history.history['loss'])
+            callbacks = [
+                EarlyStopping(monitor='loss', min_delta=0, patience=1e3, restore_best_weights=True)
+            ]
+            history = self.model.fit(
+                x_train_station, y_train_station, 
+                epochs=epochs,
+                batch_size=batch_size,
+                validation_split=0.0,
+                callbacks=callbacks
+            )
+        return history
         
-    def load_models():
-        pass
-    
-    def predict_a_fold(self, df: pd.DataFrame, fold: int):
-        pass
+    def pre_train(
+        self, df, fold:int, retrain_full,
+        epochs=2000,
+        batch_size=128,
+        stopping_patience=20,
+        lr=0.001,
+        lr_factor=0.95,
+        lr_patience=10,
+        verbose=2,
+        validation_split=0.2
+    ):
+        assert self.model is not None, "Please first provide the model structure with \"set_model\"."
+        x_train, x_test, y_train, y_test = self.train_test_split(df, fold, fine_tune=False)
+        callbacks = [
+            EarlyStopping(monitor='val_loss', min_delta=0, patience=stopping_patience, restore_best_weights=True),
+            ReduceLROnPlateau(monitor='val_loss', factor=lr_factor, patience=lr_patience)
+        ]
+        
+        self.model.compile(
+            optimizer=tf.optimizers.Adam(learning_rate=lr),
+            loss='mse',
+            metrics=[RootMeanSquaredError()]
+        )
+        
+        history = self.model.fit(
+            x_train, y_train,
+            epochs=epochs,
+            batch_size=batch_size,
+            verbose=verbose,
+            validation_split=validation_split,
+            callbacks=callbacks
+        )
+        
+        if retrain_full:
+            self.model = define_model(**self.model_params)
+            epochs = len(history.history['loss'])
+            
+            callbacks = [
+                EarlyStopping(monitor='loss', min_delta=0, patience=1e3, restore_best_weights=True)
+            ]
+            
+            history = self.model.fit(
+                x_train, y_train,
+                epochs=epochs,
+                batch_size=batch_size,
+                validation_split=0.0,
+                callbacks=callbacks
+            )
+        return history
     
