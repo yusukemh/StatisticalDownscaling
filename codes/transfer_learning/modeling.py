@@ -135,6 +135,7 @@ class Transfer_Model():
                 epochs=epochs,
                 batch_size=batch_size,
                 validation_split=0.0,
+                verbose=verbose,
                 callbacks=callbacks
             )
         return history
@@ -185,7 +186,8 @@ class Transfer_Model():
                 epochs=epochs,
                 batch_size=batch_size,
                 validation_split=0.0,
-                callbacks=callbacks
+                callbacks=callbacks,
+                verbose=verbose
             )
         return history
     
