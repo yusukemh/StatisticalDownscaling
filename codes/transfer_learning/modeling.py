@@ -26,6 +26,8 @@ def define_model(
         if dropout:
             x = Dropout(rate=dropout)(x)
         x = Dense(units=n_units, activation=activation)(x)
+    x = Dense(units=64, activation=activation)(x)
+    x = Dense(units=64, activation=activation)(x)
     outputs = Dense(units=1, kernel_initializer=tf.keras.initializers.HeNormal, activation='softplus')(x)
     
     model = Model(inputs=inputs, outputs=outputs)

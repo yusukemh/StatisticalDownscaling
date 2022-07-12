@@ -158,7 +158,7 @@ def augment_data(X, Y):
     # add noise to X
     new_X = [X]
     new_Y = [Y]
-    for _ in range(10):
+    for _ in range(5):
         noise = np.random.random(X.shape) * 0.001
         new_X.append(X + noise)
         new_Y.append(Y)
