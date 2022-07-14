@@ -67,9 +67,15 @@ class Transfer_Model():
         x_train, x_test = np.array(df_train[self.inputs]), np.array(df_test[self.inputs])
         y_train, y_test = np.array(df_train[self.outputs]), np.array(df_test[self.outputs])
         
-        scaler = MinMaxScaler()
-        x_train = scaler.fit_transform(x_train)
-        x_test = scaler.transform(x_test)
+        # scale the input and output
+        input_scaler = MinMaxScaler()
+        output_scaler = MinMaxScaler()
+        
+        x_train = input_scaler.fit_transform(x_train)
+        x_test = input_scaler.transform(x_test)
+        
+        y_train = output_scaler.fit_transform(y_train.reshape(-1, 1))
+        y_test = output_scaler.transform(y_test.reshape(-1, 1))
         
         if fine_tune:
             # split dataset
@@ -84,8 +90,11 @@ class Transfer_Model():
             y_test_station = np.array(df_test_station[self.outputs])
             
             # scale
-            x_train_station = scaler.transform(x_train_station)
-            x_test_station = scaler.transform(x_test_station)
+            x_train_station = input_scaler.transform(x_train_station)
+            x_test_station = input_scaler.transform(x_test_station)
+            
+            y_train_station = output_scaler.transform(y_train_station.reshape(-1, 1))
+            y_test_station = output_scaler.transform(y_test_station.reshape(-1, 1))
             
             return x_train, x_test, y_train, y_test, x_train_station, x_test_station, y_train_station, y_test_station
         else:
