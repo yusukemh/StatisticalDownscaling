@@ -35,3 +35,17 @@ DF_LABELS = [
     "skt",
     "slp"
 ]
+
+C_COMMON = [
+    'skn', 'data_in', 'season_wet',
+    'elevation', 'year', 'month', 'lat', 'lon'
+]
+
+C_SINGLE = []
+for item in DF_LABELS:
+    C_SINGLE.append(item)
+
+C_GRID = []
+for item in DF_LABELS:
+    for i in range(5):
+        C_GRID.append(f"{item}_{i}")
