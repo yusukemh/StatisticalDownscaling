@@ -37,7 +37,7 @@ DF_LABELS = [
 ]
 
 C_COMMON = [
-    'skn', 'data_in', 'season_wet',
+    'skn', 'data_in', 'season_wet', 'fold',
     'elevation', 'year', 'month', 'lat', 'lon'
 ]
 
@@ -49,3 +49,6 @@ C_GRID = []
 for item in DF_LABELS:
     for i in range(5):
         C_GRID.append(f"{item}_{i}")
+
+FILENAME = '/mnt/lts/nfs_fs02/sadow_lab/personal/yusukemh/' \
+    + 'PI-CASC/processed_data/ml_nonfilled_min_750_dataset.csv'
