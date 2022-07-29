@@ -11,9 +11,9 @@ import time
 
 def main():
     ######################
-    df = pd.read_csv(FILENAME, usecols=C_COMMON + C_SINGLE).sort_values(['year', 'month'])
-    columns = C_SINGLE
-    column_type = 'single'
+    columns = C_GRID
+    df = pd.read_csv(FILENAME, usecols=C_COMMON + columns).sort_values(['year', 'month'])
+    column_type = 'grid'
     ######################
 
     # we use the last 1/5 data as the heldout clean dataset. We do not use this fold for any use except for just reporting the result.

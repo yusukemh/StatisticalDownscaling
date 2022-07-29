@@ -6,7 +6,7 @@
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=1
 #SBATCH --cpus-per-task=1
-#SBATCH --time 10:00:00
+#SBATCH --time 12:00:00
 #SBATCH --error=./error_%j.err
 #SBATCH --output=./output_%j.out
 #SBATCH --mem=128G
@@ -17,4 +17,4 @@
 ## echo hello
 srun module load lang/Anaconda3
 srun source activate climate
-srun /home/yusukemh/.conda/envs/climate/bin/python3 xgboost_ht.py
+srun /home/yusukemh/.conda/envs/climate/bin/python3 xgb_ht.py
