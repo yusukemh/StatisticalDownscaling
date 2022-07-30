@@ -32,7 +32,7 @@ class NeuralNetwork():
             y_train, y_test, y_scaler = self.transform_y(y_train, y_test)
             
             # train the model
-            self.train(x_train, y_train, verbose=0, retrain_full=False) # to speed up computation for hyperparaemter tuning
+            history = self.train(x_train, y_train, verbose=0, retrain_full=False) # to speed up computation for hyperparaemter tuning
             
             # make prediction and scale
             y_pred = self.model.predict(x_test)
@@ -46,8 +46,9 @@ class NeuralNetwork():
         
         # calculate the loss and return
         return {
-            "mse": mean_squared_error(list_ytrue, list_ypred, squared=False),
-            "mae": mean_absolute_error(list_ytrue, list_ypred)
+            "rmse": mean_squared_error(list_ytrue, list_ypred, squared=False),
+            "mae": mean_absolute_error(list_ytrue, list_ypred),
+            'epochs': len(history.history['loss'])
         }
 
     def transform_x(self, x_train, x_test):
@@ -90,7 +91,7 @@ class NeuralNetwork():
         ]
         history = self.model.fit(
             x, y,
-            epochs=int(1e3),
+            epochs=int(2e3),
             batch_size=batch_size,
             validation_split=0.2,
             callbacks=callbacks,
