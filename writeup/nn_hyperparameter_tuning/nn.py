@@ -26,13 +26,13 @@ def define_model(
     batch_size=64
 ):
     inputs = Input(shape=(input_dim))
-    x = Dense(units=n_units, activation=activation, kernel_regularizer='l1')(inputs)
+    x = Dense(units=n_units, activation=activation)(inputs)
     # x = Dense(units=n_units, activation=activation)(inputs)
     x = Dropout(rate=0.5)(x)
-    x = Dense(units=n_units, activation=activation, kernel_regularizer='l1')(x)
+    x = Dense(units=n_units, activation=activation)(x)
     # x = Dense(units=n_units, activation=activation)(inputs)
     x = Dropout(rate=0.5)(x)
-    x = Dense(units=n_units, activation=activation, kernel_regularizer='l1')(x)
+    x = Dense(units=n_units, activation=activation)(x)
     # x = Dense(units=n_units, activation=activation)(inputs)
     x = Dropout(rate=0.5)(x)# serves as regularization
     outputs = Dense(units=1, activation='sigmoid')(x)
@@ -47,7 +47,7 @@ def define_model(
 
 def main():
     columns, col_type = C_SINGLE, 'single'
-    n_run = 2
+    n_run = 500
     # load data
     df_train, _ = load_data(columns + C_COMMON, FILENAME)
     
