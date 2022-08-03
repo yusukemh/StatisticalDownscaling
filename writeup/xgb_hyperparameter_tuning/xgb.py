@@ -46,7 +46,7 @@ class XGB():
 
 def main():
     columns, col_type = C_SINGLE, 'single'
-    n_run = 5
+    n_run = 500
     df_train, _ = load_data(columns + C_COMMON, FILENAME)
     
     # set up sherpa

@@ -1129,3 +1129,372 @@ elapsed time         : 166.169
 ===============================================
 {'n_units': 573, 'learning_rate': 0.003670002327959741, 'batch_size': 192, 'loss': 'mse', 'input_dim': 16}
 elapsed time         : 139.035
+===============================================
+{'n_units': 763, 'learning_rate': 0.004585134064282867, 'batch_size': 64, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 191.419
+===============================================
+{'n_units': 882, 'learning_rate': 0.007625588645625821, 'batch_size': 256, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 151.420
+===============================================
+{'n_units': 587, 'learning_rate': 0.0016996843983266468, 'batch_size': 256, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 175.893
+===============================================
+{'n_units': 1012, 'learning_rate': 0.007738199412193613, 'batch_size': 512, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 142.415
+===============================================
+{'n_units': 832, 'learning_rate': 0.0007494429737587813, 'batch_size': 128, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 263.770
+===============================================
+{'n_units': 814, 'learning_rate': 0.009309989029640716, 'batch_size': 192, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 151.709
+===============================================
+{'n_units': 759, 'learning_rate': 0.00017578718341522013, 'batch_size': 192, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 246.423
+===============================================
+{'n_units': 994, 'learning_rate': 0.007452612629997571, 'batch_size': 256, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 159.567
+===============================================
+{'n_units': 990, 'learning_rate': 0.0005006214454802397, 'batch_size': 192, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 278.318
+===============================================
+{'n_units': 257, 'learning_rate': 0.0018398615072718518, 'batch_size': 192, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 184.551
+===============================================
+{'n_units': 759, 'learning_rate': 0.008528624791714816, 'batch_size': 64, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 192.439
+===============================================
+{'n_units': 749, 'learning_rate': 0.0094049408375027, 'batch_size': 192, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 144.305
+===============================================
+{'n_units': 575, 'learning_rate': 0.00759211207842586, 'batch_size': 128, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 138.982
+===============================================
+{'n_units': 782, 'learning_rate': 0.008218033223035378, 'batch_size': 64, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 195.650
+===============================================
+{'n_units': 579, 'learning_rate': 0.00017968636769468218, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 200.949
+===============================================
+{'n_units': 739, 'learning_rate': 0.0036750557121446037, 'batch_size': 256, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 145.269
+===============================================
+{'n_units': 372, 'learning_rate': 0.0041320929762567, 'batch_size': 64, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 150.128
+===============================================
+{'n_units': 989, 'learning_rate': 0.003859488127527724, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 148.458
+===============================================
+{'n_units': 923, 'learning_rate': 0.007689823820985639, 'batch_size': 192, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 164.937
+===============================================
+{'n_units': 791, 'learning_rate': 0.0033291873670193263, 'batch_size': 128, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 165.056
+===============================================
+{'n_units': 635, 'learning_rate': 0.008255970159058768, 'batch_size': 192, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 138.481
+===============================================
+{'n_units': 628, 'learning_rate': 0.004845922042838532, 'batch_size': 256, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 133.595
+===============================================
+{'n_units': 967, 'learning_rate': 0.005716281181092234, 'batch_size': 256, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 159.930
+===============================================
+{'n_units': 429, 'learning_rate': 0.006064892740386338, 'batch_size': 64, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 143.398
+===============================================
+{'n_units': 301, 'learning_rate': 0.008837990844649733, 'batch_size': 128, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 121.594
+===============================================
+{'n_units': 538, 'learning_rate': 0.002200144354700156, 'batch_size': 128, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 154.396
+===============================================
+{'n_units': 424, 'learning_rate': 0.009926532431960748, 'batch_size': 192, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 123.136
+===============================================
+{'n_units': 947, 'learning_rate': 0.00098618492006812, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 174.060
+===============================================
+{'n_units': 968, 'learning_rate': 0.003081893294612556, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 149.557
+===============================================
+{'n_units': 474, 'learning_rate': 0.0015138822860811462, 'batch_size': 256, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 187.387
+===============================================
+{'n_units': 777, 'learning_rate': 0.003003471627737925, 'batch_size': 128, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 163.147
+===============================================
+{'n_units': 288, 'learning_rate': 0.004421530105787718, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 160.175
+===============================================
+{'n_units': 395, 'learning_rate': 0.0015552087190532457, 'batch_size': 256, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 202.337
+===============================================
+{'n_units': 748, 'learning_rate': 0.005199741069527837, 'batch_size': 128, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 158.604
+===============================================
+{'n_units': 664, 'learning_rate': 0.009760424081779741, 'batch_size': 128, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 148.227
+===============================================
+{'n_units': 567, 'learning_rate': 0.009239556390940696, 'batch_size': 128, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 137.822
+===============================================
+{'n_units': 748, 'learning_rate': 0.008507100661895842, 'batch_size': 192, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 145.656
+===============================================
+{'n_units': 282, 'learning_rate': 0.0040424856709787675, 'batch_size': 512, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 142.844
+===============================================
+{'n_units': 385, 'learning_rate': 0.004770898012090571, 'batch_size': 128, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 135.313
+===============================================
+{'n_units': 658, 'learning_rate': 0.009687816338139919, 'batch_size': 64, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 173.666
+===============================================
+{'n_units': 673, 'learning_rate': 0.003618258677672219, 'batch_size': 128, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 153.074
+===============================================
+{'n_units': 727, 'learning_rate': 0.002760218905783264, 'batch_size': 512, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 142.063
+===============================================
+{'n_units': 687, 'learning_rate': 0.009665594449977171, 'batch_size': 256, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 135.862
+===============================================
+{'n_units': 851, 'learning_rate': 0.0037216647366424506, 'batch_size': 128, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 171.843
+===============================================
+{'n_units': 500, 'learning_rate': 0.008281709819148692, 'batch_size': 256, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 123.586
+===============================================
+{'n_units': 682, 'learning_rate': 0.0028079802059509085, 'batch_size': 128, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 154.603
+===============================================
+{'n_units': 711, 'learning_rate': 0.009384154249354003, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 125.777
+===============================================
+{'n_units': 610, 'learning_rate': 0.005610548822421426, 'batch_size': 128, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 145.286
+===============================================
+{'n_units': 555, 'learning_rate': 0.002311121205354431, 'batch_size': 512, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 135.589
+===============================================
+{'n_units': 294, 'learning_rate': 0.009287566533535819, 'batch_size': 128, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 121.878
+===============================================
+{'n_units': 881, 'learning_rate': 0.0006896186128169786, 'batch_size': 256, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 235.352
+===============================================
+{'n_units': 538, 'learning_rate': 0.0006523006797384329, 'batch_size': 256, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 234.536
+===============================================
+{'n_units': 428, 'learning_rate': 0.008177030635494794, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 114.992
+===============================================
+{'n_units': 306, 'learning_rate': 0.0007757697616204638, 'batch_size': 192, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 205.503
+===============================================
+{'n_units': 341, 'learning_rate': 0.001164700798618417, 'batch_size': 64, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 285.732
+===============================================
+{'n_units': 542, 'learning_rate': 0.007747379918717343, 'batch_size': 64, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 154.738
+===============================================
+{'n_units': 410, 'learning_rate': 0.005487558825515824, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 124.876
+===============================================
+{'n_units': 364, 'learning_rate': 0.008587741736465192, 'batch_size': 512, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 112.712
+===============================================
+{'n_units': 385, 'learning_rate': 0.005298076745117401, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 120.455
+===============================================
+{'n_units': 685, 'learning_rate': 0.002715708834965368, 'batch_size': 192, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 146.829
+===============================================
+{'n_units': 575, 'learning_rate': 0.008380959831745713, 'batch_size': 128, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 139.616
+===============================================
+{'n_units': 813, 'learning_rate': 0.001815629610975763, 'batch_size': 64, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 212.805
+===============================================
+{'n_units': 753, 'learning_rate': 0.004084291529818016, 'batch_size': 128, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 163.548
+===============================================
+{'n_units': 730, 'learning_rate': 0.0067361962496791505, 'batch_size': 128, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 156.698
+===============================================
+{'n_units': 644, 'learning_rate': 0.002741923648830814, 'batch_size': 192, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 144.425
+===============================================
+{'n_units': 443, 'learning_rate': 5.543288319490266e-05, 'batch_size': 256, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 255.764
+===============================================
+{'n_units': 835, 'learning_rate': 0.00026336338132551963, 'batch_size': 64, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 479.907
+===============================================
+{'n_units': 419, 'learning_rate': 0.003405377034606353, 'batch_size': 128, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 136.382
+===============================================
+{'n_units': 719, 'learning_rate': 0.0003852339831121416, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 238.523
+===============================================
+{'n_units': 486, 'learning_rate': 0.0010296169935696219, 'batch_size': 64, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 294.722
+===============================================
+{'n_units': 931, 'learning_rate': 0.0021389582596599444, 'batch_size': 192, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 177.210
+===============================================
+{'n_units': 386, 'learning_rate': 0.003133293542171756, 'batch_size': 128, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 156.670
+===============================================
+{'n_units': 340, 'learning_rate': 0.0012072652911935848, 'batch_size': 192, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 193.639
+===============================================
+{'n_units': 997, 'learning_rate': 0.00884848030184591, 'batch_size': 192, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 173.820
+===============================================
+{'n_units': 915, 'learning_rate': 0.0024730603854105624, 'batch_size': 64, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 225.964
+===============================================
+{'n_units': 692, 'learning_rate': 0.0002101232910647657, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 211.435
+===============================================
+{'n_units': 924, 'learning_rate': 0.0039661533224897025, 'batch_size': 512, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 147.431
+===============================================
+{'n_units': 964, 'learning_rate': 0.0067830636188250274, 'batch_size': 64, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 232.286
+===============================================
+{'n_units': 736, 'learning_rate': 0.002609037220235706, 'batch_size': 192, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 150.215
+===============================================
+{'n_units': 603, 'learning_rate': 0.005872064770573041, 'batch_size': 512, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 124.749
+===============================================
+{'n_units': 281, 'learning_rate': 0.005980836974837577, 'batch_size': 128, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 132.156
+===============================================
+{'n_units': 956, 'learning_rate': 0.008875054615805112, 'batch_size': 192, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 169.912
+===============================================
+{'n_units': 586, 'learning_rate': 0.006331382514308769, 'batch_size': 128, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 140.682
+===============================================
+{'n_units': 920, 'learning_rate': 0.008010009407075944, 'batch_size': 512, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 138.989
+===============================================
+{'n_units': 464, 'learning_rate': 0.009688288576077179, 'batch_size': 64, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 147.043
+===============================================
+{'n_units': 331, 'learning_rate': 0.001078719792767453, 'batch_size': 128, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 235.276
+===============================================
+{'n_units': 597, 'learning_rate': 0.0019433215334621443, 'batch_size': 64, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 203.238
+===============================================
+{'n_units': 624, 'learning_rate': 0.009652939288157606, 'batch_size': 128, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 145.871
+===============================================
+{'n_units': 416, 'learning_rate': 0.0017740821210386615, 'batch_size': 192, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 193.888
+===============================================
+{'n_units': 695, 'learning_rate': 0.006727680956429168, 'batch_size': 192, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 141.798
+===============================================
+{'n_units': 379, 'learning_rate': 0.004533682686171713, 'batch_size': 256, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 126.626
+===============================================
+{'n_units': 456, 'learning_rate': 0.006853770530264571, 'batch_size': 64, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 150.553
+===============================================
+{'n_units': 1010, 'learning_rate': 0.001411828721559649, 'batch_size': 192, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 180.726
+===============================================
+{'n_units': 848, 'learning_rate': 0.0018760833139444691, 'batch_size': 128, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 175.511
+===============================================
+{'n_units': 578, 'learning_rate': 0.004112402297971966, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 128.838
+===============================================
+{'n_units': 405, 'learning_rate': 0.0053896020793308295, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 125.642
+===============================================
+{'n_units': 556, 'learning_rate': 0.0014016529248484573, 'batch_size': 192, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 183.229
+===============================================
+{'n_units': 994, 'learning_rate': 0.00043539099358587717, 'batch_size': 192, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 312.755
+===============================================
+{'n_units': 902, 'learning_rate': 0.00454043446094773, 'batch_size': 256, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 154.958
+===============================================
+{'n_units': 625, 'learning_rate': 0.0005128762596862008, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 235.945
+===============================================
+{'n_units': 824, 'learning_rate': 0.006558983337334748, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 132.031
+===============================================
+{'n_units': 432, 'learning_rate': 0.009215351046906711, 'batch_size': 256, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 120.757
+===============================================
+{'n_units': 820, 'learning_rate': 0.00020145705649619793, 'batch_size': 192, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 255.994
+===============================================
+{'n_units': 442, 'learning_rate': 0.0026069840234412413, 'batch_size': 256, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 170.673
+===============================================
+{'n_units': 724, 'learning_rate': 0.007993673639885174, 'batch_size': 192, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 146.456
+===============================================
+{'n_units': 548, 'learning_rate': 0.009898000175018707, 'batch_size': 64, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 155.141
+===============================================
+{'n_units': 623, 'learning_rate': 0.006417386832694011, 'batch_size': 512, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 128.064
+===============================================
+{'n_units': 996, 'learning_rate': 0.007065441020155048, 'batch_size': 64, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 240.416
+===============================================
+{'n_units': 986, 'learning_rate': 0.009636630676407656, 'batch_size': 128, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 188.690
+===============================================
+{'n_units': 915, 'learning_rate': 0.001463207971347732, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 144.223
+===============================================
+{'n_units': 372, 'learning_rate': 0.0057886933352998896, 'batch_size': 64, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 146.104
+===============================================
+{'n_units': 918, 'learning_rate': 0.008772755781560638, 'batch_size': 128, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 180.878
+===============================================
+{'n_units': 389, 'learning_rate': 0.003556290673273411, 'batch_size': 192, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 135.102
+===============================================
+{'n_units': 999, 'learning_rate': 0.008976814376056772, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 144.764
+===============================================
+{'n_units': 569, 'learning_rate': 0.002654737195959287, 'batch_size': 256, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 162.862
+===============================================
+{'n_units': 911, 'learning_rate': 0.0042648244390182995, 'batch_size': 64, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 215.938
+===============================================
+{'n_units': 672, 'learning_rate': 0.003222118729991799, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 137.867
+===============================================
+{'n_units': 835, 'learning_rate': 0.0040224860481110885, 'batch_size': 128, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 168.870
+===============================================
+{'n_units': 600, 'learning_rate': 0.0022892830614934592, 'batch_size': 64, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 175.870
+===============================================
+{'n_units': 421, 'learning_rate': 0.007488249409269011, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 118.188
+===============================================
+{'n_units': 945, 'learning_rate': 0.001313379881723651, 'batch_size': 512, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 156.918
+===============================================
+{'n_units': 708, 'learning_rate': 0.006114332507417414, 'batch_size': 256, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 139.695
+===============================================
+{'n_units': 575, 'learning_rate': 0.006253297809116982, 'batch_size': 256, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 127.610
