@@ -1,3 +1,4 @@
+## testing commits on revise branch
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
@@ -5,7 +6,8 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error
 from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
 from xgboost import XGBRegressor
 from sklearn.metrics import mean_squared_error, mean_absolute_error
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression as LR
+from tqdm import tqdm
 
 class LinearRegression():
     def __init__(self, columns):
@@ -17,10 +19,10 @@ class LinearRegression():
             df_train_station = df_train[df_train['skn'] == skn]
             df_test_station = df_test[df_test['skn'] == skn]
             
-            x_train, x_test = np.array(df_train_station[columns]), np.array(df_test_station[columns])
+            x_train, x_test = np.array(df_train_station[self.columns]), np.array(df_test_station[self.columns])
             y_train, y_test = np.array(df_train_station['data_in']), np.array(df_test_station['data_in'])
             
-            linear_regression = LinearRegression()
+            linear_regression = LR()
             linear_regression.fit(x_train, y_train)
             
             y_pred = linear_regression.predict(x_test)
@@ -33,9 +35,6 @@ class LinearRegression():
                 }
             )
         return pd.DataFrame(ret_vals)
-            
-            
-        
 
 class XGB():
     def __init__(self, params, columns):
@@ -106,37 +105,68 @@ class NeuralNetwork():
         self.columns = columns
         pass
     
+    def evaluate_by_station(self, df_train, df_test, skn):
+        df_train_station = df_train[df_train['skn'] == skn]
+        df_test_station = df_test[df_test['skn'] == skn]
+
+        # convert to numpy
+        x_train, x_test = np.array(df_train_station[self.columns]), np.array(df_test_station[self.columns])
+        y_train, y_test = np.array(df_train_station['data_in']), np.array(df_test_station['data_in'])
+
+        # scale the input and output
+        x_train, x_test = self.transform_x(x_train, x_test)
+        y_train, y_test, y_scaler = self.transform_y(y_train, y_test)
+
+        # train the model with retrain_full = True
+        history = self.train(x_train, y_train, verbose=0, retrain_full=True)
+
+        # make prediction and scale
+        y_pred = self.model.predict(x_test)
+        y_pred = self.inverse_transform_y(y_pred, y_scaler)
+
+        # scale y_test
+        y_test = self.inverse_transform_y(y_test, y_scaler)
+        
+        return {
+            "skn": skn,
+            "rmse_nn": mean_squared_error(y_test, y_pred, squared=False),
+            "mae_nn": mean_absolute_error(y_test, y_pred)
+        }
+        
+    
     def evaluate(self, df_train, df_test):
         ret_vals = []
-        for skn in df_train['skn'].unique():
-            df_train_station = df_train[df_train['skn'] == skn]
-            df_test_station = df_test[df_test['skn'] == skn]
+        for skn in tqdm(df_train['skn'].unique()):
+            r = self.evaluate_by_station(df_train, df_test, skn)
+            ret_vals.append(r)
+#             df_train_station = df_train[df_train['skn'] == skn]
+#             df_test_station = df_test[df_test['skn'] == skn]
             
-            # convert to numpy
-            x_train, x_test = np.array(df_train_station[columns]), np.array(df_test_station[columns])
-            y_train, y_test = np.array(df_train_station['data_in']), np.array(df_test_station['data_in'])
+#             # convert to numpy
+#             x_train, x_test = np.array(df_train_station[self.columns]), np.array(df_test_station[self.columns])
+#             y_train, y_test = np.array(df_train_station['data_in']), np.array(df_test_station['data_in'])
             
-            # scale the input and output
-            x_train, x_test = self.transform_x(x_train, x_test)
-            y_train, y_test, y_scaler = self.transform_y(y_train, y_test)
+#             # scale the input and output
+#             x_train, x_test = self.transform_x(x_train, x_test)
+#             y_train, y_test, y_scaler = self.transform_y(y_train, y_test)
             
-            # train the model with retrain_full = True
-            history = self.train(x_train, y_train, verbose=0, retrain_full=True)
+#             # train the model with retrain_full = True
+#             history = self.train(x_train, y_train, verbose=0, retrain_full=True)
             
-            # make prediction and scale
-            y_pred = self.model.predict(x_test)
-            y_pred = self.inverse_transform_y(y_pred, y_scaler)
+#             # make prediction and scale
+#             y_pred = self.model.predict(x_test)
+#             y_pred = self.inverse_transform_y(y_pred, y_scaler)
             
-            # scale y_test
-            y_test = self.inverse_transform_y(y_test, y_scaler)
+#             # scale y_test
+#             y_test = self.inverse_transform_y(y_test, y_scaler)
             
-            ret_vals.append(
-                {
-                    "skn": skn,
-                    "rmse_nn": mean_squared_error(y_test, y_pred, squared=False),
-                    "mae_nn": mean_absolute_error(y_test, y_pred)
-                }
-            )
+            # ret_vals.append(
+            #     {
+            #         "skn": skn,
+            #         "rmse_nn": mean_squared_error(y_test, y_pred, squared=False),
+            #         "mae_nn": mean_absolute_error(y_test, y_pred)
+            #     }
+            # )
         return pd.DataFrame(ret_vals)
             
             
@@ -230,7 +260,7 @@ class NeuralNetwork():
         if retrain_full:
             epochs = len(history.history['loss'])
             # rebuild the model
-            self.model, batch_size = self.model_func(**params)
+            self.model, batch_size = self.model_func(**self.params)
             callbacks = [EarlyStopping(monitor='loss', min_delta=0, patience=1e3, restore_best_weights=True)]
             history = self.model.fit(
                 x, y,
