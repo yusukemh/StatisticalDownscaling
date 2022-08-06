@@ -16,6 +16,7 @@ import tensorflow as tf
 from tensorflow.keras.layers import Input, Dense, Dropout
 from tensorflow.keras.metrics import RootMeanSquaredError
 from tensorflow.keras.models import Model
+from tensorflow.keras.regularizers import L2s
 
 def define_model(
     input_dim=20,
@@ -26,16 +27,13 @@ def define_model(
     batch_size=64
 ):
     inputs = Input(shape=(input_dim))
-    x = Dense(units=n_units, activation=activation)(inputs)
-    # x = Dense(units=n_units, activation=activation)(inputs)
+    x = Dense(units=n_units, activation=activation, kernel_regularizer=L2(l2=0.01))(inputs)
     x = Dropout(rate=0.5)(x)
-    x = Dense(units=n_units, activation=activation)(x)
-    # x = Dense(units=n_units, activation=activation)(inputs)
+    x = Dense(units=n_units, activation=activation, kernel_regularizer=L2(l2=0.01))(x)
     x = Dropout(rate=0.5)(x)
-    x = Dense(units=n_units, activation=activation)(x)
-    # x = Dense(units=n_units, activation=activation)(inputs)
+    x = Dense(units=n_units, activation=activation, kernel_regularizer=L2(l2=0.01))(x)
     x = Dropout(rate=0.5)(x)# serves as regularization
-    outputs = Dense(units=1, activation='sigmoid')(x)
+    outputs = Dense(units=1, activation='softplus')(x)
     
     model = Model(inputs=inputs, outputs=outputs)
     model.compile(
@@ -44,6 +42,7 @@ def define_model(
         metrics=[RootMeanSquaredError()]
     )
     return model, batch_size
+
 
 def main():
     columns, col_type = C_SINGLE, 'single'
@@ -56,7 +55,7 @@ def main():
     parameters = [
         sherpa.Discrete('n_units', [256, 1024]),
         sherpa.Continuous('learning_rate', [0.00001, 0.01]),
-        sherpa.Choice('batch_size', [64, 128, 192, 256, 512]),
+        sherpa.Choice('batch_size', [64, 128, 192, 256, 512, 1024]),
         sherpa.Choice('loss', ['mse', 'mae'])
     ]
     study = sherpa.Study(

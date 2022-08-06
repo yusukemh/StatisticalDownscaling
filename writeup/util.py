@@ -1,4 +1,3 @@
-## testing commits on revise branch
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
@@ -115,17 +114,18 @@ class NeuralNetwork():
 
         # scale the input and output
         x_train, x_test = self.transform_x(x_train, x_test)
-        y_train, y_test, y_scaler = self.transform_y(y_train, y_test)
+        # y_train, y_test, y_scaler = self.transform_y(y_train, y_test)
+        y_train, y_test = self.transform_y(y_train, y_test)
 
         # train the model with retrain_full = True
         history = self.train(x_train, y_train, verbose=0, retrain_full=True)
 
         # make prediction and scale
         y_pred = self.model.predict(x_test)
-        y_pred = self.inverse_transform_y(y_pred, y_scaler)
+        y_pred = self.inverse_transform_y(y_pred)
 
         # scale y_test
-        y_test = self.inverse_transform_y(y_test, y_scaler)
+        y_test = self.inverse_transform_y(y_test)
         
         return {
             "skn": skn,
@@ -139,34 +139,7 @@ class NeuralNetwork():
         for skn in tqdm(df_train['skn'].unique()):
             r = self.evaluate_by_station(df_train, df_test, skn)
             ret_vals.append(r)
-#             df_train_station = df_train[df_train['skn'] == skn]
-#             df_test_station = df_test[df_test['skn'] == skn]
-            
-#             # convert to numpy
-#             x_train, x_test = np.array(df_train_station[self.columns]), np.array(df_test_station[self.columns])
-#             y_train, y_test = np.array(df_train_station['data_in']), np.array(df_test_station['data_in'])
-            
-#             # scale the input and output
-#             x_train, x_test = self.transform_x(x_train, x_test)
-#             y_train, y_test, y_scaler = self.transform_y(y_train, y_test)
-            
-#             # train the model with retrain_full = True
-#             history = self.train(x_train, y_train, verbose=0, retrain_full=True)
-            
-#             # make prediction and scale
-#             y_pred = self.model.predict(x_test)
-#             y_pred = self.inverse_transform_y(y_pred, y_scaler)
-            
-#             # scale y_test
-#             y_test = self.inverse_transform_y(y_test, y_scaler)
-            
-            # ret_vals.append(
-            #     {
-            #         "skn": skn,
-            #         "rmse_nn": mean_squared_error(y_test, y_pred, squared=False),
-            #         "mae_nn": mean_absolute_error(y_test, y_pred)
-            #     }
-            # )
+
         return pd.DataFrame(ret_vals)
             
             
@@ -217,17 +190,18 @@ class NeuralNetwork():
         return x_train, x_test
     
     def transform_y(self, y_train, y_test):
-        scaler = MinMaxScaler(feature_range=(0,1))
+        # scaler = MinMaxScaler(feature_range=(0,1))
         y_train = np.log(y_train + 1.)
         y_test = np.log(y_test + 1.)
+        
+        # NO MORE MinMax SCALING 
+        # y_train = scaler.fit_transform(y_train.reshape(-1, 1))
+        # y_test = scaler.transform(y_test.reshape(-1, 1))
 
-        y_train = scaler.fit_transform(y_train.reshape(-1, 1))
-        y_test = scaler.transform(y_test.reshape(-1, 1))
-
-        return y_train, y_test, scaler
+        return y_train, y_test# , scaler
     
-    def inverse_transform_y(self, y, scaler):
-        y = scaler.inverse_transform(y)
+    def inverse_transform_y(self, y):
+        # y = scaler.inverse_transform(y)
         y = np.power(np.e, y) - 1
         return y
     
@@ -250,11 +224,11 @@ class NeuralNetwork():
         ]
         history = self.model.fit(
             x, y,
-            epochs=int(2e3),
+            epochs=int(1e3),
             batch_size=batch_size,
             validation_split=0.2,
             callbacks=callbacks,
-            verbose=verbose
+            verbose=0
         )
         
         if retrain_full:
@@ -268,7 +242,7 @@ class NeuralNetwork():
                 validation_split=0,
                 callbacks=callbacks,
                 batch_size=batch_size,
-                verbose=verbose
+                verbose=0
             )
         return history        
 
