@@ -137,3 +137,5 @@ dmypy.json
 
 # large files
 *.hdf5
+*.err
+*.out

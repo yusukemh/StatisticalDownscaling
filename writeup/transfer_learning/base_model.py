@@ -10,7 +10,7 @@ import time
 import sys
 sys.path.append('/home/yusukemh/github/yusukemh/StatisticalDownscaling/writeup')
 from config import C_COMMON, C_GRID, C_SINGLE, FILENAME
-from util import load_data, NeuralNetwork
+from util import load_data, TransferModel
 
 import tensorflow as tf
 from tensorflow.keras.layers import Input, Dense, Dropout
@@ -27,13 +27,13 @@ def define_model(
     batch_size=64
 ):
     inputs = Input(shape=(input_dim))
-    x = Dense(units=n_units, activation=activation, kernel_regularizer=L2(l2=0.01))(inputs)
+    x = Dense(units=n_units, activation=activation, kernel_regularizer=L2(l2=1e-3))(inputs)
     x = Dropout(rate=0.5)(x)
-    x = Dense(units=n_units, activation=activation, kernel_regularizer=L2(l2=0.01))(x)
+    x = Dense(units=n_units, activation=activation, kernel_regularizer=L2(l2=1e-3))(x)
     x = Dropout(rate=0.5)(x)
-    x = Dense(units=n_units, activation=activation, kernel_regularizer=L2(l2=0.01))(x)
+    x = Dense(units=n_units, activation=activation, kernel_regularizer=L2(l2=1e-3))(x)
     x = Dropout(rate=0.5)(x)# serves as regularization
-    outputs = Dense(units=1, activation='softplus')(x)
+    outputs = Dense(units=1, activation='softplus', kernel_regularizer=L2(l2=1e-3))(x)
     
     model = Model(inputs=inputs, outputs=outputs)
     model.compile(
@@ -74,26 +74,22 @@ def main():
         line = '===============================================\n'
         line += str(params) + '\n'
 
-        for skn in df_train['skn'].unique():
-            model = NeuralNetwork(
-                model_func=define_model,
-                params=params,
-                columns=columns
-            )
-            ret = model.cross_val_predict(df_train, skn)
-            df = pd.DataFrame()
-            df['trial_id'] = i,
-            df['rmse'] = [ret['rmse']]
-            df['mae'] = [ret['mae']]
-            df['epochs'] = [ret['epochs']]
-            df['skn'] = [skn]
-            for key, val in params.items():
-                df[key] = [val]
-            dfs.append(df)
-        pd.concat(dfs).to_csv(f'nn_report_{n_run}_{col_type}.csv')
+        model = TransferModel(
+            model_func=define_model,
+            columns=columns
+        )
+        ret = model.cross_val_predict_base(df_train, params)
+        df = pd.DataFrame()
+        df['trial_id'] = i,
+        df['rmse'] = [ret['rmse']]
+        df['mae'] = [ret['mae']]
+        for key, val in params.items():
+            df[key] = [val]
+        dfs.append(df)
+        pd.concat(dfs).to_csv(f'nn_report_base_{n_run}_{col_type}.csv')
         end = time.time()
         line += "elapsed time         : {:.3f}".format(end - start) + '\n'
-        with open('progress.txt', 'a') as f:
+        with open('progress_base.txt', 'a') as f:
             f.write(line)
 
 if __name__ == '__main__':
