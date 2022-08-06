@@ -45,7 +45,7 @@ def define_model(
 
 
 def main():
-    columns, col_type = C_SINGLE, 'single'
+    columns, col_type = C_SINGLE + ['elevation', 'lat', 'lon'], 'single'
     n_run = 500
     # load data
     df_train, _ = load_data(columns + C_COMMON, FILENAME)

@@ -262,3 +262,12 @@ elapsed time         : 340.183
 ===============================================
 {'n_units': 526, 'learning_rate': 0.0033312733070792492, 'batch_size': 256, 'loss': 'mse', 'input_dim': 16}
 elapsed time         : 345.856
+===============================================
+{'n_units': 274, 'learning_rate': 0.0017017467156590542, 'batch_size': 192, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 993.305
+===============================================
+{'n_units': 461, 'learning_rate': 0.009199580790687072, 'batch_size': 128, 'loss': 'mae', 'input_dim': 16}
+elapsed time         : 260.473
+===============================================
+{'n_units': 813, 'learning_rate': 0.007297129075240327, 'batch_size': 192, 'loss': 'mse', 'input_dim': 16}
+elapsed time         : 172.586

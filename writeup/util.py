@@ -315,7 +315,6 @@ class TransferModel():
             x_train, x_test, y_train, y_test = self.split_scale(df_train, df_test)
             
             model, batch_size = self.model_func(**params)
-            model.fit(x_train, y_train)
             
             callbacks = [
                 EarlyStopping(monitor='val_loss', min_delta=0, patience=20, restore_best_weights=True),
@@ -327,7 +326,7 @@ class TransferModel():
                 epochs=int(1e3),
                 validation_split=0.2,
                 callbacks=callbacks,
-                verbose=1
+                verbose=0
             )
             
             y_pred = model.predict(x_test)

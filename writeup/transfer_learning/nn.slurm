@@ -2,7 +2,7 @@
 
 
 ##SBATCH --account=sadow
-#SBATCH --job-name=GPU-example
+#SBATCH --job-name=transfer-learning
 #SBATCH --partition=shared
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=1
