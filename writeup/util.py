@@ -276,12 +276,6 @@ class TransferModel():
     def __init__(self, model_func, columns):
         self.model_func = model_func
         self.columns = columns
-        
-    def train_and_save_base_model(self, model_path, params):
-        """
-        Train the base model and saves it
-        """
-        pass
             
     def split_scale(self, df_train, df_test):
         # convert to numpy
@@ -298,9 +292,43 @@ class TransferModel():
         y_test = np.log(y_test + 1.)
         
         return x_train, x_test, y_train, y_test
+    
+    def train_base(self, x, y, params, retrain_full=False, verbose=0):
+        model, batch_size = self.model_func(**params)
+        
+        callbacks = [
+                EarlyStopping(monitor='val_loss', min_delta=0, patience=20, restore_best_weights=True),
+                ReduceLROnPlateau(monitor='val_loss', factor=0.95, patience=10)
+            ]
 
-    def train_base(self, x, y, retrain_full):
-        pass
+        history = model.fit(
+            x, y,
+            epochs=int(1e3),
+            validation_split=0.2,
+            callbacks=callbacks,
+            batch_size=batch_size,
+            verbose=verbose
+        )
+        
+        if retrain_full:
+            # retraining the base model is harmful: the model overfits
+            epochs = len(history.history['loss'])
+            
+            model, batch_size = self.model_func(**params)
+            callbacks = [
+                EarlyStopping(monitor='loss', min_delta=0, patience=1e3, restore_best_weights=True),
+                LearningRateScheduler(lambda epoch: history.history['lr'][epoch], verbose=0)
+            ]
+            
+            history = model.fit(
+                x, y,
+                epochs=epochs,
+                validation_split=0,
+                callbacks=callbacks,
+                batch_size=batch_size,
+                verbose=verbose
+            )
+        return model, history   
     
     def cross_val_predict_base(self, df, params, n_folds=5):
         """
@@ -309,25 +337,13 @@ class TransferModel():
         list_ytrue = []
         list_ypred = []
         for k in range(n_folds):
+            print(f"fold {k}")
             df_train = df[df['inner_fold'] != k]
             df_test = df[df['inner_fold'] == k]
             
             x_train, x_test, y_train, y_test = self.split_scale(df_train, df_test)
             
-            model, batch_size = self.model_func(**params)
-            
-            callbacks = [
-                EarlyStopping(monitor='val_loss', min_delta=0, patience=20, restore_best_weights=True),
-                ReduceLROnPlateau(monitor='val_loss', factor=0.95, patience=10)
-            ]
-
-            history = model.fit(
-                x_train, y_train,
-                epochs=int(1e3),
-                validation_split=0.2,
-                callbacks=callbacks,
-                verbose=0
-            )
+            model, history = self.train_base(x_train, y_train, params, retrain_full=False, verbose=0)# do not retrain full to save time. also, it hurts
             
             y_pred = model.predict(x_test)
             list_ytrue.extend(np.power(np.e, y_test))
@@ -336,25 +352,4 @@ class TransferModel():
         return {
             "rmse": mean_squared_error(list_ytrue, list_ypred, squared=False),
             "mae": mean_absolute_error(list_ytrue, list_ypred),
-            # 'epochs': len(history.history['loss'])
         }
-    
-    def cross_val_predict_station(self, df, skn, n_folds=5):
-        """
-        Run 5-fold cross validation on a single station.
-        """
-        df_station = df[df['skn'] == skn]
-        
-        list_ytrue = []
-        list_ypred = []
-        for k in range(n_folds):
-            df_train = df_station[df_station['inner_fold'] != k]
-            df_test = df_station[df_station['inner_fold'] == k]
-            
-            x_train, x_test, y_train, y_test = self.split_scale(df_train, df_test)
-                    
-    def inverse_transform_y():
-        pass
-    
-    def pre_train(x, y):
-        pass
