@@ -331,42 +331,80 @@ class TransferModel():
         y_test = np.log(y_test + 1.)
         
         return x_train, x_test, y_train, y_test
+
+    def evaluate_base(self, df_train, df_test, params, save=False, filename=None):
+        if save: assert filename is not None, f"Expected str for filename, got {filename}"
+        x_train, x_test, y_train, y_test = self.split_scale(df_train, df_test)
+        model, history = self.train_base(x_train, y_train, params)
+        
+        y_pred = model.predict(x_test)
+        # scale back to the original space
+        y_pred = np.power(np.e, y_pred) - 1.
+        y_true = np.power(np.e, y_test) - 1.
+        
+        if save:
+            model.save(filename)
+        
+        return {
+            "rmse": mean_squared_error(y_true, y_pred, squared=False),
+            "mae": mean_absolute_error(y_true, y_pred)
+        }
+        
     
     def train_base(self, x, y, params, retrain_full=False, verbose=0):
         model, batch_size = self.model_func(**params)
+        
+        # prepare train/valid
+        # strictly speaking, this is not appropriate because scaler fit to the union of train/valid.
+        x_train, x_valid, y_train, y_valid = train_test_split(x, y, test_size=0.2, shuffle=False)
         
         callbacks = [
                 EarlyStopping(monitor='val_loss', min_delta=0, patience=20, restore_best_weights=True),
                 ReduceLROnPlateau(monitor='val_loss', factor=0.95, patience=10)
             ]
+        
+        train_datagen = Generator(x_train, y_train, batch_size)
+        valid_datagen = Generator(x_valid, y_valid, batch_size)
 
+        # history = model.fit(
+        #     x, y, 
+        #     epochs=int(1e3),
+        #     validation_split=0.2,
+        #     callbacks=callbacks,
+        #     batch_size=batch_size,
+        #     verbose=verbose
+        # )
+        
         history = model.fit(
-            x, y,
+            x=train_datagen,
+            steps_per_epoch=np.ceil(len(x_train)/batch_size),
+            validation_data=valid_datagen,
+            validation_steps=np.ceil(len(x_valid)/batch_size),
             epochs=int(1e3),
-            validation_split=0.2,
             callbacks=callbacks,
-            batch_size=batch_size,
             verbose=verbose
         )
         
-        if retrain_full:
-            # retraining the base model is harmful: the model overfits
-            epochs = len(history.history['loss'])
+        
+        
+#         if retrain_full:
+#             # retraining the base model is harmful: the model overfits
+#             epochs = len(history.history['loss'])
             
-            model, batch_size = self.model_func(**params)
-            callbacks = [
-                EarlyStopping(monitor='loss', min_delta=0, patience=1e3, restore_best_weights=True),
-                LearningRateScheduler(lambda epoch: history.history['lr'][epoch], verbose=0)
-            ]
+#             model, batch_size = self.model_func(**params)
+#             callbacks = [
+#                 EarlyStopping(monitor='loss', min_delta=0, patience=1e3, restore_best_weights=True),
+#                 LearningRateScheduler(lambda epoch: history.history['lr'][epoch], verbose=0)
+#             ]
             
-            history = model.fit(
-                x, y,
-                epochs=epochs,
-                validation_split=0,
-                callbacks=callbacks,
-                batch_size=batch_size,
-                verbose=verbose
-            )
+#             history = model.fit(
+#                 x, y,
+#                 epochs=epochs,
+#                 validation_split=0,
+#                 callbacks=callbacks,
+#                 batch_size=batch_size,
+#                 verbose=verbose
+#             )
         return model, history   
     
     def cross_val_predict_base(self, df, params, n_folds=5):
@@ -385,8 +423,8 @@ class TransferModel():
             model, history = self.train_base(x_train, y_train, params, retrain_full=False, verbose=0)# do not retrain full to save time. also, it hurts
             
             y_pred = model.predict(x_test)
-            list_ytrue.extend(np.power(np.e, y_test))
-            list_ypred.extend(np.power(np.e, y_pred))
+            list_ytrue.extend(np.power(np.e, y_test) - 1.)
+            list_ypred.extend(np.power(np.e, y_pred) - 1.)
         # calculate the loss and return
         return {
             "rmse": mean_squared_error(list_ytrue, list_ypred, squared=False),
