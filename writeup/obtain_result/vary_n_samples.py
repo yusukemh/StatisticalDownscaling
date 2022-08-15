@@ -38,7 +38,7 @@ def define_model(
 def main():
     
     columns = C_SINGLE
-    for p in [i for i in range(50, 105, 5)]:
+    for p in [i for i in range(50, 600, 50)]:
         ret_vals = []
         for item in NN_PARAMS:
             skn = item['skn']
@@ -47,9 +47,9 @@ def main():
             df_train = df_train[df_train['skn'] == skn]
             df_test = df_test[df_test['skn'] == skn]
 
-            n_data = int(df_train.shape[0] * (p / 100.))
-            df_train = df_train.iloc[:n_data]
-            # df_test = df_test.iloc[:n_data]
+            # n_data = int(df_train.shape[0] * (p / 100.))
+            # df_train = df_train.iloc[-n_data:]
+            df_train = df_train.iloc[-p:]
 
             station_model = NeuralNetwork(
                 columns=columns,
@@ -58,7 +58,7 @@ def main():
             )
             r = station_model.evaluate_by_station(df_train, df_test, skn=skn, n_iter=10)
             ret_vals.append(r)
-        pd.DataFrame(ret_vals).to_csv(f'{p:02d}.csv')
+        pd.DataFrame(ret_vals).to_csv(f'n_{p}_.csv')
 
 if __name__ == '__main__':
     main()

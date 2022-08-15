@@ -3,6 +3,7 @@
 
 ##SBATCH --account=sadow
 #SBATCH --partition=kill-shared
+#SBATCH --job-name=obtain_result
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=1
 #SBATCH --cpus-per-task=1

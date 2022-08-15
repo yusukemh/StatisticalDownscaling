@@ -11,8 +11,14 @@ from tensorflow.keras.utils import Sequence
 from sklearn.model_selection import train_test_split
 import math
 
+import tensorflow as tf
+from tensorflow.keras.layers import Input, Dense, Dropout
+from tensorflow.keras.metrics import RootMeanSquaredError
+from tensorflow.keras.models import Model
+from tensorflow.keras.regularizers import L1, L2
+from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau, LearningRateScheduler
+
 class Generator(Sequence):
-    # Class is a dataset wrapper for better training performance
     def __init__(self, x_set, y_set, batch_size=256):
         self.x, self.y = x_set, y_set
         self.batch_size = batch_size
@@ -22,7 +28,7 @@ class Generator(Sequence):
         return math.ceil(self.x.shape[0] / self.batch_size)
 
     def __getitem__(self, idx):
-        # inds = self.indices[idx * self.batch_size:(idx + 1) * self.batch_size]  # Line A
+        # inds = self.indices[idx * self.batch_size:(idx + 1) * self.batch_size]
         inds = self.indices.take(range(idx * self.batch_size, (idx + 1) * self.batch_size), mode='wrap')
         batch_x = self.x[inds]
         batch_y = self.y[inds]
@@ -31,97 +37,7 @@ class Generator(Sequence):
     def on_epoch_end(self):
         np.random.shuffle(self.indices)
 
-
-class LinearRegression():
-    def __init__(self, columns):
-        self.columns = columns
-        
-    def evaluate(self, df_train, df_test):
-        ret_vals = []
-        for skn in df_train['skn'].unique():
-            df_train_station = df_train[df_train['skn'] == skn]
-            df_test_station = df_test[df_test['skn'] == skn]
-            
-            x_train, x_test = np.array(df_train_station[self.columns]), np.array(df_test_station[self.columns])
-            y_train, y_test = np.array(df_train_station['data_in']), np.array(df_test_station['data_in'])
-            
-            linear_regression = LR()
-            linear_regression.fit(x_train, y_train)
-            
-            y_pred = linear_regression.predict(x_test)
-            
-            ret_vals.append(
-                {
-                    "skn": skn,
-                    "rmse_lr": mean_squared_error(y_test, y_pred, squared=False),
-                    "mae_lr": mean_absolute_error(y_test, y_pred)
-                }
-            )
-        return pd.DataFrame(ret_vals)
-
-class XGB():
-    def __init__(self, params, columns):
-        self.params = params
-        self.columns = columns
-        pass
-    
-    def cross_val_predict(self, df, skn, n_folds=5):
-        assert 'inner_fold' in df.columns, 'define fold with column name "inner_fold"'
-        df_station = df[df['skn'] == skn]
-        
-        list_ytrue = []
-        list_ypred = []
-        for k in range(n_folds):
-            df_train = df_station[df_station['inner_fold'] != k]
-            df_test = df_station[df_station['inner_fold'] == k]
-            x_train, x_test = np.array(df_train[self.columns]), np.array(df_test[self.columns])
-            y_train, y_test = np.array(df_train['data_in']), np.array(df_test['data_in'])
-            
-            model = XGBRegressor(**self.params)
-            model.fit(x_train, y_train)
-            
-            y_pred = model.predict(x_test)
-            
-            list_ytrue.extend(y_test)
-            list_ypred.extend(y_pred)
-        return {
-            "mae": mean_absolute_error(list_ytrue, list_ypred),
-            "rmse": mean_squared_error(list_ytrue, list_ypred, squared=False)
-        }
-    
-    def evaluate(self, df_train, df_test):
-        ret_vals = []
-        for skn in df_train['skn'].unique():
-            df_train_station = df_train[df_train['skn'] == skn]
-            df_test_station = df_test[df_test['skn'] == skn]
-
-            x_train, x_test = np.array(df_train_station[self.columns]), np.array(df_test_station[self.columns])
-            y_train, y_test = np.array(df_train_station['data_in']), np.array(df_test_station['data_in'])
-
-            """
-            # linear regression
-            linear_regression = LinearRegression()
-            linear_regression.fit(x_train, y_train)
-            y_pred = linear_regression.predict(x_test)
-            ret['mae_lr'] = mean_absolute_error(y_test, y_pred)
-            ret['rmse_lr'] = mean_squared_error(y_test, y_pred, squared=False)
-            """
-
-            # xgb
-            model = XGBRegressor(**self.params)
-            model.fit(x_train, y_train)
-            y_pred = model.predict(x_test)
-            ret_vals.append(
-                {
-                    "skn": skn,
-                    "rmse_xgb": mean_squared_error(y_test, y_pred, squared=False),
-                    "mae_xgb": mean_absolute_error(y_test, y_pred)
-                }
-            )
-        return pd.DataFrame(ret_vals)
-
 class NeuralNetwork():
-    
     def __init__(self, model_func, params, columns):
         self.model_func = model_func
         self.params = params
@@ -142,7 +58,6 @@ class NeuralNetwork():
             # scale the input and output
             x_train, x_test = self.transform_x(x_train, x_test)
             y_train, y_test = self.transform_y(y_train, y_test)
-
 
             # train the model with retrain_full = True
             history = self.train(x_train, y_train, verbose=0, retrain_full=True)
@@ -174,8 +89,6 @@ class NeuralNetwork():
             ret_vals.append(r)
 
         return pd.DataFrame(ret_vals)
-            
-            
     
     def cross_val_predict(self, df, skn, verbose=0, n_folds=5):
         assert 'inner_fold' in df.columns, 'define fold with column name "inner_fold"'
@@ -315,6 +228,64 @@ class TransferModel():
     def __init__(self, model_func, columns):
         self.model_func = model_func
         self.columns = columns
+        
+    def load_trained_model(self, filename):
+        # load the trained base model and remove the last layer, and return as a model
+        trained_model = tf.keras.models.load_model(filename)
+        n_hidden_layers = len(trained_model.layers) - 2
+        inputs = tf.keras.Input(shape=(19,))
+        x = trained_model.layers[1](inputs)
+        for i in range(2, n_hidden_layers):
+            x = trained_model.layers[i](x)
+        outputs = trained_model.layers[n_hidden_layers](x)
+        _model = tf.keras.Model(inputs, outputs)
+
+        return _model
+
+    def define_sitespecific_model(self, batch_size=64):
+        base_model = self.load_trained_model(filename='model_weights/base_model.h5')
+        base_model.trainable = False
+
+        inputs = tf.keras.Input(shape=(19,))
+
+        x = base_model(inputs, training=False)
+        x = tf.keras.layers.Dense(units=128, kernel_regularizer=L2(l2=0.001), activation='selu')(x)
+        x = tf.keras.layers.Dropout(rate=0.1)(x)
+        x = tf.keras.layers.Dense(units=128, kernel_regularizer=L2(l2=0.001), activation='selu')(x)
+        x = tf.keras.layers.Dropout(rate=0.1)(x)
+        x = tf.keras.layers.Dense(units=128, kernel_regularizer=L2(l2=0.001), activation='selu')(x)
+        x = tf.keras.layers.Dropout(rate=0.1)(x)
+        outputs = tf.keras.layers.Dense(units=1, kernel_regularizer=L2(l2=0.001), activation='softplus')(x)
+
+        complete_model = tf.keras.Model(inputs, outputs)
+        complete_model.compile(
+            optimizer=tf.keras.optimizers.Adam(learning_rate=0.001),
+            loss='mse',
+            metrics=[RootMeanSquaredError()]
+        )
+
+        return complete_model, batch_size
+        
+    def evaluate_by_station(self, df_train, df_test, skn, params):
+        df_train_station = df_train[df_train['skn'] == skn]
+        df_test_station = df_test[df_test['skn'] == skn]
+        
+        x_train, x_test, y_train, y_test = self.split_scale(df_train_station, df_test_station)
+        
+        model, history = self.train_site_specific(x_train, y_train, params, verbose=1)
+        
+        y_pred = model.predict(x_test)
+        y_pred = np.power(np.e, y_pred) - 1.
+        y_true = np.power(np.e, y_test) - 1.
+        
+        return {
+            "rmse": mean_squared_error(y_true, y_pred, squared=False),
+            "mae": mean_absolute_error(y_true, y_pred)
+        }
+            
+        
+        
+        
             
     def split_scale(self, df_train, df_test):
         # convert to numpy
@@ -349,6 +320,29 @@ class TransferModel():
             "rmse": mean_squared_error(y_true, y_pred, squared=False),
             "mae": mean_absolute_error(y_true, y_pred)
         }
+    
+    def train_site_specific(self, x, y, params, retrain_full=False, fine_tune=False, verbose=0):
+        model, batch_size = self.define_sitespecific_model(**params)
+        x_train, x_valid, y_train, y_valid = train_test_split(x, y, test_size=0.2, shuffle=False)
+        callbacks = [
+            EarlyStopping(monitor='val_loss', min_delta=0, patience=20, restore_best_weights=True),
+            ReduceLROnPlateau(monitor='val_loss', factor=0.95, patience=10)
+        ]
+        
+        train_datagen = Generator(x_train, y_train, batch_size)
+        valid_datagen = Generator(x_valid, y_valid, batch_size)
+        
+        history = model.fit(
+            x=train_datagen,
+            steps_per_epoch=np.ceil(len(x_train)/batch_size),
+            validation_data=valid_datagen,
+            validation_steps=np.ceil(len(x_valid)/batch_size),
+            epochs=int(1e3),
+            callbacks=callbacks,
+            verbose=verbose
+        )
+        
+        return model, history
         
     
     def train_base(self, x, y, params, retrain_full=False, verbose=0):
@@ -384,9 +378,6 @@ class TransferModel():
             callbacks=callbacks,
             verbose=verbose
         )
-        
-        
-        
 #         if retrain_full:
 #             # retraining the base model is harmful: the model overfits
 #             epochs = len(history.history['loss'])
@@ -430,3 +421,82 @@ class TransferModel():
             "rmse": mean_squared_error(list_ytrue, list_ypred, squared=False),
             "mae": mean_absolute_error(list_ytrue, list_ypred),
         }
+
+class XGB():
+    def __init__(self, params, columns):
+        self.params = params
+        self.columns = columns
+        pass
+    
+    def cross_val_predict(self, df, skn, n_folds=5):
+        assert 'inner_fold' in df.columns, 'define fold with column name "inner_fold"'
+        df_station = df[df['skn'] == skn]
+        
+        list_ytrue = []
+        list_ypred = []
+        for k in range(n_folds):
+            df_train = df_station[df_station['inner_fold'] != k]
+            df_test = df_station[df_station['inner_fold'] == k]
+            x_train, x_test = np.array(df_train[self.columns]), np.array(df_test[self.columns])
+            y_train, y_test = np.array(df_train['data_in']), np.array(df_test['data_in'])
+            
+            model = XGBRegressor(**self.params)
+            model.fit(x_train, y_train)
+            
+            y_pred = model.predict(x_test)
+            
+            list_ytrue.extend(y_test)
+            list_ypred.extend(y_pred)
+        return {
+            "mae": mean_absolute_error(list_ytrue, list_ypred),
+            "rmse": mean_squared_error(list_ytrue, list_ypred, squared=False)
+        }
+    
+    def evaluate(self, df_train, df_test):
+        ret_vals = []
+        for skn in df_train['skn'].unique():
+            df_train_station = df_train[df_train['skn'] == skn]
+            df_test_station = df_test[df_test['skn'] == skn]
+
+            x_train, x_test = np.array(df_train_station[self.columns]), np.array(df_test_station[self.columns])
+            y_train, y_test = np.array(df_train_station['data_in']), np.array(df_test_station['data_in'])
+
+            model = XGBRegressor(**self.params)
+            model.fit(x_train, y_train)
+            y_pred = model.predict(x_test)
+            ret_vals.append(
+                {
+                    "skn": skn,
+                    "rmse_xgb": mean_squared_error(y_test, y_pred, squared=False),
+                    "mae_xgb": mean_absolute_error(y_test, y_pred)
+                }
+            )
+        return pd.DataFrame(ret_vals)
+
+class LinearRegression():
+    def __init__(self, columns):
+        self.columns = columns
+        
+    def evaluate(self, df_train, df_test):
+        ret_vals = []
+        for skn in df_train['skn'].unique():
+            df_train_station = df_train[df_train['skn'] == skn]
+            df_test_station = df_test[df_test['skn'] == skn]
+            
+            x_train, x_test = np.array(df_train_station[self.columns]), np.array(df_test_station[self.columns])
+            y_train, y_test = np.array(df_train_station['data_in']), np.array(df_test_station['data_in'])
+            
+            linear_regression = LR()
+            linear_regression.fit(x_train, y_train)
+            
+            y_pred = linear_regression.predict(x_test)
+            
+            ret_vals.append(
+                {
+                    "skn": skn,
+                    "rmse_lr": mean_squared_error(y_test, y_pred, squared=False),
+                    "mae_lr": mean_absolute_error(y_test, y_pred)
+                }
+            )
+        return pd.DataFrame(ret_vals)
+    
