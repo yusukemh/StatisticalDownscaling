@@ -47,7 +47,7 @@ class NeuralNetwork():
     def evaluate_by_station(self, df_train, df_test, skn, n_iter=1, retrain_full=True):
         rmse = []
         mae = []
-        for iter in range(n_iter):
+        for _ in range(n_iter):
             df_train_station = df_train[df_train['skn'] == skn]
             df_test_station = df_test[df_test['skn'] == skn]
 
@@ -452,26 +452,49 @@ class XGB():
             "rmse": mean_squared_error(list_ytrue, list_ypred, squared=False)
         }
     
-    def evaluate(self, df_train, df_test):
-        ret_vals = []
-        for skn in df_train['skn'].unique():
+    def evaluate_by_station(self, df_train, df_test, skn, n_iter=1):
+        rmse = []
+        for _ in range(n_iter):
             df_train_station = df_train[df_train['skn'] == skn]
             df_test_station = df_test[df_test['skn'] == skn]
-
+            
             x_train, x_test = np.array(df_train_station[self.columns]), np.array(df_test_station[self.columns])
             y_train, y_test = np.array(df_train_station['data_in']), np.array(df_test_station['data_in'])
-
+            
             model = XGBRegressor(**self.params)
             model.fit(x_train, y_train)
             y_pred = model.predict(x_test)
-            ret_vals.append(
-                {
-                    "skn": skn,
-                    "rmse_xgb": mean_squared_error(y_test, y_pred, squared=False),
-                    "mae_xgb": mean_absolute_error(y_test, y_pred)
-                }
-            )
+            rmse.append(mean_squared_error(y_test, y_pred, squared=False))
+        return {
+                "skn": skn,
+                "n_iter": n_iter,
+                "rmse_xgb": np.mean(rmse),
+                "rmse_std_xgb": np.std(rmse)
+        }
+    
+    def evaluate(self, df_train, df_test, n_iter=1):
+        ret_vals = []
+        for skn in df_train['skn'].unique():
+            r = self.evaluate_by_station(df_train, df_test, skn, n_iter)
+            ret_vals.append(r)
         return pd.DataFrame(ret_vals)
+#             df_train_station = df_train[df_train['skn'] == skn]
+#             df_test_station = df_test[df_test['skn'] == skn]
+
+#             x_train, x_test = np.array(df_train_station[self.columns]), np.array(df_test_station[self.columns])
+#             y_train, y_test = np.array(df_train_station['data_in']), np.array(df_test_station['data_in'])
+
+#             model = XGBRegressor(**self.params)
+#             model.fit(x_train, y_train)
+#             y_pred = model.predict(x_test)
+#             ret_vals.append(
+#                 {
+#                     "skn": skn,
+#                     "rmse_xgb": mean_squared_error(y_test, y_pred, squared=False),
+#                     "mae_xgb": mean_absolute_error(y_test, y_pred)
+#                 }
+#             )
+#         return pd.DataFrame(ret_vals)
 
 class LinearRegression():
     def __init__(self, columns):

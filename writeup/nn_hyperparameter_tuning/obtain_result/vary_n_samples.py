@@ -38,18 +38,17 @@ def define_model(
 def main():
     
     columns = C_SINGLE
-    for p in [i for i in range(50, 600, 50)]:
+    # for p in [i for i in range(300, 600, 50)]:
+    for p in [550]:
         ret_vals = []
         for item in NN_PARAMS:
             skn = item['skn']
-            if p == 50: print(item['skn'], item['params'])
+            print(item['skn'], item['params'])
             df_train, df_test = load_data(columns + C_COMMON, FILENAME)
 
             df_train = df_train[df_train['skn'] == skn]
             df_test = df_test[df_test['skn'] == skn]
 
-            # n_data = int(df_train.shape[0] * (p / 100.))
-            # df_train = df_train.iloc[-n_data:]
             df_train = df_train.iloc[-p:]
 
             station_model = NeuralNetwork(
