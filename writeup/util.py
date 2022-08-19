@@ -44,7 +44,7 @@ class NeuralNetwork():
         self.columns = columns
         pass
     
-    def evaluate_by_station(self, df_train, df_test, skn, n_iter=1):
+    def evaluate_by_station(self, df_train, df_test, skn, n_iter=1, retrain_full=True):
         rmse = []
         mae = []
         for iter in range(n_iter):
@@ -59,8 +59,8 @@ class NeuralNetwork():
             x_train, x_test = self.transform_x(x_train, x_test)
             y_train, y_test = self.transform_y(y_train, y_test)
 
-            # train the model with retrain_full = True
-            history = self.train(x_train, y_train, verbose=0, retrain_full=True)
+            # train the model
+            history = self.train(x_train, y_train, verbose=0, retrain_full=retrain_full)
 
             # make prediction and scale
             y_pred = self.model.predict(x_test)

@@ -38,7 +38,7 @@ def define_model(
 def main():
     
     columns = C_SINGLE
-    for p in [i for i in range(50, 600, 50)]:
+    for p in [i for i in range(350, 600, 50)]:
         ret_vals = []
         for item in NN_PARAMS:
             skn = item['skn']
@@ -56,9 +56,9 @@ def main():
                 params=item['params'],
                 model_func=define_model
             )
-            r = station_model.evaluate_by_station(df_train, df_test, skn=skn, n_iter=10)
+            r = station_model.evaluate_by_station(df_train, df_test, skn=skn, n_iter=10, retrain_full=False)
             ret_vals.append(r)
-        pd.DataFrame(ret_vals).to_csv(f'n_{p}_.csv')
+        pd.DataFrame(ret_vals).to_csv(f'n_{p}_no_retrain.csv')
 
 if __name__ == '__main__':
     main()

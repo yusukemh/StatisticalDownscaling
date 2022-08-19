@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-##SBATCH --account=sadow
-#SBATCH --partition=kill-shared
+#SBATCH --account=sadow
+#SBATCH --partition=sadow
 #SBATCH --job-name=obtain_result
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=1
