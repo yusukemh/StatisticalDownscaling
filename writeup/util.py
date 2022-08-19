@@ -461,10 +461,15 @@ class XGB():
             x_train, x_test = np.array(df_train_station[self.columns]), np.array(df_test_station[self.columns])
             y_train, y_test = np.array(df_train_station['data_in']), np.array(df_test_station['data_in'])
             
-            model = XGBRegressor(**self.params)
+            # need to append seed to get randomized result
+            params = self.params
+            params['seed'] = np.random.randint(100)
+            
+            model = XGBRegressor(**params)
             model.fit(x_train, y_train)
             y_pred = model.predict(x_test)
             rmse.append(mean_squared_error(y_test, y_pred, squared=False))
+        # print(rmse)
         return {
                 "skn": skn,
                 "n_iter": n_iter,
