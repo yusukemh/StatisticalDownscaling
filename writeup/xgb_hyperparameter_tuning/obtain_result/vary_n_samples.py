@@ -32,7 +32,7 @@ def main():
                 columns=columns,
                 params=item['params'],
             )
-            r = station_model.evaluate_by_station(df_train, df_test, skn=skn, n_iter=5)
+            r = station_model.evaluate_by_station(df_train, df_test, skn=skn, n_iter=10)
             ret_vals.append(r)
         pd.DataFrame(ret_vals).to_csv(f'n_{p}_.csv')
 
