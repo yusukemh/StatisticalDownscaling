@@ -1,4 +1,5 @@
 NC_FILE_NAMES = [
+    # individual nc filenames
     "air.2m.mon.mean.regridded.nc",
     "air.1000-500.mon.mean.nc",
     "hgt500.mon.mean.nc",
@@ -18,6 +19,7 @@ NC_FILE_NAMES = [
 ]
 
 DF_LABELS = [
+    # label names used in df column names
     "air2m",
     "air1000_500",
     "hgt500",
@@ -35,6 +37,27 @@ DF_LABELS = [
     "skt",
     "slp"
 ]
+
+NC_ATTRIBUTES = [
+    # attribute names used in individual nc files
+    "air",
+    "air",
+    "hgt",
+    "hgt",
+    "omega",
+    "pottmp",
+    "pottmp",
+    "pr_wtr",
+    "shum",
+    "shum",
+    "shum",
+    "shum",
+    "shum",
+    "shum",
+    "skt",
+    "slp"
+]
+
 
 C_COMMON = [
     'skn', 'data_in', 'season_wet', 'fold',
