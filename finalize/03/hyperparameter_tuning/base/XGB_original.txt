@@ -1,0 +1,250 @@
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.06639675125422093, 'max_depth': 2, 'verbosity': 1}
+MSE on training set  : 23.749962
+MSE on validation set: 27.776072
+elapsed time         : 9.728
+===============================================
+{'n_estimators': 170, 'learning_rate': 0.05502444742781697, 'max_depth': 4, 'verbosity': 1}
+MSE on training set  : 17.995520
+MSE on validation set: 23.652499
+elapsed time         : 13.919
+===============================================
+{'n_estimators': 170, 'learning_rate': 0.1501641051638743, 'max_depth': 1, 'verbosity': 1}
+MSE on training set  : 29.375163
+MSE on validation set: 32.749486
+elapsed time         : 4.102
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.14984884275309682, 'max_depth': 1, 'verbosity': 1}
+MSE on training set  : 28.287679
+MSE on validation set: 31.636000
+elapsed time         : 5.683
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.14162833692269416, 'max_depth': 1, 'verbosity': 1}
+MSE on training set  : 29.251085
+MSE on validation set: 32.606636
+elapsed time         : 4.458
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.10263624046921543, 'max_depth': 6, 'verbosity': 1}
+MSE on training set  : 9.929663
+MSE on validation set: 19.882749
+elapsed time         : 24.928
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.1887213046658301, 'max_depth': 3, 'verbosity': 1}
+MSE on training set  : 15.507761
+MSE on validation set: 22.437574
+elapsed time         : 12.291
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.12798807295303904, 'max_depth': 3, 'verbosity': 1}
+MSE on training set  : 16.361920
+MSE on validation set: 22.719598
+elapsed time         : 15.401
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.1866868661592524, 'max_depth': 5, 'verbosity': 1}
+MSE on training set  : 9.939938
+MSE on validation set: 20.104198
+elapsed time         : 20.624
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.09153907009972553, 'max_depth': 8, 'verbosity': 1}
+MSE on training set  : 5.484225
+MSE on validation set: 18.529157
+elapsed time         : 53.895
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.08848226212886226, 'max_depth': 7, 'verbosity': 1}
+MSE on training set  : 8.126040
+MSE on validation set: 19.246478
+elapsed time         : 34.412
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.17845784227160666, 'max_depth': 4, 'verbosity': 1}
+MSE on training set  : 15.654654
+MSE on validation set: 22.159450
+elapsed time         : 8.066
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.11583949891474293, 'max_depth': 2, 'verbosity': 1}
+MSE on training set  : 23.788031
+MSE on validation set: 27.720182
+elapsed time         : 4.891
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.0673230667249464, 'max_depth': 1, 'verbosity': 1}
+MSE on training set  : 32.327042
+MSE on validation set: 35.584332
+elapsed time         : 2.325
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.06922417555812507, 'max_depth': 1, 'verbosity': 1}
+MSE on training set  : 31.720720
+MSE on validation set: 35.097434
+elapsed time         : 2.946
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.05376004454723429, 'max_depth': 4, 'verbosity': 1}
+MSE on training set  : 16.653953
+MSE on validation set: 22.959824
+elapsed time         : 21.142
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.0979207394804465, 'max_depth': 4, 'verbosity': 1}
+MSE on training set  : 15.408638
+MSE on validation set: 22.273793
+elapsed time         : 15.085
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.11403665339170245, 'max_depth': 5, 'verbosity': 1}
+MSE on training set  : 10.312008
+MSE on validation set: 20.176523
+elapsed time         : 30.377
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.1887143979462439, 'max_depth': 8, 'verbosity': 1}
+MSE on training set  : 4.577876
+MSE on validation set: 19.126317
+elapsed time         : 42.611
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.11098551359053246, 'max_depth': 5, 'verbosity': 1}
+MSE on training set  : 10.662324
+MSE on validation set: 19.880432
+elapsed time         : 26.901
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.0564252581619002, 'max_depth': 8, 'verbosity': 1}
+MSE on training set  : 8.595195
+MSE on validation set: 19.416878
+elapsed time         : 27.821
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.16648967341704246, 'max_depth': 9, 'verbosity': 1}
+MSE on training set  : 5.258282
+MSE on validation set: 19.367585
+elapsed time         : 23.030
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.19327844781034753, 'max_depth': 2, 'verbosity': 1}
+MSE on training set  : 22.953646
+MSE on validation set: 27.119116
+elapsed time         : 3.898
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.12921023631448647, 'max_depth': 8, 'verbosity': 1}
+MSE on training set  : 5.692992
+MSE on validation set: 18.847558
+elapsed time         : 35.444
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.1710393556075086, 'max_depth': 3, 'verbosity': 1}
+MSE on training set  : 18.640771
+MSE on validation set: 24.193064
+elapsed time         : 6.577
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.16008800312418928, 'max_depth': 9, 'verbosity': 1}
+MSE on training set  : 3.451631
+MSE on validation set: 19.195348
+elapsed time         : 56.054
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.10681169350339412, 'max_depth': 9, 'verbosity': 1}
+MSE on training set  : 6.101883
+MSE on validation set: 19.108193
+elapsed time         : 26.975
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.06387100393860143, 'max_depth': 8, 'verbosity': 1}
+MSE on training set  : 7.221483
+MSE on validation set: 19.035057
+elapsed time         : 43.882
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.0690542761780904, 'max_depth': 7, 'verbosity': 1}
+MSE on training set  : 7.773694
+MSE on validation set: 19.382385
+elapsed time         : 46.615
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.11955274420565408, 'max_depth': 3, 'verbosity': 1}
+MSE on training set  : 15.995560
+MSE on validation set: 22.434017
+elapsed time         : 17.148
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.19447133175887804, 'max_depth': 9, 'verbosity': 1}
+MSE on training set  : 4.136248
+MSE on validation set: 18.961140
+elapsed time         : 34.292
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.1955519143790545, 'max_depth': 4, 'verbosity': 1}
+MSE on training set  : 10.766271
+MSE on validation set: 20.113395
+elapsed time         : 22.361
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.19266219671339513, 'max_depth': 1, 'verbosity': 1}
+MSE on training set  : 27.812081
+MSE on validation set: 31.121553
+elapsed time         : 5.570
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.09527211398531574, 'max_depth': 4, 'verbosity': 1}
+MSE on training set  : 16.408755
+MSE on validation set: 22.762184
+elapsed time         : 12.885
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.1775395014057753, 'max_depth': 9, 'verbosity': 1}
+MSE on training set  : 3.592344
+MSE on validation set: 19.394450
+elapsed time         : 47.012
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.10788645874110153, 'max_depth': 9, 'verbosity': 1}
+MSE on training set  : 4.442408
+MSE on validation set: 18.637122
+elapsed time         : 53.832
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.09932850124401463, 'max_depth': 4, 'verbosity': 1}
+MSE on training set  : 13.272494
+MSE on validation set: 21.063361
+elapsed time         : 23.375
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.0864444448650562, 'max_depth': 8, 'verbosity': 1}
+MSE on training set  : 7.741223
+MSE on validation set: 19.531327
+elapsed time         : 28.203
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.16781178594281693, 'max_depth': 7, 'verbosity': 1}
+MSE on training set  : 6.132667
+MSE on validation set: 19.359646
+elapsed time         : 31.888
+===============================================
+{'n_estimators': 170, 'learning_rate': 0.07741385618078814, 'max_depth': 3, 'verbosity': 1}
+MSE on training set  : 20.273567
+MSE on validation set: 25.227299
+elapsed time         : 10.132
+===============================================
+{'n_estimators': 180, 'learning_rate': 0.05162228930423765, 'max_depth': 3, 'verbosity': 1}
+MSE on training set  : 21.927846
+MSE on validation set: 26.723479
+elapsed time         : 10.245
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.16064960860423017, 'max_depth': 6, 'verbosity': 1}
+MSE on training set  : 8.882448
+MSE on validation set: 19.636546
+elapsed time         : 20.035
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.1780508962670453, 'max_depth': 6, 'verbosity': 1}
+MSE on training set  : 9.598247
+MSE on validation set: 20.173573
+elapsed time         : 16.589
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.13899807427398664, 'max_depth': 7, 'verbosity': 1}
+MSE on training set  : 6.743880
+MSE on validation set: 19.321640
+elapsed time         : 32.126
+===============================================
+{'n_estimators': 170, 'learning_rate': 0.1043389660703479, 'max_depth': 7, 'verbosity': 1}
+MSE on training set  : 8.427842
+MSE on validation set: 19.244558
+elapsed time         : 25.490
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.07451300646532819, 'max_depth': 3, 'verbosity': 1}
+MSE on training set  : 21.549665
+MSE on validation set: 26.367797
+elapsed time         : 7.883
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.08115909746215644, 'max_depth': 5, 'verbosity': 1}
+MSE on training set  : 13.987128
+MSE on validation set: 21.507772
+elapsed time         : 16.444
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.05873939631803792, 'max_depth': 1, 'verbosity': 1}
+MSE on training set  : 32.431908
+MSE on validation set: 35.632805
+elapsed time         : 2.663
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.10056044754918966, 'max_depth': 5, 'verbosity': 1}
+MSE on training set  : 11.284001
+MSE on validation set: 20.459130
+elapsed time         : 25.083
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.10883345080594352, 'max_depth': 1, 'verbosity': 1}
+MSE on training set  : 29.470331
+MSE on validation set: 32.867075
+elapsed time         : 5.036
