@@ -14,7 +14,7 @@
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END
 #SBATCH --mail-type=FAIL
-
-export PATH="/home/yusukemh/sadow_lts/personal/yusukemh/Anaconda3/bin:$PATH"
-source activate climate
-python3 random_forest.py
+## echo hello
+srun module load lang/Anaconda3
+srun source activate climate
+srun /home/yusukemh/.conda/envs/climate/bin/python3 xgb.py

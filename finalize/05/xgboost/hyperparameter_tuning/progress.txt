@@ -1,0 +1,1500 @@
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.04815793265452345, 'max_depth': 3, 'gamma': 0.020593272783514083, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.971
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.059167786366504264, 'max_depth': 9, 'gamma': 1.5025739121747017, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 41.688
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.03283289029723138, 'max_depth': 6, 'gamma': 1.9797015614778293, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 18.410
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.016040766049579085, 'max_depth': 5, 'gamma': 0.604138974367868, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.102
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.042406141904833855, 'max_depth': 7, 'gamma': 1.5689955786384866, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 20.560
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.08092973932577366, 'max_depth': 1, 'gamma': 1.5067840614832184, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.044
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.08158074705772027, 'max_depth': 5, 'gamma': 1.3641798711665563, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.885
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.030224515805475537, 'max_depth': 1, 'gamma': 0.44953315341124767, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 5.943
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.048811708805088054, 'max_depth': 8, 'gamma': 0.5810986989812652, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 18.288
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.03649300561908264, 'max_depth': 2, 'gamma': 0.6580567370238473, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.687
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.04681501059316252, 'max_depth': 4, 'gamma': 1.3730063329189965, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.401
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.033789641901825165, 'max_depth': 8, 'gamma': 0.36683490220611037, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 37.765
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.029712133499082666, 'max_depth': 5, 'gamma': 1.331533157788443, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 20.146
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.0754249488793324, 'max_depth': 5, 'gamma': 1.2863023447942727, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 19.494
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.021107774200953368, 'max_depth': 9, 'gamma': 0.14462422646965645, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 36.578
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.06237867428102226, 'max_depth': 2, 'gamma': 1.594880242857428, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.530
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.06699383479479125, 'max_depth': 1, 'gamma': 0.07750668054121346, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.716
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.05819420410464469, 'max_depth': 4, 'gamma': 1.4373337747693202, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.597
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.056200697012161085, 'max_depth': 6, 'gamma': 0.5777815630990939, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 22.789
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.0355867569996574, 'max_depth': 4, 'gamma': 1.9558796877527058, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.016
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.06480555489017371, 'max_depth': 3, 'gamma': 0.3836594418369226, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.160
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.03373382327708535, 'max_depth': 1, 'gamma': 0.17515995464422462, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 3.351
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.015114859450920507, 'max_depth': 4, 'gamma': 0.9479828914317141, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 15.283
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.08403191597607762, 'max_depth': 3, 'gamma': 1.1175262264530692, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 12.178
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.0408462575489731, 'max_depth': 5, 'gamma': 1.9054389760189383, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.557
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.09653137898269959, 'max_depth': 9, 'gamma': 1.6342633379191485, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 41.656
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.08100511083265437, 'max_depth': 3, 'gamma': 1.7667131616264533, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.014
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.06253859111815484, 'max_depth': 5, 'gamma': 1.5674954421503275, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.566
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.0983075932078337, 'max_depth': 3, 'gamma': 0.23787339819631614, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.642
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.0365345559001489, 'max_depth': 7, 'gamma': 0.5211880058131777, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 29.134
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.06376977321907366, 'max_depth': 8, 'gamma': 0.23230359385459165, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 20.030
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.029371112625861638, 'max_depth': 2, 'gamma': 1.0872907457684897, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.011
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.051235271341607, 'max_depth': 9, 'gamma': 1.310003409115299, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 24.897
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.026493297235950918, 'max_depth': 5, 'gamma': 1.3877839215274712, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 21.072
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.08506032399943352, 'max_depth': 4, 'gamma': 0.6390589002753944, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 15.895
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.07469739592419042, 'max_depth': 9, 'gamma': 0.9161806910659613, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 32.827
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.05879747150115824, 'max_depth': 9, 'gamma': 1.767217033833215, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.436
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.0449379633737525, 'max_depth': 4, 'gamma': 1.3911677810007974, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.843
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.06303665666276148, 'max_depth': 3, 'gamma': 0.5453517017009639, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.824
+===============================================
+{'n_estimators': 170, 'learning_rate': 0.06077810189426852, 'max_depth': 8, 'gamma': 1.4067064092165749, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 22.238
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.05181744597689707, 'max_depth': 9, 'gamma': 0.7207642924873681, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 39.047
+===============================================
+{'n_estimators': 180, 'learning_rate': 0.03313579259463295, 'max_depth': 3, 'gamma': 1.2101877337802849, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.846
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.022951685252304153, 'max_depth': 6, 'gamma': 0.10401817073933373, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.972
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.03323886093374956, 'max_depth': 6, 'gamma': 1.6930780719164478, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.717
+===============================================
+{'n_estimators': 180, 'learning_rate': 0.011932473624653592, 'max_depth': 1, 'gamma': 1.8165392731264531, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 4.485
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.08321905074593383, 'max_depth': 8, 'gamma': 1.7515179459589236, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 27.438
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.09187147003677534, 'max_depth': 4, 'gamma': 1.8214303083514978, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 15.924
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.041111719315022804, 'max_depth': 1, 'gamma': 0.6713046553465063, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.782
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.0931421851281477, 'max_depth': 9, 'gamma': 0.7067666729448132, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 18.468
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.006303890294477183, 'max_depth': 7, 'gamma': 1.7494962998326162, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 27.602
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.04089151869669391, 'max_depth': 7, 'gamma': 1.9098743369352305, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.974
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.052428491509499256, 'max_depth': 8, 'gamma': 0.09318019483857332, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 15.557
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.008321425220490748, 'max_depth': 5, 'gamma': 0.47144505277580295, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.010
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.0985612907851219, 'max_depth': 4, 'gamma': 1.7306209713226948, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.185
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.041272005169279896, 'max_depth': 7, 'gamma': 1.8601676687118605, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 32.016
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.0716469652680015, 'max_depth': 4, 'gamma': 0.23971460947570034, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 14.573
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.004913585286540312, 'max_depth': 2, 'gamma': 0.3256635905736962, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 3.783
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.021683728979917685, 'max_depth': 7, 'gamma': 0.8198163052640173, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 14.866
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.09247276389063297, 'max_depth': 7, 'gamma': 1.697624580760163, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.424
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.07321897916114156, 'max_depth': 2, 'gamma': 0.3669776300052443, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.711
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.0814645352335511, 'max_depth': 5, 'gamma': 0.5081420035205497, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.169
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.08976726157347979, 'max_depth': 3, 'gamma': 1.0151319883257737, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.334
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.0734652669447794, 'max_depth': 9, 'gamma': 1.7581078359216695, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 24.244
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.09052350414769761, 'max_depth': 6, 'gamma': 1.1531369915862262, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 14.601
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.09597433570922465, 'max_depth': 1, 'gamma': 1.65403287457504, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.248
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.026800487135892028, 'max_depth': 6, 'gamma': 0.6206463095720074, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 19.508
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.07471959519325519, 'max_depth': 6, 'gamma': 1.194676634104024, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 17.254
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.08781485833919855, 'max_depth': 3, 'gamma': 0.03433421911062062, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 12.969
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.08337450555527985, 'max_depth': 3, 'gamma': 1.726867525174653, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.911
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.015072661658060201, 'max_depth': 7, 'gamma': 1.1604088393666643, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 25.430
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.009051008628732947, 'max_depth': 6, 'gamma': 0.836466861628218, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.323
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.016279687406018296, 'max_depth': 4, 'gamma': 1.7687590062844372, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 14.268
+===============================================
+{'n_estimators': 180, 'learning_rate': 0.03251400536973508, 'max_depth': 2, 'gamma': 0.0921420535616082, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.385
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.08257373021449174, 'max_depth': 4, 'gamma': 0.9356550085197957, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 12.244
+===============================================
+{'n_estimators': 180, 'learning_rate': 0.06294449129066422, 'max_depth': 6, 'gamma': 0.08745991262791586, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 17.112
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.042475804177556406, 'max_depth': 2, 'gamma': 0.5434935536884311, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 5.774
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.02354788843003435, 'max_depth': 3, 'gamma': 0.5207815342688222, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.108
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.07629914988002318, 'max_depth': 7, 'gamma': 0.8978808318945628, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 29.994
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.03042078630165604, 'max_depth': 5, 'gamma': 1.1694957756770672, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 15.565
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.07780997815183638, 'max_depth': 2, 'gamma': 0.9145515961094708, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.944
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.06265393809217445, 'max_depth': 3, 'gamma': 1.8460387908414913, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.912
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.0714869436389309, 'max_depth': 9, 'gamma': 1.786285042749694, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 19.465
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.013542889274922625, 'max_depth': 8, 'gamma': 1.017315144957877, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 18.773
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.05522586095451003, 'max_depth': 5, 'gamma': 1.1861224630117115, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 14.994
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.018933261217582334, 'max_depth': 2, 'gamma': 0.020675083577715414, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.875
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.02736824395625858, 'max_depth': 5, 'gamma': 1.1762992406179396, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 14.931
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.04608116363139273, 'max_depth': 8, 'gamma': 1.8885539916135545, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.230
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.07414754450476735, 'max_depth': 7, 'gamma': 0.047508797759147736, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 30.313
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.024402492427378242, 'max_depth': 8, 'gamma': 0.35252424543508676, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 29.832
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.08783163238149003, 'max_depth': 7, 'gamma': 0.3473135430661882, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 23.753
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.06473196439050784, 'max_depth': 9, 'gamma': 1.0402125977598482, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 21.262
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.019870708760239792, 'max_depth': 6, 'gamma': 1.97292368062553, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 24.423
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.08953049751593586, 'max_depth': 7, 'gamma': 1.4071508248614306, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 12.786
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.014762282746865613, 'max_depth': 5, 'gamma': 0.23657679271239496, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.769
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.07355316599258786, 'max_depth': 9, 'gamma': 1.4779405157894208, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 29.031
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.026517294496177492, 'max_depth': 2, 'gamma': 1.8750910211954572, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.322
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.0030437128302232305, 'max_depth': 4, 'gamma': 1.4927775345689673, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 15.971
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.013941440089551536, 'max_depth': 5, 'gamma': 0.9622019106393433, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.339
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.05080386352640386, 'max_depth': 6, 'gamma': 1.7421798236255135, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 22.204
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.05111929702871842, 'max_depth': 3, 'gamma': 0.4439144424090782, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 5.633
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.06368106508678865, 'max_depth': 9, 'gamma': 1.0811250897612885, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 33.793
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.08768616568655811, 'max_depth': 3, 'gamma': 0.6110538844011957, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 10.113
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.03909744289222162, 'max_depth': 6, 'gamma': 0.9599309537881757, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 15.532
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.09519383193837794, 'max_depth': 6, 'gamma': 1.4777655262744955, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 18.993
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.08693031686067351, 'max_depth': 5, 'gamma': 0.8432994683572204, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 19.527
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.0034285661004941717, 'max_depth': 8, 'gamma': 1.0409622950203103, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 21.196
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.02639630266795689, 'max_depth': 3, 'gamma': 0.03231997417666399, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.216
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.060131427595584784, 'max_depth': 7, 'gamma': 1.4102180075982746, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 27.203
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.021232579959161092, 'max_depth': 1, 'gamma': 0.6683777624756964, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 3.889
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.04682254098652481, 'max_depth': 3, 'gamma': 0.8534601036014327, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.090
+===============================================
+{'n_estimators': 170, 'learning_rate': 0.09093238171457967, 'max_depth': 9, 'gamma': 1.1045984357360088, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 25.972
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.02489512738174427, 'max_depth': 3, 'gamma': 0.08875953379967916, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.508
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.05376199192730141, 'max_depth': 2, 'gamma': 0.1522139337053401, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 4.853
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.06940252438797778, 'max_depth': 7, 'gamma': 1.162617018993382, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 27.401
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.04131199608552431, 'max_depth': 5, 'gamma': 0.1076847484775969, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 19.917
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.017124113470543746, 'max_depth': 8, 'gamma': 1.5946411820924977, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 21.721
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.045197602772659995, 'max_depth': 6, 'gamma': 0.5500393065684284, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 19.727
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.030603032405819366, 'max_depth': 2, 'gamma': 0.025166523227568627, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 4.595
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.0010598718220478232, 'max_depth': 1, 'gamma': 0.8793411543909866, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 5.321
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.07194945208499127, 'max_depth': 2, 'gamma': 1.0904548281089097, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.689
+===============================================
+{'n_estimators': 180, 'learning_rate': 0.011276367696583519, 'max_depth': 8, 'gamma': 0.8358345119945405, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 27.518
+===============================================
+{'n_estimators': 170, 'learning_rate': 0.015348795578759036, 'max_depth': 1, 'gamma': 1.8051969452266787, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 4.556
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.08943170673920413, 'max_depth': 5, 'gamma': 1.8338674577332998, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.531
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.06015881323498106, 'max_depth': 5, 'gamma': 0.41601680317071255, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 10.893
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.01245233660139082, 'max_depth': 3, 'gamma': 1.3764285270565424, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.681
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.004519301441252706, 'max_depth': 4, 'gamma': 1.5482880946477724, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.010
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.010208336478082596, 'max_depth': 5, 'gamma': 0.30746810080245757, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 18.462
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.024503083066250483, 'max_depth': 6, 'gamma': 1.1773553154364194, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 14.951
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.06822611531760281, 'max_depth': 6, 'gamma': 1.3050479232315177, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 25.150
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.031482426958483564, 'max_depth': 5, 'gamma': 0.8326684871561094, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.702
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.033638004553115546, 'max_depth': 9, 'gamma': 1.7464744217171222, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 32.518
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.017095106434838223, 'max_depth': 4, 'gamma': 1.096571547241313, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.202
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.03602241364569768, 'max_depth': 8, 'gamma': 0.5536850530704309, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 31.189
+===============================================
+{'n_estimators': 180, 'learning_rate': 0.08656813708326193, 'max_depth': 4, 'gamma': 0.6114030740785124, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 10.540
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.007352175578461019, 'max_depth': 7, 'gamma': 1.1699463025980916, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 17.658
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.016566236648741895, 'max_depth': 7, 'gamma': 0.4383596957620173, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 15.224
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.08139283970546117, 'max_depth': 8, 'gamma': 1.4495588642881756, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 35.317
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.018250431856147973, 'max_depth': 2, 'gamma': 0.4249405770268524, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 5.033
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.09600691785943129, 'max_depth': 7, 'gamma': 0.6383280731368715, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.920
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.042635070087482387, 'max_depth': 9, 'gamma': 1.0176795112315011, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 44.717
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.05556872861372314, 'max_depth': 6, 'gamma': 1.6753183979636053, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 15.106
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.041048411446571856, 'max_depth': 7, 'gamma': 0.8524534421833634, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.847
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.0017189161152592284, 'max_depth': 4, 'gamma': 1.7284828046329437, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.161
+===============================================
+{'n_estimators': 180, 'learning_rate': 0.09289796105750608, 'max_depth': 6, 'gamma': 1.4228795365012554, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.598
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.06813581203231517, 'max_depth': 1, 'gamma': 1.7624189006139437, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 5.470
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.018067032039662055, 'max_depth': 9, 'gamma': 1.2620494538336153, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 25.226
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.0769607353736089, 'max_depth': 5, 'gamma': 0.48883198891888324, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 19.478
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.005643724539792295, 'max_depth': 5, 'gamma': 1.845607490075485, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.118
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.02038583274342331, 'max_depth': 1, 'gamma': 1.6150845494076378, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 4.188
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.09858777269321112, 'max_depth': 9, 'gamma': 1.1811308787516142, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 34.583
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.037734821530949494, 'max_depth': 2, 'gamma': 1.138568002951916, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.719
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.06534533601813199, 'max_depth': 6, 'gamma': 1.9346128863245786, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 25.665
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.05682815335122754, 'max_depth': 6, 'gamma': 0.2675304679986863, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 24.071
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.09718785146683828, 'max_depth': 1, 'gamma': 0.3394163106977528, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 5.212
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.06876676870449869, 'max_depth': 4, 'gamma': 1.5950473346834695, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.186
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.031000053747845185, 'max_depth': 6, 'gamma': 1.7560645103225812, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 18.722
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.053212995007383815, 'max_depth': 4, 'gamma': 1.2358764459941431, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 12.668
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.04035641787556473, 'max_depth': 7, 'gamma': 0.25804968312751275, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 27.011
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.07478155666590353, 'max_depth': 1, 'gamma': 1.3426708774424772, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.986
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.020256666604324045, 'max_depth': 6, 'gamma': 1.0406023976850989, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 14.012
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.09934244380988515, 'max_depth': 5, 'gamma': 0.6420870269707073, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.741
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.06736851546964008, 'max_depth': 8, 'gamma': 1.0311312003027295, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 35.513
+===============================================
+{'n_estimators': 180, 'learning_rate': 0.033708648980336896, 'max_depth': 5, 'gamma': 1.136116811663246, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.654
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.02424462041971733, 'max_depth': 7, 'gamma': 0.6781711173470473, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 24.644
+===============================================
+{'n_estimators': 180, 'learning_rate': 0.06127922749259698, 'max_depth': 3, 'gamma': 1.3776127981137611, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.393
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.00942416420223683, 'max_depth': 4, 'gamma': 0.7416709214748443, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 14.485
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.09782788851043694, 'max_depth': 3, 'gamma': 0.4317595411321271, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 10.287
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.016606580801495626, 'max_depth': 5, 'gamma': 0.6271873526829765, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 14.701
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.0644846662428589, 'max_depth': 2, 'gamma': 1.17757147400088, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.003
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.010338085976565856, 'max_depth': 1, 'gamma': 1.3737616679869102, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.049
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.01203720969214108, 'max_depth': 7, 'gamma': 1.8534104127907791, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 31.031
+===============================================
+{'n_estimators': 170, 'learning_rate': 0.06467285889111624, 'max_depth': 2, 'gamma': 1.1979902159007583, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.333
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.07043601933316765, 'max_depth': 7, 'gamma': 0.27588846947415036, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 23.550
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.04240322864592552, 'max_depth': 9, 'gamma': 0.33847097190917674, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 19.678
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.013743565496635371, 'max_depth': 8, 'gamma': 1.9952969511191985, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 40.799
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.06361554601597881, 'max_depth': 3, 'gamma': 1.1928552505022474, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.774
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.055833778443044935, 'max_depth': 3, 'gamma': 1.5190918428541236, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.010
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.013728303147042323, 'max_depth': 3, 'gamma': 1.2171315986786817, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 12.634
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.08289417203392063, 'max_depth': 2, 'gamma': 0.27376784920536146, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.893
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.0413720564119082, 'max_depth': 7, 'gamma': 0.5043028745899805, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 29.082
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.017375390311621778, 'max_depth': 8, 'gamma': 0.3312610286076567, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 17.458
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.07061479227026914, 'max_depth': 5, 'gamma': 0.12601111668644438, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 20.698
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.06354571142340548, 'max_depth': 9, 'gamma': 0.9345141400353729, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 44.992
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.062262661319633955, 'max_depth': 8, 'gamma': 1.7851746318382347, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 38.423
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.09502752475098547, 'max_depth': 9, 'gamma': 0.33851678693883613, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 22.305
+===============================================
+{'n_estimators': 170, 'learning_rate': 0.005733862880966725, 'max_depth': 3, 'gamma': 1.103768461441098, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.889
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.017554925472456313, 'max_depth': 5, 'gamma': 0.687271343505431, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.003
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.07109160310627045, 'max_depth': 1, 'gamma': 0.7615716396742624, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 4.218
+===============================================
+{'n_estimators': 180, 'learning_rate': 0.01665477121301362, 'max_depth': 3, 'gamma': 1.9511900668423434, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.440
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.06393823336877316, 'max_depth': 3, 'gamma': 1.1187179790322401, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.663
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.07536928634331692, 'max_depth': 1, 'gamma': 0.6679449284237768, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.347
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.006147825980634835, 'max_depth': 2, 'gamma': 0.8158972663412498, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.758
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.04381509865599021, 'max_depth': 4, 'gamma': 0.36360556004197986, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.974
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.06337206685039543, 'max_depth': 3, 'gamma': 0.375063343368101, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 12.326
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.092005173686209, 'max_depth': 3, 'gamma': 0.963320379193175, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 5.325
+===============================================
+{'n_estimators': 180, 'learning_rate': 0.0194784685913941, 'max_depth': 1, 'gamma': 1.9555676915124167, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 4.957
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.0434624457549368, 'max_depth': 3, 'gamma': 0.9166378804678088, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.166
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.0465486827693117, 'max_depth': 5, 'gamma': 1.1755035906085924, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 19.061
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.09451518293042553, 'max_depth': 8, 'gamma': 1.659494081298105, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 29.868
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.036233276395233965, 'max_depth': 1, 'gamma': 0.13537304643948533, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.140
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.036452727929512145, 'max_depth': 7, 'gamma': 1.1077385404736364, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 29.996
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.03262339980927044, 'max_depth': 8, 'gamma': 0.14752161081606419, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 22.637
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.057849787435441447, 'max_depth': 1, 'gamma': 0.8822246659633699, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.198
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.0272314806038793, 'max_depth': 5, 'gamma': 1.9804678125830733, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 15.949
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.01723195402412433, 'max_depth': 4, 'gamma': 1.2992339597213869, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.734
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.05474939272673613, 'max_depth': 8, 'gamma': 0.24880059272140165, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 31.133
+===============================================
+{'n_estimators': 170, 'learning_rate': 0.0430855156982591, 'max_depth': 2, 'gamma': 1.1118284790199635, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.332
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.014483776168438992, 'max_depth': 5, 'gamma': 0.23297970642081545, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 19.683
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.02531916419930142, 'max_depth': 6, 'gamma': 0.9100903620968492, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 26.520
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.09419291993434559, 'max_depth': 8, 'gamma': 0.8105742338495974, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 37.702
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.0806235450602918, 'max_depth': 5, 'gamma': 1.9699356408099706, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 21.738
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.07550041841503809, 'max_depth': 8, 'gamma': 1.1127751776593824, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 20.797
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.08555373662480402, 'max_depth': 8, 'gamma': 0.6415284761694804, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 32.856
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.08346666623546438, 'max_depth': 3, 'gamma': 1.4532867209147502, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 12.581
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.04416195634345379, 'max_depth': 7, 'gamma': 0.008186327642994096, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.292
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.0740516247558563, 'max_depth': 4, 'gamma': 1.8088113753505901, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 17.326
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.03448185379486336, 'max_depth': 8, 'gamma': 0.3058465316594545, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 33.568
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.07464684148433183, 'max_depth': 5, 'gamma': 0.3458838001918507, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 22.140
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.023825766666038833, 'max_depth': 2, 'gamma': 1.272222625287467, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.221
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.08648175469307554, 'max_depth': 2, 'gamma': 1.0037744628227663, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.189
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.022036828918203168, 'max_depth': 7, 'gamma': 1.136382102004607, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.608
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.03555593442765857, 'max_depth': 3, 'gamma': 1.7450688782936907, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.391
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.021323326732583442, 'max_depth': 9, 'gamma': 1.1380401259603572, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 25.333
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.09797983058180082, 'max_depth': 6, 'gamma': 0.8401170663003787, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 18.573
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.0240267016421691, 'max_depth': 1, 'gamma': 1.3071908056286983, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 4.048
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.07307474965296629, 'max_depth': 8, 'gamma': 1.3576095318314247, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 31.306
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.0832235163798031, 'max_depth': 3, 'gamma': 1.3857265714785603, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.462
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.032504508016948624, 'max_depth': 8, 'gamma': 0.12038495703076846, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 18.814
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.021549613225469087, 'max_depth': 6, 'gamma': 0.9066825481776108, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.549
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.0982787895048296, 'max_depth': 3, 'gamma': 0.6845037206666615, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.130
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.020659019327124918, 'max_depth': 5, 'gamma': 0.6789720163697106, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 21.786
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.003393250701151385, 'max_depth': 7, 'gamma': 1.5329570935108587, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 36.429
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.02712612122604341, 'max_depth': 7, 'gamma': 0.3340537881582306, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 33.251
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.0032909854389032095, 'max_depth': 6, 'gamma': 1.144122002495707, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.208
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.04998975000257177, 'max_depth': 4, 'gamma': 0.3498526683705834, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 17.151
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.09522775678104592, 'max_depth': 4, 'gamma': 0.9653819706586666, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.627
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.06428684698973663, 'max_depth': 1, 'gamma': 1.8206056911905533, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 3.483
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.05881402760580694, 'max_depth': 6, 'gamma': 0.1777553011821067, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 14.223
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.08901825843209644, 'max_depth': 7, 'gamma': 1.943746090026081, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 24.662
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.07640091148690428, 'max_depth': 9, 'gamma': 0.5785620457644083, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 35.800
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.08418116254500928, 'max_depth': 5, 'gamma': 1.334044336480904, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.861
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.08932015452210665, 'max_depth': 1, 'gamma': 1.3951755581001626, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 3.878
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.03314272770360729, 'max_depth': 6, 'gamma': 1.3884356145732408, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.854
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.041947261261965726, 'max_depth': 6, 'gamma': 1.118503173589424, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 22.736
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.040496464280541426, 'max_depth': 9, 'gamma': 0.8158645990053808, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 44.483
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.016946965376413575, 'max_depth': 2, 'gamma': 0.0028685457391397495, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 10.322
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.08922080251857858, 'max_depth': 6, 'gamma': 1.3302097511879325, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 18.835
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.06705984682967439, 'max_depth': 6, 'gamma': 1.7112837015627134, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 12.840
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.026066095927416308, 'max_depth': 2, 'gamma': 0.032476378715893484, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 5.767
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.08179152961393663, 'max_depth': 3, 'gamma': 0.10258888909380137, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 12.392
+===============================================
+{'n_estimators': 180, 'learning_rate': 0.03828330395719922, 'max_depth': 3, 'gamma': 0.8210699402327826, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.648
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.09360868529557509, 'max_depth': 1, 'gamma': 1.6012424504542417, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 4.540
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.08482797774264016, 'max_depth': 5, 'gamma': 1.2883827899832134, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.582
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.01782088452513358, 'max_depth': 8, 'gamma': 0.6759999215433428, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 44.167
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.0057244278778217994, 'max_depth': 6, 'gamma': 0.7474120693498072, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 27.369
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.05250108613459173, 'max_depth': 4, 'gamma': 0.060846783045983566, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 12.823
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.02693850065122993, 'max_depth': 1, 'gamma': 1.984080180675479, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 4.568
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.0817304130442259, 'max_depth': 9, 'gamma': 0.13719767692354967, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 17.557
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.04826139838963113, 'max_depth': 7, 'gamma': 1.4195303324142907, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.096
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.042848360865025616, 'max_depth': 6, 'gamma': 0.82651339758704, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 10.895
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.0978525356681286, 'max_depth': 5, 'gamma': 0.4209379490480083, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 15.026
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.018078098938900614, 'max_depth': 4, 'gamma': 1.8691062252597497, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 15.187
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.05773625432120359, 'max_depth': 3, 'gamma': 1.6065370555544938, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.221
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.06512599131726933, 'max_depth': 9, 'gamma': 0.3458531002867258, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 46.716
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.010238966518061953, 'max_depth': 6, 'gamma': 1.4388266634677185, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 21.908
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.09231220253517003, 'max_depth': 8, 'gamma': 0.26821281583846246, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 17.684
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.07760549606373088, 'max_depth': 7, 'gamma': 0.5050120079385123, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.877
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.07110565485781122, 'max_depth': 3, 'gamma': 1.0340900763449261, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.051
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.07377365032533413, 'max_depth': 3, 'gamma': 0.4306703104225811, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.021
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.0526155295756299, 'max_depth': 4, 'gamma': 1.0873906796700592, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.908
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.0851936098399728, 'max_depth': 3, 'gamma': 0.4251605807406591, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.581
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.04375748367237982, 'max_depth': 2, 'gamma': 0.5845075663691304, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.470
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.06576356754083139, 'max_depth': 4, 'gamma': 0.6266923833596858, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.135
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.042170660274092636, 'max_depth': 2, 'gamma': 1.6481628010676443, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.415
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.07032232612614207, 'max_depth': 9, 'gamma': 1.5757026960010745, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 21.610
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.035623813681687315, 'max_depth': 4, 'gamma': 0.5997328441995866, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.821
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.038474048462033866, 'max_depth': 6, 'gamma': 0.08159665766376611, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 22.390
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.02318595493753493, 'max_depth': 2, 'gamma': 0.7676527472588675, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.186
+===============================================
+{'n_estimators': 180, 'learning_rate': 0.08033360327387964, 'max_depth': 8, 'gamma': 1.2891361675752004, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 24.784
+===============================================
+{'n_estimators': 170, 'learning_rate': 0.01608086594965048, 'max_depth': 1, 'gamma': 0.5485582728049809, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 5.311
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.04335518918228601, 'max_depth': 9, 'gamma': 1.6875169198290252, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 36.017
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.04526926954606685, 'max_depth': 8, 'gamma': 1.1644549147028684, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 19.939
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.043169755035890246, 'max_depth': 7, 'gamma': 1.660406929092111, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 25.669
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.031486749259820014, 'max_depth': 2, 'gamma': 1.8581051574553629, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.180
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.08493281800498356, 'max_depth': 8, 'gamma': 0.07799329995960358, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.802
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.015456718459777724, 'max_depth': 9, 'gamma': 0.3919440992392673, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 38.836
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.08468826847785059, 'max_depth': 9, 'gamma': 1.3332290464136567, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 21.865
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.05607465964235558, 'max_depth': 4, 'gamma': 0.8037896678762688, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.563
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.052942840703104524, 'max_depth': 9, 'gamma': 0.8560665912267886, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 35.821
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.01391434366385889, 'max_depth': 1, 'gamma': 0.646054383408069, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.276
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.07110618087783738, 'max_depth': 4, 'gamma': 1.286399571289837, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 14.621
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.009319729304708601, 'max_depth': 3, 'gamma': 1.1248966988675149, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 10.426
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.022128586435886683, 'max_depth': 3, 'gamma': 1.0735380123283549, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.141
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.011150862928311397, 'max_depth': 9, 'gamma': 1.0459031353357473, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 51.183
+===============================================
+{'n_estimators': 170, 'learning_rate': 0.07591239292794363, 'max_depth': 9, 'gamma': 1.781708866685497, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 27.754
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.09578344491277774, 'max_depth': 8, 'gamma': 0.9478432005241026, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 21.347
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.0940754818478454, 'max_depth': 7, 'gamma': 1.716211000934617, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 18.532
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.016394089162293138, 'max_depth': 5, 'gamma': 1.2869501909612078, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 21.507
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.028572920998114093, 'max_depth': 2, 'gamma': 0.4792160570518089, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 5.722
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.0949605972193778, 'max_depth': 7, 'gamma': 1.660162395398826, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.732
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.011168418519375254, 'max_depth': 7, 'gamma': 1.7948514361994445, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 24.987
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.03453522179683756, 'max_depth': 6, 'gamma': 1.8024854542080877, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.306
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.06165098535883816, 'max_depth': 1, 'gamma': 0.11589399971312275, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 3.958
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.020319329426987602, 'max_depth': 8, 'gamma': 1.9301958471884655, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 33.197
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.024910601067726808, 'max_depth': 6, 'gamma': 0.9876116976485048, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 23.564
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.04350205678245794, 'max_depth': 5, 'gamma': 1.576297754481571, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.086
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.06397673422604877, 'max_depth': 9, 'gamma': 0.8020910116304623, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 22.725
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.034784164826468573, 'max_depth': 6, 'gamma': 0.9031134551509656, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 23.966
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.05374602643310792, 'max_depth': 8, 'gamma': 0.8202148903160489, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 22.052
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.05528495455382269, 'max_depth': 1, 'gamma': 0.5984877196918363, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.193
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.049292554238396506, 'max_depth': 3, 'gamma': 1.1222860184833194, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 10.952
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.01904419079302931, 'max_depth': 5, 'gamma': 1.298913647627398, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 23.364
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.001199059683850102, 'max_depth': 9, 'gamma': 1.0238847225457108, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 18.552
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.08341429743015417, 'max_depth': 7, 'gamma': 1.5411829673442758, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 30.438
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.07787845617394383, 'max_depth': 6, 'gamma': 0.20013926173944352, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 12.917
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.05050142733341916, 'max_depth': 2, 'gamma': 0.6345199867182776, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.238
+===============================================
+{'n_estimators': 180, 'learning_rate': 0.024947695157082554, 'max_depth': 3, 'gamma': 0.8055148971978006, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.461
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.0024836563829909604, 'max_depth': 4, 'gamma': 0.660400822294761, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.606
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.005337143146998261, 'max_depth': 6, 'gamma': 0.036096590494211434, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 22.224
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.04605964244585872, 'max_depth': 6, 'gamma': 1.543795293006524, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 18.870
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.038195849244413715, 'max_depth': 5, 'gamma': 0.3397077354708169, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 20.205
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.02605673366374066, 'max_depth': 3, 'gamma': 1.32603210298312, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.037
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.07506540283938765, 'max_depth': 6, 'gamma': 1.986015278771777, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 22.807
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.013532386170552448, 'max_depth': 5, 'gamma': 1.6109517621951492, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 17.255
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.03305661034415804, 'max_depth': 6, 'gamma': 1.93002725296313, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 20.115
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.09591418417524514, 'max_depth': 5, 'gamma': 0.007446405714100823, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 21.391
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.09357501409839716, 'max_depth': 8, 'gamma': 1.102156176991179, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 27.616
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.04368089764448912, 'max_depth': 2, 'gamma': 1.0547924010468246, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 5.857
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.03752504419335853, 'max_depth': 3, 'gamma': 1.5024072269526547, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.653
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.02051222676010563, 'max_depth': 8, 'gamma': 0.7635360450099957, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.611
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.06937705830529546, 'max_depth': 4, 'gamma': 0.9184875365252843, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.370
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.0199084987824674, 'max_depth': 7, 'gamma': 1.7277124735702134, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 15.441
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.03377181916430943, 'max_depth': 6, 'gamma': 0.9271110868044752, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 15.922
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.06657732487259416, 'max_depth': 2, 'gamma': 0.1543682731920839, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.680
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.08637776146002858, 'max_depth': 4, 'gamma': 1.5758275986003596, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.557
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.04462072401441385, 'max_depth': 6, 'gamma': 0.15773062720393627, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.584
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.0868117209710832, 'max_depth': 1, 'gamma': 0.506737190264551, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.529
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.09095107109464869, 'max_depth': 9, 'gamma': 1.536905496981603, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 30.311
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.01855006326743141, 'max_depth': 4, 'gamma': 1.6235452127669303, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.857
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.03542353602060023, 'max_depth': 2, 'gamma': 1.669260712480986, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.550
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.07534996217079369, 'max_depth': 8, 'gamma': 1.3872433289450348, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 27.232
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.05422102031467013, 'max_depth': 3, 'gamma': 0.10145517160719741, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.502
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.004399791349530873, 'max_depth': 6, 'gamma': 0.839228728592676, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 24.150
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.07396115043783355, 'max_depth': 5, 'gamma': 0.06455323033681903, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.538
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.027512671668338914, 'max_depth': 5, 'gamma': 1.1137385217607734, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 15.665
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.05515282702379245, 'max_depth': 9, 'gamma': 0.738923999458122, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 36.291
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.009891575525818066, 'max_depth': 4, 'gamma': 0.34027730904289855, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.530
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.060145244915376886, 'max_depth': 3, 'gamma': 1.9851842188379472, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 10.848
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.08286914171060704, 'max_depth': 4, 'gamma': 0.3278012507543191, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.177
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.0840759106555688, 'max_depth': 6, 'gamma': 0.6671978143579231, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.636
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.022930921924529373, 'max_depth': 5, 'gamma': 1.055695201534627, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.840
+===============================================
+{'n_estimators': 170, 'learning_rate': 0.0996859976611245, 'max_depth': 4, 'gamma': 0.5322466098801641, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.601
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.06741784699890874, 'max_depth': 9, 'gamma': 0.049705127932383464, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 21.736
+===============================================
+{'n_estimators': 170, 'learning_rate': 0.013394072115925786, 'max_depth': 5, 'gamma': 0.2839300485205034, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 14.582
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.03105264646345166, 'max_depth': 2, 'gamma': 1.8232702108288703, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 5.059
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.0386999425112863, 'max_depth': 6, 'gamma': 0.8259743112973528, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 19.187
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.08035225326091217, 'max_depth': 8, 'gamma': 1.4939702144091973, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 31.249
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.07448824026004519, 'max_depth': 8, 'gamma': 0.24947141230077263, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 28.649
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.05791618780044396, 'max_depth': 3, 'gamma': 0.5763669971617962, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 14.322
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.04804401481780508, 'max_depth': 9, 'gamma': 0.8147835987198966, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 22.260
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.08376402389102192, 'max_depth': 8, 'gamma': 1.0441256367850316, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 22.973
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.04907704155572337, 'max_depth': 3, 'gamma': 0.8126332692795768, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 12.120
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.04435850642159488, 'max_depth': 9, 'gamma': 1.5021028456742607, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 45.334
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.08851273912259737, 'max_depth': 4, 'gamma': 1.6791716357358384, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 18.164
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.062282160922668445, 'max_depth': 3, 'gamma': 1.3373708739222365, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.048
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.07238804462153384, 'max_depth': 8, 'gamma': 0.8888515129576919, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 31.981
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.010806288931264701, 'max_depth': 2, 'gamma': 0.7599513530848996, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.668
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.09254937814832932, 'max_depth': 4, 'gamma': 1.20545188944344, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.848
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.09616395088264926, 'max_depth': 9, 'gamma': 0.12163385356038914, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 34.399
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.023753528993159547, 'max_depth': 6, 'gamma': 1.2788189100905902, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 12.012
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.03180557608998759, 'max_depth': 3, 'gamma': 1.6192413049239067, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.149
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.05971342347754898, 'max_depth': 2, 'gamma': 1.9901566530261074, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 10.411
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.0036356031171713653, 'max_depth': 2, 'gamma': 0.3529546983752787, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.188
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.08901835507184286, 'max_depth': 8, 'gamma': 1.3744914264736487, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.614
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.0675494937191906, 'max_depth': 9, 'gamma': 0.06731920562921001, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 20.801
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.03270648481866926, 'max_depth': 9, 'gamma': 1.6253081656475112, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 29.155
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.00666035623222505, 'max_depth': 1, 'gamma': 0.970369420851539, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 5.131
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.01804072254052833, 'max_depth': 4, 'gamma': 1.233552057100506, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 10.931
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.04604340726561761, 'max_depth': 7, 'gamma': 0.0009943529490330505, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 33.070
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.056510180472172905, 'max_depth': 1, 'gamma': 0.12925132296555164, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.928
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.03045867040707472, 'max_depth': 4, 'gamma': 1.638777430101358, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.162
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.09019867320159748, 'max_depth': 8, 'gamma': 0.9795593245690963, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.938
+===============================================
+{'n_estimators': 170, 'learning_rate': 0.02671664571195629, 'max_depth': 8, 'gamma': 0.42942700697118363, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 26.731
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.04100843430313823, 'max_depth': 7, 'gamma': 0.03306730217729781, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 32.324
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.024720210704178496, 'max_depth': 5, 'gamma': 1.5397152640299405, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 22.467
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.0800680748088855, 'max_depth': 9, 'gamma': 1.0689962073465646, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 46.760
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.06695574801537202, 'max_depth': 4, 'gamma': 1.351452838464416, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.301
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.0653191040501672, 'max_depth': 6, 'gamma': 1.8986243710693755, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.263
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.049932875675121335, 'max_depth': 7, 'gamma': 1.8905782432471485, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 30.164
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.0019008594336524355, 'max_depth': 1, 'gamma': 0.8685151546609635, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.182
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.051409163816564574, 'max_depth': 1, 'gamma': 0.4995995094064887, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 5.076
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.07772001319110905, 'max_depth': 9, 'gamma': 1.4611877064198169, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 38.635
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.08795307389965974, 'max_depth': 6, 'gamma': 1.0734620475477927, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 25.283
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.06016894283390899, 'max_depth': 1, 'gamma': 0.2421014123159697, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 4.762
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.08222728600179427, 'max_depth': 6, 'gamma': 0.1543420811170495, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 28.545
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.06525044396920351, 'max_depth': 1, 'gamma': 1.538215339913066, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 4.495
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.032944202534528996, 'max_depth': 8, 'gamma': 1.1025487352542296, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 28.665
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.0555662138249668, 'max_depth': 7, 'gamma': 1.269172524197084, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 25.050
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.06272425284807681, 'max_depth': 3, 'gamma': 1.626518772623115, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.336
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.0820579000515189, 'max_depth': 3, 'gamma': 0.6543878292803273, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.366
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.09325046726061181, 'max_depth': 6, 'gamma': 0.9036289629771688, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.859
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.03025316635278551, 'max_depth': 4, 'gamma': 0.3023219142224842, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 14.842
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.008545719218422402, 'max_depth': 5, 'gamma': 1.461516824748695, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 14.115
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.03076056931859394, 'max_depth': 1, 'gamma': 0.25786620527581317, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.531
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.07082195323474946, 'max_depth': 5, 'gamma': 0.13946216112712428, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 22.465
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.05286163884150758, 'max_depth': 2, 'gamma': 1.9815199425469412, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.845
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.03328507033748971, 'max_depth': 2, 'gamma': 0.702408562567368, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.280
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.03831033423695576, 'max_depth': 9, 'gamma': 1.1505606960768322, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 45.250
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.03020936671632058, 'max_depth': 6, 'gamma': 1.7203830619903797, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 27.305
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.01708832038973904, 'max_depth': 4, 'gamma': 0.591106938289611, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.311
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.07147531471008442, 'max_depth': 8, 'gamma': 0.8065875231569639, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 31.873
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.06645682756847242, 'max_depth': 2, 'gamma': 0.5822271803813366, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.478
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.03398757390840859, 'max_depth': 5, 'gamma': 0.11927382622286276, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 22.012
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.08713635270447513, 'max_depth': 5, 'gamma': 0.09536164728003893, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 23.792
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.019149964767201128, 'max_depth': 4, 'gamma': 1.0505341738702287, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 14.742
+===============================================
+{'n_estimators': 170, 'learning_rate': 0.06238416030454227, 'max_depth': 3, 'gamma': 0.7553805406641356, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.229
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.040275170868433616, 'max_depth': 8, 'gamma': 0.47720836273774925, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 27.797
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.07165536694256118, 'max_depth': 1, 'gamma': 1.9270674277934174, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.960
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.016324961234661154, 'max_depth': 9, 'gamma': 1.3975350922053622, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 48.585
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.08558721714710762, 'max_depth': 4, 'gamma': 1.7271908921744141, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 18.339
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.024376699935229867, 'max_depth': 9, 'gamma': 0.31793574210566433, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 30.172
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.029886745579445803, 'max_depth': 4, 'gamma': 1.018757373669303, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.772
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.0512322072901944, 'max_depth': 2, 'gamma': 0.5242523565709007, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.626
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.06158478807182891, 'max_depth': 6, 'gamma': 0.08609434370695634, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 23.079
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.02587051161883628, 'max_depth': 4, 'gamma': 1.1862100425329036, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.141
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.010402172427528951, 'max_depth': 2, 'gamma': 1.1917525483712668, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.033
+===============================================
+{'n_estimators': 160, 'learning_rate': 0.055222107313352295, 'max_depth': 8, 'gamma': 1.1028920849513837, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 23.871
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.047468204598230354, 'max_depth': 2, 'gamma': 1.8714727706103593, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.304
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.08865319305904473, 'max_depth': 4, 'gamma': 0.3438969385610151, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.871
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.041872146894855494, 'max_depth': 7, 'gamma': 1.5644497521341794, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 15.489
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.015799093182525297, 'max_depth': 6, 'gamma': 0.9362566576237299, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 12.166
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.03415141774983214, 'max_depth': 9, 'gamma': 0.7571687842827268, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 22.819
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.04670530491933582, 'max_depth': 6, 'gamma': 0.40874238777058025, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 15.265
+===============================================
+{'n_estimators': 120, 'learning_rate': 0.07546829022936784, 'max_depth': 5, 'gamma': 1.8822094123750945, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 10.850
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.04433954778700883, 'max_depth': 3, 'gamma': 0.6778084087433145, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 12.131
+===============================================
+{'n_estimators': 270, 'learning_rate': 0.039855880577611164, 'max_depth': 4, 'gamma': 1.635845783637476, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.943
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.06035450779335522, 'max_depth': 9, 'gamma': 1.7684675277076156, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 23.338
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.06540860127988013, 'max_depth': 2, 'gamma': 0.05457352194204268, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 10.961
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.035504276476709, 'max_depth': 7, 'gamma': 0.8510300526514842, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 34.813
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.0021256924646240833, 'max_depth': 6, 'gamma': 1.132034800994718, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 27.717
+===============================================
+{'n_estimators': 170, 'learning_rate': 0.06406566554801889, 'max_depth': 7, 'gamma': 0.8980079820948801, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 20.993
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.003527238262943593, 'max_depth': 1, 'gamma': 1.456078580026088, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 5.494
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.04484726018462429, 'max_depth': 2, 'gamma': 0.3758311647515169, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.427
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.060749657915591386, 'max_depth': 8, 'gamma': 0.27866518353641134, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.524
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.09963881477467869, 'max_depth': 3, 'gamma': 1.9641552699631895, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 12.929
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.02422065222801002, 'max_depth': 2, 'gamma': 1.661134964488995, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 5.456
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.05439959693693601, 'max_depth': 6, 'gamma': 0.747894526692441, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 21.864
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.09865341973109128, 'max_depth': 3, 'gamma': 0.36454757973592766, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.258
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.07096584621532787, 'max_depth': 5, 'gamma': 0.11916284302496538, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 18.175
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.011002101774434489, 'max_depth': 7, 'gamma': 1.581438383827698, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 38.047
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.06499898024987241, 'max_depth': 9, 'gamma': 0.20268458078143992, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 39.407
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.035953741178398044, 'max_depth': 7, 'gamma': 0.29708785580005315, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 29.150
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.08410039510922555, 'max_depth': 9, 'gamma': 1.3036408825495538, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 19.511
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.01338052184445106, 'max_depth': 2, 'gamma': 0.43629279308241675, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 10.644
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.0395980567067162, 'max_depth': 2, 'gamma': 0.1816845525743651, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.519
+===============================================
+{'n_estimators': 290, 'learning_rate': 0.06757745904287621, 'max_depth': 6, 'gamma': 1.25733927470682, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 27.688
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.05392667586630162, 'max_depth': 3, 'gamma': 1.742092482336, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 11.786
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.04034000740163465, 'max_depth': 4, 'gamma': 0.7310499730468809, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 15.650
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.07807553336767556, 'max_depth': 1, 'gamma': 1.1825263855479784, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.938
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.03701053856893739, 'max_depth': 7, 'gamma': 0.010471335778781343, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 23.917
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.0354373794890487, 'max_depth': 7, 'gamma': 0.7957879716872069, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 25.224
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.06558144539776967, 'max_depth': 5, 'gamma': 1.0223977106683895, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 18.113
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.014829389013550732, 'max_depth': 2, 'gamma': 0.7543851895799689, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.574
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.09399131804183691, 'max_depth': 5, 'gamma': 1.1082443524812877, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 18.975
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.0919585196236471, 'max_depth': 4, 'gamma': 0.49662237517613184, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.276
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.029435241565541656, 'max_depth': 9, 'gamma': 0.28970544851875024, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 33.962
+===============================================
+{'n_estimators': 280, 'learning_rate': 0.060222374072705386, 'max_depth': 4, 'gamma': 1.8156510056170967, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 17.597
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.04856212902232821, 'max_depth': 2, 'gamma': 1.903075832545558, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.199
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.07491328048236971, 'max_depth': 3, 'gamma': 1.5679893004915337, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.603
+===============================================
+{'n_estimators': 100, 'learning_rate': 0.038219591793819674, 'max_depth': 4, 'gamma': 0.5651765510924145, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.318
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.07030539691128873, 'max_depth': 4, 'gamma': 0.09574324548507795, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 14.455
+===============================================
+{'n_estimators': 170, 'learning_rate': 0.08456537507594938, 'max_depth': 7, 'gamma': 1.7556897025630485, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 20.493
+===============================================
+{'n_estimators': 170, 'learning_rate': 0.08301152570746527, 'max_depth': 6, 'gamma': 1.8107093136125927, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 17.286
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.04545120908061895, 'max_depth': 5, 'gamma': 1.9564516424228675, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 13.048
+===============================================
+{'n_estimators': 210, 'learning_rate': 0.09047236376828673, 'max_depth': 9, 'gamma': 1.5755558196541275, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 32.919
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.006661263779574146, 'max_depth': 9, 'gamma': 0.2691498606351561, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 37.340
+===============================================
+{'n_estimators': 240, 'learning_rate': 0.004588905931585567, 'max_depth': 1, 'gamma': 1.8908743989875776, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.512
+===============================================
+{'n_estimators': 260, 'learning_rate': 0.09627807850439493, 'max_depth': 8, 'gamma': 0.852233418621748, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 35.044
+===============================================
+{'n_estimators': 110, 'learning_rate': 0.009336054583399516, 'max_depth': 5, 'gamma': 0.9080239045952099, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 10.881
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.01458293996004571, 'max_depth': 5, 'gamma': 0.5790924692386261, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 20.242
+===============================================
+{'n_estimators': 180, 'learning_rate': 0.0431863116077618, 'max_depth': 1, 'gamma': 1.794589247617551, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.328
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.06059115816806333, 'max_depth': 7, 'gamma': 1.2586289500985839, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.954
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.024892748036187635, 'max_depth': 6, 'gamma': 1.7502126367746988, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 25.218
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.03512021785286203, 'max_depth': 6, 'gamma': 0.025072292074788116, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 20.639
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.07331445793834393, 'max_depth': 1, 'gamma': 0.46389400265377057, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 6.791
+===============================================
+{'n_estimators': 140, 'learning_rate': 0.0581944543876231, 'max_depth': 1, 'gamma': 1.5221708767282407, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 5.471
+===============================================
+{'n_estimators': 300, 'learning_rate': 0.04820616179852147, 'max_depth': 8, 'gamma': 1.2671060238096157, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 41.185
+===============================================
+{'n_estimators': 230, 'learning_rate': 0.010997010593725251, 'max_depth': 7, 'gamma': 1.6366769235683325, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 30.395
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.06597139403872786, 'max_depth': 1, 'gamma': 1.21483080780703, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 5.305
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.08067328544333607, 'max_depth': 7, 'gamma': 1.0784456738771604, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 24.061
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.027178352127712364, 'max_depth': 2, 'gamma': 1.313726433509412, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 9.979
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.038024674505247096, 'max_depth': 9, 'gamma': 1.7697330041006158, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 27.462
+===============================================
+{'n_estimators': 190, 'learning_rate': 0.00946677666420764, 'max_depth': 6, 'gamma': 0.3372455310322595, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 20.769
+===============================================
+{'n_estimators': 130, 'learning_rate': 0.07515484809093542, 'max_depth': 7, 'gamma': 1.756449586510725, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 16.759
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.06308343703863815, 'max_depth': 9, 'gamma': 0.8269446694295595, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 33.283
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.052544193193115506, 'max_depth': 9, 'gamma': 1.1523301887392476, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 36.432
+===============================================
+{'n_estimators': 220, 'learning_rate': 0.011369238951544923, 'max_depth': 1, 'gamma': 1.070491581444116, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 7.195
+===============================================
+{'n_estimators': 200, 'learning_rate': 0.030503912620033727, 'max_depth': 9, 'gamma': 0.25606758603946433, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 36.238
+===============================================
+{'n_estimators': 250, 'learning_rate': 0.06448071783789268, 'max_depth': 7, 'gamma': 1.4165939092876183, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 29.317
+===============================================
+{'n_estimators': 150, 'learning_rate': 0.031828999353889824, 'max_depth': 3, 'gamma': 1.7142942233618497, 'input_dim': 17, 'subsample': 0.9}
+elapsed time         : 8.879
