@@ -1,4 +1,3 @@
-# CHECK FILE NAME, MODEL, PARAMETER SPACE
 # basic libraries
 import numpy as np
 import pandas as pd
@@ -6,19 +5,24 @@ import pandas as pd
 # sklearn
 from sklearn.metrics import mean_squared_error
 
+from sklearn.ensemble import RandomForestRegressor
+
 #others
-from xgboost import XGBRegressor
 import time
 import sherpa
+
+BASE_DIR='/home/yusukemh/github/yusukemh/StatisticalDownscaling/dataset'
 
 LABELS=[
     'air2m', 'air1000_500', 'hgt500', 'hgt1000', 'omega500',
     'pottemp1000-500', 'pottemp1000-850', 'pr_wtr', 'shum-uwnd-700',
-    'shum-uwnd-925', 'shum-vwnd-700', 'shum-vwnd-950', 'shum700', 'shum925', 'skt', 'slp', 'lat', 'lon'
+    'shum-uwnd-925', 'shum-vwnd-700', 'shum-vwnd-950', 'shum700', 'shum925', 'skt', 'slp',
+    'lat', 'lon', 'elevation'
 ]
 
 def main():
     # load datasets
+    
     df = pd.read_csv('/home/yusukemh/sadow_lts/personal/yusukemh/pi_casc/processed_datasets/dataset_6grid.csv')
     # split
     df_train = df.query('year < 1984')
@@ -34,14 +38,12 @@ def main():
     Xtest = np.array(df_test[LABELS])
     Ytest = np.array(df_test["data_in"])
     
-    file_name = './XGB_original.txt'
+    file_name = './RFR_elevation.txt'
 
     parameters = [
         sherpa.Choice('n_estimators', list(range(100, 310, 10))),
-        sherpa.Continuous(name="learning_rate", range=[0.05, 0.2]),
-        sherpa.Discrete('max_depth', [1, 10]),
+        sherpa.Discrete('min_samples_split', [2, 6])
     ]
-
     alg = sherpa.algorithms.RandomSearch(max_num_trials=50)
     study = sherpa.Study(parameters=parameters,
                          algorithm=alg,
@@ -52,13 +54,15 @@ def main():
         line = '===============================================\n'
         params = {
             "n_estimators": trial.parameters['n_estimators'],
-            "learning_rate": trial.parameters['learning_rate'],
-            "max_depth": trial.parameters['max_depth'],
-            "verbosity": 1
+            "max_depth": None,
+            "min_samples_split": trial.parameters["min_samples_split"],
+            "max_samples": 0.9,
+            "verbose": True,
+            "n_jobs": -1,
         }
         print(params)
         line += str(params) + '\n'
-        model = XGBRegressor(**params)
+        model = RandomForestRegressor(**params)
         model.fit(Xtrain, Ytrain)
         training_error = mean_squared_error(Ytrain, model.predict(Xtrain))
         validation_error = mean_squared_error(Yvalid, model.predict(Xvalid))
@@ -79,5 +83,6 @@ def main():
         study.finalize(trial)
 
     print(study.get_best_result())
+
 if __name__ == "__main__":
     main()
