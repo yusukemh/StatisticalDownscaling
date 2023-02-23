@@ -4,7 +4,7 @@ import numpy as np
 from tqdm import tqdm
 
 import sys
-sys.path.append('/home/yusukemh/github/yusukemh/StatisticalDownscaling/writeup')
+sys.path.append('/home/yusukemh/github/yusukemh/StatisticalDownscaling/finalize/05/')
 from config import C_COMMON, C_GRID, C_SINGLE, FILENAME
 from util import load_data
 
@@ -46,6 +46,7 @@ class XGB():
 
 def main():
     columns, col_type = C_SINGLE, 'single'
+    columns.append('season_wet')
     n_run = 500
     df_train, _ = load_data(columns + C_COMMON, FILENAME)
     

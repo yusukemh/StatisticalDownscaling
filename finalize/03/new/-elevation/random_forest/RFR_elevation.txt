@@ -1,0 +1,250 @@
+===============================================
+{'n_estimators': 240, 'max_depth': None, 'min_samples_split': 2, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.960337
+MSE on validation set: 20.376144
+elapsed time         : 115.633
+===============================================
+{'n_estimators': 130, 'max_depth': None, 'min_samples_split': 3, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.242812
+MSE on validation set: 20.304958
+elapsed time         : 62.162
+===============================================
+{'n_estimators': 120, 'max_depth': None, 'min_samples_split': 4, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.533710
+MSE on validation set: 20.380551
+elapsed time         : 54.144
+===============================================
+{'n_estimators': 200, 'max_depth': None, 'min_samples_split': 2, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.968546
+MSE on validation set: 20.315796
+elapsed time         : 95.945
+===============================================
+{'n_estimators': 240, 'max_depth': None, 'min_samples_split': 2, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.958819
+MSE on validation set: 20.330891
+elapsed time         : 119.638
+===============================================
+{'n_estimators': 210, 'max_depth': None, 'min_samples_split': 2, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.964362
+MSE on validation set: 20.240780
+elapsed time         : 116.426
+===============================================
+{'n_estimators': 190, 'max_depth': None, 'min_samples_split': 3, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.228161
+MSE on validation set: 20.299691
+elapsed time         : 100.592
+===============================================
+{'n_estimators': 140, 'max_depth': None, 'min_samples_split': 4, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.520152
+MSE on validation set: 20.218049
+elapsed time         : 73.261
+===============================================
+{'n_estimators': 300, 'max_depth': None, 'min_samples_split': 3, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.217147
+MSE on validation set: 20.129726
+elapsed time         : 158.621
+===============================================
+{'n_estimators': 160, 'max_depth': None, 'min_samples_split': 2, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.968929
+MSE on validation set: 20.094776
+elapsed time         : 77.412
+===============================================
+{'n_estimators': 270, 'max_depth': None, 'min_samples_split': 4, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.505869
+MSE on validation set: 20.296363
+elapsed time         : 121.410
+===============================================
+{'n_estimators': 160, 'max_depth': None, 'min_samples_split': 5, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.788957
+MSE on validation set: 20.423196
+elapsed time         : 70.531
+===============================================
+{'n_estimators': 140, 'max_depth': None, 'min_samples_split': 2, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.982270
+MSE on validation set: 20.119962
+elapsed time         : 68.376
+===============================================
+{'n_estimators': 290, 'max_depth': None, 'min_samples_split': 5, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.778772
+MSE on validation set: 20.391407
+elapsed time         : 126.698
+===============================================
+{'n_estimators': 170, 'max_depth': None, 'min_samples_split': 4, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.505506
+MSE on validation set: 20.182694
+elapsed time         : 78.090
+===============================================
+{'n_estimators': 210, 'max_depth': None, 'min_samples_split': 2, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.963412
+MSE on validation set: 20.330549
+elapsed time         : 112.954
+===============================================
+{'n_estimators': 100, 'max_depth': None, 'min_samples_split': 5, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.812321
+MSE on validation set: 20.516180
+elapsed time         : 51.460
+===============================================
+{'n_estimators': 140, 'max_depth': None, 'min_samples_split': 2, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.974783
+MSE on validation set: 20.463515
+elapsed time         : 77.254
+===============================================
+{'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.989241
+MSE on validation set: 20.420467
+elapsed time         : 55.833
+===============================================
+{'n_estimators': 170, 'max_depth': None, 'min_samples_split': 2, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.965808
+MSE on validation set: 20.534371
+elapsed time         : 94.233
+===============================================
+{'n_estimators': 300, 'max_depth': None, 'min_samples_split': 5, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.774709
+MSE on validation set: 20.330876
+elapsed time         : 145.920
+===============================================
+{'n_estimators': 250, 'max_depth': None, 'min_samples_split': 4, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.510679
+MSE on validation set: 20.322984
+elapsed time         : 112.986
+===============================================
+{'n_estimators': 290, 'max_depth': None, 'min_samples_split': 4, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.506702
+MSE on validation set: 20.370527
+elapsed time         : 129.636
+===============================================
+{'n_estimators': 130, 'max_depth': None, 'min_samples_split': 2, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.981190
+MSE on validation set: 20.373040
+elapsed time         : 63.675
+===============================================
+{'n_estimators': 130, 'max_depth': None, 'min_samples_split': 3, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.236752
+MSE on validation set: 20.226980
+elapsed time         : 61.512
+===============================================
+{'n_estimators': 180, 'max_depth': None, 'min_samples_split': 4, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.501638
+MSE on validation set: 20.372189
+elapsed time         : 82.020
+===============================================
+{'n_estimators': 270, 'max_depth': None, 'min_samples_split': 5, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.767355
+MSE on validation set: 20.379871
+elapsed time         : 118.754
+===============================================
+{'n_estimators': 300, 'max_depth': None, 'min_samples_split': 5, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.772137
+MSE on validation set: 20.255425
+elapsed time         : 131.827
+===============================================
+{'n_estimators': 130, 'max_depth': None, 'min_samples_split': 2, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.973933
+MSE on validation set: 20.208744
+elapsed time         : 63.907
+===============================================
+{'n_estimators': 180, 'max_depth': None, 'min_samples_split': 4, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.512968
+MSE on validation set: 20.400990
+elapsed time         : 81.869
+===============================================
+{'n_estimators': 280, 'max_depth': None, 'min_samples_split': 5, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.775628
+MSE on validation set: 20.229420
+elapsed time         : 122.663
+===============================================
+{'n_estimators': 110, 'max_depth': None, 'min_samples_split': 2, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.983618
+MSE on validation set: 20.356496
+elapsed time         : 53.436
+===============================================
+{'n_estimators': 150, 'max_depth': None, 'min_samples_split': 4, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.513000
+MSE on validation set: 20.365852
+elapsed time         : 67.788
+===============================================
+{'n_estimators': 180, 'max_depth': None, 'min_samples_split': 2, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.972410
+MSE on validation set: 20.456501
+elapsed time         : 86.710
+===============================================
+{'n_estimators': 170, 'max_depth': None, 'min_samples_split': 3, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.228323
+MSE on validation set: 20.245857
+elapsed time         : 79.450
+===============================================
+{'n_estimators': 230, 'max_depth': None, 'min_samples_split': 3, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.225941
+MSE on validation set: 20.309741
+elapsed time         : 105.508
+===============================================
+{'n_estimators': 140, 'max_depth': None, 'min_samples_split': 2, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.974899
+MSE on validation set: 20.412486
+elapsed time         : 67.977
+===============================================
+{'n_estimators': 170, 'max_depth': None, 'min_samples_split': 3, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.227531
+MSE on validation set: 20.113292
+elapsed time         : 79.356
+===============================================
+{'n_estimators': 240, 'max_depth': None, 'min_samples_split': 3, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.225118
+MSE on validation set: 20.319040
+elapsed time         : 110.215
+===============================================
+{'n_estimators': 280, 'max_depth': None, 'min_samples_split': 5, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.777108
+MSE on validation set: 20.243295
+elapsed time         : 122.104
+===============================================
+{'n_estimators': 220, 'max_depth': None, 'min_samples_split': 3, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.217671
+MSE on validation set: 20.281471
+elapsed time         : 100.943
+===============================================
+{'n_estimators': 100, 'max_depth': None, 'min_samples_split': 2, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.993761
+MSE on validation set: 20.096902
+elapsed time         : 49.085
+===============================================
+{'n_estimators': 180, 'max_depth': None, 'min_samples_split': 2, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.970732
+MSE on validation set: 20.222494
+elapsed time         : 86.638
+===============================================
+{'n_estimators': 150, 'max_depth': None, 'min_samples_split': 5, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.793081
+MSE on validation set: 20.371855
+elapsed time         : 66.346
+===============================================
+{'n_estimators': 180, 'max_depth': None, 'min_samples_split': 5, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.787887
+MSE on validation set: 20.374833
+elapsed time         : 79.795
+===============================================
+{'n_estimators': 140, 'max_depth': None, 'min_samples_split': 4, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.516366
+MSE on validation set: 20.431026
+elapsed time         : 63.810
+===============================================
+{'n_estimators': 130, 'max_depth': None, 'min_samples_split': 2, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.977253
+MSE on validation set: 20.327865
+elapsed time         : 63.075
+===============================================
+{'n_estimators': 240, 'max_depth': None, 'min_samples_split': 2, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 0.966070
+MSE on validation set: 20.309614
+elapsed time         : 114.415
+===============================================
+{'n_estimators': 170, 'max_depth': None, 'min_samples_split': 4, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.511359
+MSE on validation set: 20.077838
+elapsed time         : 77.380
+===============================================
+{'n_estimators': 240, 'max_depth': None, 'min_samples_split': 4, 'max_samples': 0.9, 'verbose': True, 'n_jobs': -1}
+MSE on training set  : 1.509120
+MSE on validation set: 20.250015
+elapsed time         : 107.687
